@@ -13,6 +13,7 @@
 		3528941C28A330E9002C980C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941A28A330E9002C980C /* Main.storyboard */; };
 		3528941E28A330EB002C980C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3528941D28A330EB002C980C /* Assets.xcassets */; };
 		3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941F28A330EB002C980C /* LaunchScreen.storyboard */; };
+		3528942928A335AF002C980C /* Home Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528942828A335AF002C980C /* Home Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3528941D28A330EB002C980C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3528942028A330EB002C980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3528942228A330EB002C980C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3528942828A335AF002C980C /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3528941D28A330EB002C980C /* Assets.xcassets */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
 				3528942228A330EB002C980C /* Info.plist */,
+				3528942828A335AF002C980C /* Home Screen.swift */,
 			);
 			path = "COSC345-Lang";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3528941928A330E9002C980C /* ViewController.swift in Sources */,
+				3528942928A335AF002C980C /* Home Screen.swift in Sources */,
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 			);
