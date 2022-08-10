@@ -51,14 +51,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-d9-jcR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-d9-jcR">
                                 <rect key="frame" x="168" y="681" width="75.5" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1052297364" blue="0.029185124100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="show" id="JdO-gs-j9S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuR-do-1ry">
                                 <rect key="frame" x="94" y="170" width="227" height="65"/>
@@ -70,6 +72,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="L2b-d9-jcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36Y-AS-f8r"/>
+                            <constraint firstItem="L2b-d9-jcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWk-MT-a0v"/>
+                            <constraint firstItem="L2b-d9-jcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1B-mm-GlK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,11 +93,12 @@
             <objects>
                 <viewController id="q2f-da-TVm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tw-lS-oqZ" customClass="HomeScreen">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUe-Mh-cTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
