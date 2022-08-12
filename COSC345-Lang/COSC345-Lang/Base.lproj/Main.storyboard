@@ -78,6 +78,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="show" id="hgV-fE-77r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptr-TJ-Xly">
                                 <rect key="frame" x="184" y="463" width="0.0" height="0.0"/>
@@ -121,7 +124,7 @@
             <objects>
                 <viewController id="q2f-da-TVm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tw-lS-oqZ" customClass="HomeScreen">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
