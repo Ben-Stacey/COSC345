@@ -37,6 +37,7 @@ class HomeScreen: UIViewController {
         //name = nameTextField.text
         if let x = nameTextField.text {
             name = x
+            hello = "hello"
         }
     }
 
