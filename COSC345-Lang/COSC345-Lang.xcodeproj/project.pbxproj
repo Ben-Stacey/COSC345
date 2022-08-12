@@ -14,7 +14,18 @@
 		3528941E28A330EB002C980C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3528941D28A330EB002C980C /* Assets.xcassets */; };
 		3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941F28A330EB002C980C /* LaunchScreen.storyboard */; };
 		3528942928A335AF002C980C /* Home Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528942828A335AF002C980C /* Home Screen.swift */; };
+		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35CE493528A5F3430093CC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3528940928A330E9002C980C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3528941028A330E9002C980C;
+			remoteInfo = "COSC345-Lang";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3528941128A330E9002C980C /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,19 @@
 		3528942028A330EB002C980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3528942228A330EB002C980C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3528942828A335AF002C980C /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
+		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3528940E28A330E9002C980C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35CE492E28A5F3430093CC7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				3528941328A330E9002C980C /* COSC345-Lang */,
+				35CE493228A5F3430093CC7E /* COSC345-LangTests */,
 				3528941228A330E9002C980C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3528941128A330E9002C980C /* COSC345-Lang.app */,
+				35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +90,14 @@
 				3528942828A335AF002C980C /* Home Screen.swift */,
 			);
 			path = "COSC345-Lang";
+			sourceTree = "<group>";
+		};
+		35CE493228A5F3430093CC7E /* COSC345-LangTests */ = {
+			isa = PBXGroup;
+			children = (
+				35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */,
+			);
+			path = "COSC345-LangTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +120,24 @@
 			productReference = 3528941128A330E9002C980C /* COSC345-Lang.app */;
 			productType = "com.apple.product-type.application";
 		};
+		35CE493028A5F3430093CC7E /* COSC345-LangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35CE493928A5F3430093CC7E /* Build configuration list for PBXNativeTarget "COSC345-LangTests" */;
+			buildPhases = (
+				35CE492D28A5F3430093CC7E /* Sources */,
+				35CE492E28A5F3430093CC7E /* Frameworks */,
+				35CE492F28A5F3430093CC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35CE493628A5F3430093CC7E /* PBXTargetDependency */,
+			);
+			name = "COSC345-LangTests";
+			productName = "COSC345-LangTests";
+			productReference = 35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +150,10 @@
 				TargetAttributes = {
 					3528941028A330E9002C980C = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					35CE493028A5F3430093CC7E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3528941028A330E9002C980C;
 					};
 				};
 			};
@@ -119,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				3528941028A330E9002C980C /* COSC345-Lang */,
+				35CE493028A5F3430093CC7E /* COSC345-LangTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 				3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */,
 				3528941E28A330EB002C980C /* Assets.xcassets in Resources */,
 				3528941C28A330E9002C980C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35CE492F28A5F3430093CC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35CE492D28A5F3430093CC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35CE493628A5F3430093CC7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3528941028A330E9002C980C /* COSC345-Lang */;
+			targetProxy = 35CE493528A5F3430093CC7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3528941A28A330E9002C980C /* Main.storyboard */ = {
@@ -340,6 +416,42 @@
 			};
 			name = Release;
 		};
+		35CE493728A5F3430093CC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RL35JKD39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-LangTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345-Lang.app/COSC345-Lang";
+			};
+			name = Debug;
+		};
+		35CE493828A5F3430093CC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RL35JKD39V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-LangTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345-Lang.app/COSC345-Lang";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +469,15 @@
 			buildConfigurations = (
 				3528942628A330EB002C980C /* Debug */,
 				3528942728A330EB002C980C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35CE493928A5F3430093CC7E /* Build configuration list for PBXNativeTarget "COSC345-LangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35CE493728A5F3430093CC7E /* Debug */,
+				35CE493828A5F3430093CC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
