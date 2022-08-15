@@ -51,7 +51,7 @@ jobs:
       - name: Extract Documentation
         uses: SwiftDocOrg/swift-doc@master
         with:
-           inputs: "COSC345"
+           inputs: "COSC345-Lang"
            module-name: MyLibrary
            output: "Documentation"
       - name: Upload Documentation to Wiki
