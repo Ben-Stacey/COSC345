@@ -19,7 +19,7 @@
 		3528942928A335AF002C980C /* Home Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528942828A335AF002C980C /* Home Screen.swift */; };
 		353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11CE28A9FDDA00B996DB /* CheatSheet.swift */; };
 		353B11D128AAF23D00B996DB /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11D028AAF23D00B996DB /* test.swift */; };
-		353B11D328AAF37A00B996DB /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11D228AAF37A00B996DB /* test2.swift */; };
+		357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD70D28AB3C5E00D060C4 /* Config.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		3528942828A335AF002C980C /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
 		353B11CE28A9FDDA00B996DB /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		353B11D028AAF23D00B996DB /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		353B11D228AAF37A00B996DB /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
+		357FD70D28AB3C5E00D060C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,10 +94,13 @@
 			children = (
 				3528941428A330E9002C980C /* AppDelegate.swift */,
 				353B11D028AAF23D00B996DB /* test.swift */,
-				353B11D228AAF37A00B996DB /* test2.swift */,
 				3528941628A330E9002C980C /* SceneDelegate.swift */,
+				357FD71528AB3D5200D060C4 /* Assets */,
+				357FD71228AB3D0700D060C4 /* Classes */,
+				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941828A330E9002C980C /* ViewController.swift */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
+				357FD70D28AB3C5E00D060C4 /* Config.swift */,
 				353B11CE28A9FDDA00B996DB /* CheatSheet.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				297AF0AB28A601B300C3291A /* WagerQuizzes.swift */,
@@ -108,6 +111,51 @@
 				297AF0A528A600AD00C3291A /* Leaderboards.swift */,
 			);
 			path = "COSC345-Lang";
+			sourceTree = "<group>";
+		};
+		357FD71128AB3CE400D060C4 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		357FD71228AB3D0700D060C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				357FD71628AB3D7F00D060C4 /* Models */,
+				357FD71328AB3D1300D060C4 /* Views */,
+				357FD71428AB3D3700D060C4 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		357FD71328AB3D1300D060C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		357FD71428AB3D3700D060C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		357FD71528AB3D5200D060C4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		357FD71628AB3D7F00D060C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		35CE493228A5F3430093CC7E /* COSC345-LangTests */ = {
@@ -226,8 +274,8 @@
 				353B11D128AAF23D00B996DB /* test.swift in Sources */,
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
+				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
-				353B11D328AAF37A00B996DB /* test2.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
