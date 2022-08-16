@@ -20,6 +20,11 @@
 		353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11CE28A9FDDA00B996DB /* CheatSheet.swift */; };
 		353B11D128AAF23D00B996DB /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11D028AAF23D00B996DB /* test.swift */; };
 		357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD70D28AB3C5E00D060C4 /* Config.swift */; };
+		357FD71828AB3EDF00D060C4 /* TowerOne.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71728AB3EDF00D060C4 /* TowerOne.plist */; };
+		357FD71A28AB3EEB00D060C4 /* TowerTwo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71928AB3EEB00D060C4 /* TowerTwo.plist */; };
+		357FD71C28AB3EFE00D060C4 /* TowerThree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71B28AB3EFE00D060C4 /* TowerThree.plist */; };
+		357FD72028AB3F2D00D060C4 /* TowerFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71F28AB3F2D00D060C4 /* TowerFour.plist */; };
+		357FD72228AB3F4400D060C4 /* TowerFive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD72128AB3F4400D060C4 /* TowerFive.plist */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,11 @@
 		353B11CE28A9FDDA00B996DB /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		353B11D028AAF23D00B996DB /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		357FD70D28AB3C5E00D060C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		357FD71728AB3EDF00D060C4 /* TowerOne.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerOne.plist; sourceTree = "<group>"; };
+		357FD71928AB3EEB00D060C4 /* TowerTwo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerTwo.plist; sourceTree = "<group>"; };
+		357FD71B28AB3EFE00D060C4 /* TowerThree.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerThree.plist; sourceTree = "<group>"; };
+		357FD71F28AB3F2D00D060C4 /* TowerFour.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerFour.plist; sourceTree = "<group>"; };
+		357FD72128AB3F4400D060C4 /* TowerFive.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerFive.plist; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +126,11 @@
 		357FD71128AB3CE400D060C4 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				357FD71728AB3EDF00D060C4 /* TowerOne.plist */,
+				357FD71928AB3EEB00D060C4 /* TowerTwo.plist */,
+				357FD71B28AB3EFE00D060C4 /* TowerThree.plist */,
+				357FD71F28AB3F2D00D060C4 /* TowerFour.plist */,
+				357FD72128AB3F4400D060C4 /* TowerFive.plist */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -248,8 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */,
+				357FD71C28AB3EFE00D060C4 /* TowerThree.plist in Resources */,
 				3528941E28A330EB002C980C /* Assets.xcassets in Resources */,
 				3528941C28A330E9002C980C /* Main.storyboard in Resources */,
+				357FD72228AB3F4400D060C4 /* TowerFive.plist in Resources */,
+				357FD72028AB3F2D00D060C4 /* TowerFour.plist in Resources */,
+				357FD71A28AB3EEB00D060C4 /* TowerTwo.plist in Resources */,
+				357FD71828AB3EDF00D060C4 /* TowerOne.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
