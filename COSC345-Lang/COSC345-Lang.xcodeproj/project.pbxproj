@@ -26,6 +26,7 @@
 		357FD72028AB3F2D00D060C4 /* TowerFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71F28AB3F2D00D060C4 /* TowerFour.plist */; };
 		357FD72228AB3F4400D060C4 /* TowerFive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD72128AB3F4400D060C4 /* TowerFive.plist */; };
 		357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD72328AB4FCB00D060C4 /* GameData.swift */; };
+		357FD72628AB504900D060C4 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD72528AB504900D060C4 /* Level.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		357FD71F28AB3F2D00D060C4 /* TowerFour.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerFour.plist; sourceTree = "<group>"; };
 		357FD72128AB3F4400D060C4 /* TowerFive.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerFive.plist; sourceTree = "<group>"; };
 		357FD72328AB4FCB00D060C4 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		357FD72528AB504900D060C4 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				357FD72328AB4FCB00D060C4 /* GameData.swift */,
+				357FD72528AB504900D060C4 /* Level.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
 				353B11D128AAF23D00B996DB /* test.swift in Sources */,
+				357FD72628AB504900D060C4 /* Level.swift in Sources */,
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
