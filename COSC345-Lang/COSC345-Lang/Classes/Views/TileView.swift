@@ -27,12 +27,12 @@ class TileView:UIImageView {
     // Create a new tile
     init(letter:Character, sideLength:CGFloat){
         self.letter = letter
-        let background = UIImage(named: "tile")
-        super.init(image:background)
+        let image = UIImage(named: "tile")
+        super.init(image:image)
         
         // Rescalling the tile
-        let scale = sideLength / background.size.width
-        self.frame = CGRect(x: 0, y: 0, width: background.size.width * scale, height: background.size.height * scale)
+        let scale = sideLength / image.size.width
+        self.frame = CGRect(x: 0, y: 0, width: image.size.width * scale, height: image.size.height * scale)
         
         // Adding character (will be changed to word shortly)
         let letterLabel = UILabel(frame, self.bounds)
