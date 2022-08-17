@@ -33,7 +33,7 @@ class ViewController: UIViewController {
   }
   
   //show the game menu on app start
-  override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.showLevelMenu()
   }
@@ -51,20 +51,20 @@ class ViewController: UIViewController {
     //1 show the level selector menu
     let alertController = UIAlertController(title: "Choose Difficulty Level",
       message: nil,
-      preferredStyle:UIAlertControllerStyle.Alert)
+      preferredStyle:UIAlertController.Style.alert)
     
     //2 set up the menu actions
-    let easy = UIAlertAction(title: "Easy-peasy", style:.Default,
+      let easy = UIAlertAction(title: "Easy-peasy", style:.default,
       handler: {(alert:UIAlertAction!) in
-        self.showLevel(1)
+        self.showLevel(levelNumber: 1)
     })
-    let hard = UIAlertAction(title: "Challenge accepted", style:.Default,
+      let hard = UIAlertAction(title: "Challenge accepted", style:.default,
       handler: {(alert:UIAlertAction!) in
-        self.showLevel(2)
+        self.showLevel(levelNumber: 2)
     })
-    let hardest = UIAlertAction(title: "I'm totally hard-core", style: .Default,
+      let hardest = UIAlertAction(title: "I'm totally hard-core", style: .default,
       handler: {(alert:UIAlertAction!) in
-        self.showLevel(3)
+        self.showLevel(levelNumber: 3)
     })
     
     //3 add the menu actions to the menu

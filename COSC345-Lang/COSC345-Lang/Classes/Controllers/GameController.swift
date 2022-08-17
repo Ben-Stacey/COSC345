@@ -19,25 +19,18 @@ class GameController {
   var hud:HUDView! {
     didSet {
       //connect the Hint button
-      hud.hintButton.addTarget(self, action: Selector("actionHint"), forControlEvents:.TouchUpInside)
+      hud.hintButton.addTarget(self, action: Selector("actionHint"), for:.touchUpInside)
       hud.hintButton.enabled = false
     }
   }
   
   //stopwatch variables
   private var secondsLeft: Int = 0
-  private var timer: NSTimer?
+    private var timer: Timer?
   
   private var data = GameData()
   
-  private var audioController: AudioController
-  
   var onAnagramSolved:( () -> ())!
-  
-  init() {
-    self.audioController = AudioController()
-    self.audioController.preloadAudioEffects(AudioEffectFiles)
-  }
   
   func dealRandomAnagram () {
     //1
@@ -104,22 +97,22 @@ class GameController {
     //start the timer
     self.startStopwatch()
     
-    hud.hintButton.enabled = true
+    hud.hintButton.isEnabled = true
     
   }
   
   func placeTile(tileView: TileView, targetView: TargetView) {
     //1
-    targetView.isMatched = true
-    tileView.isMatched = true
+     targetView.isMatched = true
+     tileView.isMatched = true
     
     //2
-    tileView.userInteractionEnabled = false
+      tileView.isUserInteractionEnabled = false
     
     //3
-    UIView.animateWithDuration(0.35,
+      UIView.animate(withDuration: 0.35,
       delay:0.00,
-      options:UIViewAnimationOptions.CurveEaseOut,
+      options:UIView.AnimationOptions.curveEaseOut,
       //4
       animations: {
         tileView.center = targetView.center
@@ -128,7 +121,7 @@ class GameController {
       //5
       completion: {
         (value:Bool) in
-        targetView.hidden = true
+          targetView.isHidden = true
     })
     
     let explode = ExplodeView(frame:CGRectMake(tileView.center.x, tileView.center.y, 10,10))
@@ -186,7 +179,7 @@ class GameController {
     hud.stopwatch.setSeconds(secondsLeft)
     
     //schedule a new timer
-    timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector:"tick:", userInfo: nil, repeats: true)
+      timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:"tick:", userInfo: nil, repeats: true)
   }
   
   func stopStopwatch() {
@@ -194,7 +187,7 @@ class GameController {
     timer = nil
   }
   
-  @objc func tick(timer: NSTimer) {
+    @objc func tick(timer: Timer) {
     secondsLeft--
     hud.stopwatch.setSeconds(secondsLeft)
     if secondsLeft == 0 {
@@ -230,22 +223,22 @@ class GameController {
     }
     
     //ensure there is a matching tile and target
-    if let target = foundTarget, tile = foundTile {
+      if let target = foundTarget, let tile = foundTile {
       
       //5 don't want the tile sliding under other tiles
       gameView.bringSubviewToFront(tile)
       
       //6 show the animation to the user
-      UIView.animateWithDuration(1.5,
+        UIView.animate(withDuration: 1.5,
         delay:0.0,
-        options:UIViewAnimationOptions.CurveEaseOut,
+        options:UIView.AnimationOptions.curveEaseOut,
         animations:{
           tile.center = target.center
         }, completion: {
           (value:Bool) in
           
           //7 adjust view on spot
-          self.placeTile(tile, targetView: target)
+          self.placeTile(tileView: tile, targetView: target)
           
           //8 re-enable the button
           self.hud.hintButton.enabled = true
