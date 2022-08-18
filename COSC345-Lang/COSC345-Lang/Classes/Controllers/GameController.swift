@@ -94,12 +94,6 @@ class GameController {
     }
     print("Game Over!")
     
-    // win animation
-    let firstTarget = targets[0]
-    let startX:CGFloat = 0
-    let endX:CGFloat = ScreenWidth + 300
-    let startY = firstTarget.center.y
-    
     self.clearBoard()
     self.onAnagramSolved()
   }
@@ -126,7 +120,7 @@ extension GameController:TileDragDelegateProtocol {
     
     if let targetView = targetView {
       if targetView.letter == tileView.letter {
-        self.placeTile(tileView, targetView: targetView)
+        self.placeTile(tileView:tileView, targetView: targetView)
         self.checkForSuccess()
       }
     }
