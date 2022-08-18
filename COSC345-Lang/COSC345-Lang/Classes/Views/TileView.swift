@@ -18,7 +18,7 @@ class TileView:UIImageView {
     private var xOffset = 0.0
     private var yOffset = 0.0
     var tile: TileDragDelegateProtocol
-    private var tempTransform: CGAffineTransform = CGAffineTransformIdentity
+    private var tempTransform = CGAffineTransform.identity
     
     required init(coder aDecoder: NSCoder){
         fatalError("user init(letter, sideLength")
@@ -53,13 +53,13 @@ class TileView:UIImageView {
             yOffset = point.y - self.center.y
             
             tempTransform = self.transform
-            self.transform = CGAffineTransformScale(self.transform, 1.2, 1.2)
+            self.transform = self.transform.scaledBy(x: 1.2, y: 1.2)
             self.superview?.bringSubviewToFront(self)
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.touchesMoved(touches, withEvent: event)
+        self.touchesMoved(touches, with: event)
         self.transform = tempTransform
         dragDelegate?.tileView(self, didDragToPoint: self.center)
     }
