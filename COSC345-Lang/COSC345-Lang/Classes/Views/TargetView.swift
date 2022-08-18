@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class TargetView: UIImageView {
+    var letter:Character
+    
     required init(coder aDecoder:NSCoder) {
       fatalError("use init(letter:, sideLength:")
     }
