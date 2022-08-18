@@ -12,29 +12,27 @@ class ViewController: UIViewController {
   
   required init(coder aDecoder: NSCoder) {
     controller = GameController()
-    super.init(coder: aDecoder)
+      super.init(coder: aDecoder)!
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     //add one layer for all game elements
-      let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
+    let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
     self.view.addSubview(gameView)
     controller.gameView = gameView
-
     controller.onAnagramSolved = self.showLevelMenu
   }
   
   //show the game menu on app start
-    override func viewDidAppear(_ animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.showLevelMenu()
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 /**
   override func prefersStatusBarHidden() -> Bool {
@@ -69,11 +67,9 @@ class ViewController: UIViewController {
     self.present(alertController, animated: true, completion: nil)
   }
   
-  //5 show the appropriate level selected by the player
   func showLevel(levelNumber:Int) {
     controller.level = Level(levelNumber: levelNumber)
     controller.dealRandomAnagram()
   }
-  
 }
 
