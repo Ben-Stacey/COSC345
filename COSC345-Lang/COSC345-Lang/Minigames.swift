@@ -36,14 +36,14 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
+/**
   override func prefersStatusBarHidden() -> Bool {
     return true
   }
+ */
     // rebuild for towers
   func showLevelMenu() {
-    //1 show the level selector menu
-    let alertController = UIAlertController(title: "Choose Difficulty Level",
+    let alertController = UIAlertController(title: "Choose your tower: ",
       message: nil,
       preferredStyle:UIAlertController.Style.alert)
     
