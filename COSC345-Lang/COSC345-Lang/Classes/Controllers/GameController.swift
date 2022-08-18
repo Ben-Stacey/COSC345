@@ -58,7 +58,6 @@ class GameController {
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
         tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
-        tile.randomize()
         tile.dragDelegate = self
         gameView.addSubview(tile)
         tiles.append(tile)
