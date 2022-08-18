@@ -45,8 +45,8 @@ class TileView:UIImageView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first as UITouch{
-            let point = touch.locationInView(self.superview)
+        if let touch = touches.first as? UITouch{
+            let point = touch.location(in: self.superview)
             xOffset = point.x - self.center.x
             yOffset = point.y - self.center.y
             
@@ -57,9 +57,9 @@ class TileView:UIImageView {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first as UITouch {
-            let point = touch.locationInView(self.superview)
-            self.center = CGPointMake(point.x - xOffset, point.y - yOffset)
+        if let touch = touches.first as? UITouch {
+            let point = touch.location(in: self.superview)
+            self.center = CGPoint(x: point.x - xOffset, y: point.y - yOffset)
         }
     }
     
