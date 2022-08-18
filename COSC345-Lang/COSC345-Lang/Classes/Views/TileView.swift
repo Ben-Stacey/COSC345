@@ -35,14 +35,13 @@ class TileView:UIImageView {
         self.frame = CGRect(x: 0, y: 0, width: image.size.width * scale, height: image.size.height * scale)
         
         // Adding character (will be changed to word shortly)
-        let letterLabel = UILabel(frame, self.bounds)
+        let letterLabel = UILabel(frame: self.bounds)
         letterLabel.textAlignment = NSTextAlignment.center
         letterLabel.textColor = UIColor.white
         letterLabel.backgroundColor = UIColor.clear
         letterLabel.text = String(letter).uppercased()
         letterLabel.font = UIFont(name: "Verdana-Bold", size: 78.0*scale)
         self.addSubview(letterLabel)
-        
         self.isUserInteractionEnabled = true
     }
     
@@ -58,17 +57,17 @@ class TileView:UIImageView {
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.touchesMoved(touches, with: event)
-        self.transform = tempTransform
-        dragDelegate?.tileView(self, didDragToPoint: self.center)
-    }
-    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first as UITouch {
             let point = touch.locationInView(self.superview)
             self.center = CGPointMake(point.x - xOffset, point.y - yOffset)
         }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.touchesMoved(touches, with: event)
+        self.transform = tempTransform
+        dragDelegate.tileView(self, didDragToPoint: self.center)
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
