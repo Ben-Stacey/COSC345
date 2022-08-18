@@ -17,9 +17,9 @@ class GameController {
   
   private var data = GameData()
   
-  var onAnagramSolved:( () -> ())!
+  var onSentenceSolved:( () -> ())!
   
-  func dealRandomAnagram () {
+  func dealRandomSentence () {
     assert(level.anagrams.count > 0, "no level loaded")
     
     let randomIndex = randomNumber(minX:0, maxX:UInt32(level.anagrams.count-1))
@@ -57,7 +57,8 @@ class GameController {
       for (index, letter) in anagram1.enumerated() {
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
-          tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
+        tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
+        tile.randomize()
         tile.dragDelegate = self
         gameView.addSubview(tile)
         tiles.append(tile)
@@ -94,7 +95,7 @@ class GameController {
     print("Game Over!")
     
     self.clearBoard()
-    self.onAnagramSolved()
+    self.onSentenceSolved()
   }
   
   func clearBoard() {

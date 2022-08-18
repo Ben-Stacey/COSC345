@@ -17,7 +17,7 @@ class TileView:UIImageView {
     var isMatched: Bool = false
     private var xOffset = 0.0
     private var yOffset = 0.0
-    var tile: TileDragDelegateProtocol
+    var dragDelegate: TileDragDelegateProtocol?
     private var tempTransform = CGAffineTransform.identity
     
     required init(coder aDecoder: NSCoder){
