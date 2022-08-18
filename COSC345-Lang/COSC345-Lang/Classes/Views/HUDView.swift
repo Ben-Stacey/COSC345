@@ -21,14 +21,5 @@ class HUDView: UIView {
         super.init(frame:frame)
         self.isUserInteractionEnabled = true
     }
-    
-    override func hitTest(pointL CGPoint, withEvent event: UIEvent?) -> UIView? {
-        let hitView = super.hitTest(pointL: CGPoint, withEvent: event)
-        
-        if hitView is UIButton{
-            return hitView
-        }
-        return nil
-    }
 }
 
