@@ -13,21 +13,15 @@ class ViewController: UIViewController {
   required init(coder aDecoder: NSCoder) {
     controller = GameController()
     super.init(coder: aDecoder)
-    
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     //add one layer for all game elements
-    let gameView = UIView(frame: CGRectMake(0, 0, ScreenWidth, ScreenHeight))
+      let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
     self.view.addSubview(gameView)
     controller.gameView = gameView
-
-    //add one view for all hud and controls
-    let hudView = HUDView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
-    self.view.addSubview(hudView)
-    controller.hud = hudView
 
     controller.onAnagramSolved = self.showLevelMenu
   }
@@ -46,7 +40,7 @@ class ViewController: UIViewController {
   override func prefersStatusBarHidden() -> Bool {
     return true
   }
-
+    // rebuild for towers
   func showLevelMenu() {
     //1 show the level selector menu
     let alertController = UIAlertController(title: "Choose Difficulty Level",
@@ -71,9 +65,8 @@ class ViewController: UIViewController {
     alertController.addAction(easy)
     alertController.addAction(hard)
     alertController.addAction(hardest)
-    
-    //4 show the UIAlertController
-    self.presentViewController(alertController, animated: true, completion: nil)
+
+    self.present(alertController, animated: true, completion: nil)
   }
   
   //5 show the appropriate level selected by the player

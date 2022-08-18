@@ -1,9 +1,8 @@
 //
 //  GameController.swift
-//  Anagrams
+//  COSC345-Lang
 //
-//  Created by Caroline Begbie on 12/04/2015.
-//  Copyright (c) 2015 Caroline. All rights reserved.
+//  Created by Ben Stacey on 16/08/22.
 //
 
 import Foundation
