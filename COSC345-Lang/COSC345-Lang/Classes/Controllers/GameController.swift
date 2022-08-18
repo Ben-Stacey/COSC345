@@ -33,7 +33,6 @@ class GameController {
   var onAnagramSolved:( () -> ())!
   
   func dealRandomAnagram () {
-    //1
     assert(level.anagrams.count > 0, "no level loaded")
     
     //2
@@ -61,10 +60,8 @@ class GameController {
     //adjust for tile center (instead of the tile's origin)
     xOffset += tileSide / 2.0
     
-    //initialize target list
     targets = []
     
-    //create targets
     for (index, letter) in enumerate(anagram2) {
       if letter != " " {
         let target = TargetView(letter: letter, sideLength: tileSide)
@@ -74,31 +71,20 @@ class GameController {
         targets.append(target)
       }
     }
-    
-    //1 initialize tile list
+
     tiles = []
     
-    //2 create tiles
     for (index, letter) in enumerate(anagram1) {
-      //3
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
         tile.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin), ScreenHeight/4*3)
         
-        tile.randomize()
         tile.dragDelegate = self
-        
-        //4
+    
         gameView.addSubview(tile)
         tiles.append(tile)
       }
     }
-    
-    //start the timer
-    self.startStopwatch()
-    
-    hud.hintButton.isEnabled = true
-    
   }
   
   func placeTile(tileView: TileView, targetView: TargetView) {

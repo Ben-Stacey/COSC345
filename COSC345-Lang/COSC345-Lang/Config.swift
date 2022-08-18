@@ -12,3 +12,8 @@ let ScreenWidth = UIScreen.main.bounds.size.width
 let ScreenHeight = UIScreen.main.bounds.size.width
 
 let TileMargin: CGFloat = 20.0
+
+func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
+  let result = (arc4random() % (maxX - minX + 1)) + minX
+  return Int(result)
+}
