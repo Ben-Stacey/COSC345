@@ -1,12 +1,15 @@
 //
 //  Minigames.swift
-//  COSC345-Lang
+//  
 //
 //  Created by Liam Flynn on 12/08/22.
 //
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var language = ""
+    
     private let controller:GameController
     
     required init(coder aDecorder: NSCoder){
@@ -27,4 +30,3 @@ class ViewController: UIViewController {
         controller.level = level1
         controller.dealRandomSentence()
     }
-}
