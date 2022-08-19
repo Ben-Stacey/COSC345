@@ -4,7 +4,7 @@
 //
 //  Created by Ben Stacey on 16/08/22.
 //
-
+/**
 import Foundation
 import UIKit
 
@@ -35,7 +35,6 @@ class GameController {
     print("phrase2[\(anagram2length)]: \(anagram2)")
     
     let tileSide = ceil(ScreenWidth * 0.9 / CGFloat(max(anagram1length, anagram2length))) - TileMargin
-
     var xOffset = (ScreenWidth - CGFloat(max(anagram1length, anagram2length)) * (tileSide + TileMargin)) / 2.0
     
     xOffset += tileSide / 2.0
@@ -45,7 +44,7 @@ class GameController {
     for (index, letter) in anagram2.enumerated(){
       if letter != " " {
         let target = TargetView(letter: letter, sideLength: tileSide)
-          target.center = CGPoint( x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4)
+        target.center = CGPoint( x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4)
         
         gameView.addSubview(target)
         targets.append(target)
@@ -68,25 +67,11 @@ class GameController {
   func placeTile(tileView: TileView, targetView: TargetView) {
      targetView.isMatched = true
      tileView.isMatched = true
-    
-      tileView.isUserInteractionEnabled = false
-    
-      UIView.animate(withDuration: 0.35,
-      delay:0.00,
-      options:UIView.AnimationOptions.curveEaseOut,
-      animations: {
-        tileView.center = targetView.center
-        tileView.transform = CGAffineTransform.identity
-      },
-      completion: {
-        (value:Bool) in
-          targetView.isHidden = true
-    })
+     tileView.isUserInteractionEnabled = false
   }
   
   func checkForSuccess() {
     for targetView in targets {
-      //no success, bail out
       if !targetView.isMatched {
         return
       }
@@ -125,3 +110,4 @@ extension GameController:TileDragDelegateProtocol {
     }
   }
 }
+ */

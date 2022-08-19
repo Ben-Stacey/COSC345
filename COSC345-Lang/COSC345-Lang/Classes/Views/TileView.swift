@@ -18,7 +18,6 @@ class TileView:UIImageView {
     private var xOffset = 0.0
     private var yOffset = 0.0
     var dragDelegate: TileDragDelegateProtocol?
-    private var tempTransform = CGAffineTransform.identity
     
     required init(coder aDecoder: NSCoder){
         fatalError("user init(letter, sideLength")
@@ -35,11 +34,6 @@ class TileView:UIImageView {
         
         // Adding character (will be changed to word shortly)
         let letterLabel = UILabel(frame: self.bounds)
-        letterLabel.textAlignment = NSTextAlignment.center
-        letterLabel.textColor = UIColor.white
-        letterLabel.backgroundColor = UIColor.clear
-        letterLabel.text = String(letter).uppercased()
-        letterLabel.font = UIFont(name: "Verdana-Bold", size: 78.0*scale)
         self.addSubview(letterLabel)
         self.isUserInteractionEnabled = true
     }
@@ -50,7 +44,7 @@ class TileView:UIImageView {
             xOffset = point.x - self.center.x
             yOffset = point.y - self.center.y
             
-            tempTransform = self.transform
+            self.transform = .identity
             self.transform = self.transform.scaledBy(x: 1.2, y: 1.2)
             self.superview?.bringSubviewToFront(self)
         }
@@ -65,11 +59,11 @@ class TileView:UIImageView {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.touchesMoved(touches, with: event)
-        self.transform = tempTransform
-        dragDelegate.tileView(self, didDragToPoint: self.center)
+        self.transform = .identity
+        dragDelegate?.tileView(tileView: self, didDragToPoint: self.center)
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.transform = tempTransform
+        self.transform = .identity
     }
 }

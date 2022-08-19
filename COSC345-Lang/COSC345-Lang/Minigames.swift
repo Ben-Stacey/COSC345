@@ -12,20 +12,16 @@ class ViewController: UIViewController {
   
   required init(coder aDecoder: NSCoder) {
     controller = GameController()
-      super.init(coder: aDecoder)!
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    //add one layer for all game elements
     let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
     self.view.addSubview(gameView)
     controller.gameView = gameView
-    controller.onAnagramSolved = self.showLevelMenu
+    controller.onSentenceSolved = self.showLevelMenu
   }
   
-  //show the game menu on app start
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.showLevelMenu()
@@ -41,20 +37,19 @@ class ViewController: UIViewController {
  */
     // rebuild for towers
   func showLevelMenu() {
-    let alertController = UIAlertController(title: "Choose your tower: ",
-      message: nil,
-      preferredStyle:UIAlertController.Style.alert)
+    let alertController = UIAlertController(title: "Choose your tower: ", message: nil,
+    preferredStyle:UIAlertController.Style.alert)
     
     //2 set up the menu actions
-      let easy = UIAlertAction(title: "Easy-peasy", style:.default,
+      let easy = UIAlertAction(title: "Tower One", style:.default,
       handler: {(alert:UIAlertAction!) in
         self.showLevel(levelNumber: 1)
     })
-      let hard = UIAlertAction(title: "Challenge accepted", style:.default,
+      let hard = UIAlertAction(title: "Tower Two", style:.default,
       handler: {(alert:UIAlertAction!) in
         self.showLevel(levelNumber: 2)
     })
-      let hardest = UIAlertAction(title: "I'm totally hard-core", style: .default,
+      let hardest = UIAlertAction(title: "Tower Three", style: .default,
       handler: {(alert:UIAlertAction!) in
         self.showLevel(levelNumber: 3)
     })
@@ -69,7 +64,7 @@ class ViewController: UIViewController {
   
   func showLevel(levelNumber:Int) {
     controller.level = Level(levelNumber: levelNumber)
-    controller.dealRandomAnagram()
+    controller.dealRandomSentence()
   }
 }
 
