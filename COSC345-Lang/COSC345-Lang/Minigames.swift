@@ -7,10 +7,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let controller:GameController
+    
+    required init(coder aDecorder: NSCoder){
+        controller = GameController()
+        super.init(coder: aDecorder)!
+    }
+    
     override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view, typically from a nib.
         let level1 = Level(levelNumber: 1)
-        print("anagrams: \(level1.anagrams)")
+        print("Tower: \(level1.sentence)")
     }
+    
+    let gameView = UIView(frame: <#T##CGRect#>(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
+    self.view.addSubview(gameView)
+    controller.gameView = gameView
 }

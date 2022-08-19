@@ -9,7 +9,7 @@ import Foundation
 struct Level {
   //let pointsPerTile: Int
   //let timeToSolve: Int
-  let anagrams: [NSArray]
+  let sentence: [NSArray]
   
   init(levelNumber: Int) {
     let fileName = "level\(levelNumber).plist"
