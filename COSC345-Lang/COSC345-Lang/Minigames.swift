@@ -24,5 +24,7 @@ class ViewController: UIViewController {
         let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
         self.view.addSubview(gameView)
         controller.gameView = gameView
+        controller.level = level1
+        controller.dealRandomSentence()
     }
 }
