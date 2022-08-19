@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
-      // Do any additional setup after loading the view, typically from a nib.
         let level1 = Level(levelNumber: 1)
         print("Tower: \(level1.sentence)")
         
