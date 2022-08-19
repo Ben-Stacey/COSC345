@@ -11,7 +11,7 @@ import UIKit
 class GameController {
     var gameView: UIView!
     var level: Level!
-    private var tile = [TileView]()
+    private var tiles = [TileView]()
     private var targets = [TargetView]()
     
     init(){
@@ -38,6 +38,18 @@ class GameController {
         var xOffset = (ScreenWidth - CGFloat(max(sentence1Length, sentence2Length)) * (tileSide + TileMargin)) / 2.0
         
         xOffset += tileSide / 2.0
+        
+        targets = []
+        
+        for (index, letter) in sentence2.enumerated(){
+            if letter != " " {
+                let target = TargetView(letter: letter, sideLength: tileSide)
+                target.center = CGPoint(x: xOffset + CGFloat(index) * (tileSide + TileMargin), y: ScreenHeight/4)
+                
+                gameView.addSubview(target)
+                targets.append(target)
+            }
+        }
         
         tiles = []
             
