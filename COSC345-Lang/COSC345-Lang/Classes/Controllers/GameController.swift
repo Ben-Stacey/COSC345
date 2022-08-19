@@ -15,7 +15,7 @@ class GameController {
     private var targets = [TargetView]()
     
     init(){
-}
+    }
     
     func dealRandomSentence(){
         assert(level.sentence.count > 0, "no level loaded")
