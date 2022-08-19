@@ -1,12 +1,15 @@
 //
 //  Minigames.swift
-//  COSC345-Lang
+//  
 //
 //  Created by Liam Flynn on 12/08/22.
 //
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var language = ""
+    
     private let controller:GameController
     
     required init(coder aDecorder: NSCoder){
@@ -24,5 +27,5 @@ class ViewController: UIViewController {
         let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
         self.view.addSubview(gameView)
         controller.gameView = gameView
+      } 
     }
-}
