@@ -1,12 +1,15 @@
 //
 //  Minigames.swift
-//  COSC345-Lang
+//  
 //
 //  Created by Liam Flynn on 12/08/22.
 //
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var language = ""
+    
     private let controller:GameController
     
     required init(coder aDecorder: NSCoder){
@@ -19,9 +22,11 @@ class ViewController: UIViewController {
       // Do any additional setup after loading the view, typically from a nib.
         let level1 = Level(levelNumber: 1)
         print("Tower: \(level1.sentence)")
+        
+        super.viewDidLoad()
+        let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
+        self.view.addSubview(gameView)
+        controller.gameView = gameView
+        controller.level = level1
+        controller.dealRandomSentence()
     }
-    
-    let gameView = UIView(frame: <#T##CGRect#>(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
-    self.view.addSubview(gameView)
-    controller.gameView = gameView
-}
