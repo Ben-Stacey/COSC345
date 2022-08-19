@@ -18,6 +18,6 @@ struct Level {
     assert(levelDictionary != nil, "Level configuration file not found")
     //self.pointsPerTile = levelDictionary!["pointsPerTile"] as! Int
     //self.timeToSolve = levelDictionary!["timeToSolve"] as! Int
-    self.anagrams = levelDictionary!["anagrams"] as! [NSArray]
+    self.sentence = levelDictionary!["sentence"] as! [NSArray]
   }
 }

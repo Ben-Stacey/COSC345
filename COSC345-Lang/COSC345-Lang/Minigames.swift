@@ -19,9 +19,10 @@ class ViewController: UIViewController {
       // Do any additional setup after loading the view, typically from a nib.
         let level1 = Level(levelNumber: 1)
         print("Tower: \(level1.sentence)")
+        
+        super.viewDidLoad()
+        let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
+        self.view.addSubview(gameView)
+        controller.gameView = gameView
     }
-    
-    let gameView = UIView(frame: <#T##CGRect#>(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
-    self.view.addSubview(gameView)
-    controller.gameView = gameView
 }
