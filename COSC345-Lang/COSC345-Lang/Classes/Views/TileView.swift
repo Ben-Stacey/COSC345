@@ -22,5 +22,9 @@ class TileView:UIImageView{
         super.init(image:image)
         let scale = sideLength / image.size.width
         self.frame = CGRect(x: 0, y: 0, width: image.size.width * scale, height: image.size.height * scale)
+        
+        let letterLabel = UILabel(frame: self.bounds)
+        letterLabel.textAlignment = NSTextAlignment.center
+        self.addSubview(letterLabel)
     }
 }
