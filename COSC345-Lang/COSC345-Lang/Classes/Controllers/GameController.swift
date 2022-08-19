@@ -11,6 +11,7 @@ import UIKit
 class GameController {
     var gameView: UIView!
     var level: Level!
+    private var tile = [TileView]()
     
     init(){
         
@@ -30,5 +31,13 @@ class GameController {
         
         print("phrase1[\(sentence1Length)]: \(sentence1)")
         print("phrase2[\(sentence1Length)]: \(sentence2)")
+        
+        let tileSide = ceil(ScreenWidth * 0.9 / CGFloat(max(sentence1Length, sentence2Length))) - TileMargin
+        
+        var xOffset = (ScreenWidth - CGFloat(max(sentence1Length, sentence2Length)) * (tileSide + TileMargin)) / 2.0
+        
+        xOffset += tileSide / 2.0
+        
+        
     }
 }
