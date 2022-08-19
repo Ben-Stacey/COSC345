@@ -18,7 +18,7 @@ class GameController {
     }
     
     func dealRandomSentence(){
-        assert(level.sentence.count > 0, "no level looded")
+        assert(level.sentence.count > 0, "no level loaded")
         
         let randomIndex = randomNumber(minX: 0, maxX: UInt32(level.sentence.count-1))
         let sentencePair = level.sentence[randomIndex]
@@ -38,6 +38,16 @@ class GameController {
         
         xOffset += tileSide / 2.0
         
-        
+        tiles = []
+            
+        for (index, letter) in sentence1.enumerated() {
+          if letter != " " {
+            let tile = TileView(letter: letter, sideLength: tileSide)
+              tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
+                
+            gameView.addSubview(tile)
+            tiles.append(tile)
+          }
+        }
     }
 }

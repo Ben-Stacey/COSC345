@@ -18,8 +18,8 @@ class TileView:UIImageView{
     
     init(letter:Character, sideLength:CGFloat){
         self.letter = letter
-        let image = UIImage(named: "tile")!
-        super.init(image:image)
+        let image = UIImage(named: "tile")
+        super.init(image:image)!
         let scale = sideLength / image.size.width
         self.frame = CGRect(x: 0, y: 0, width: image.size.width * scale, height: image.size.height * scale)
     }
