@@ -12,6 +12,7 @@ class GameController {
     var gameView: UIView!
     var level: Level!
     private var tile = [TileView]()
+    private var targets = [TargetView]()
     
     init(){
         
@@ -43,6 +44,7 @@ class GameController {
         for (index, letter) in sentence1.enumerated() {
           if letter != " " {
             let tile = TileView(letter: letter, sideLength: tileSide)
+              tile.randomize()
               tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
                 
             gameView.addSubview(tile)
