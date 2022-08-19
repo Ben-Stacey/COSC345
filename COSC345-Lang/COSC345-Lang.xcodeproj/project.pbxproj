@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2932EAE528AF28C600387370 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932EAE428AF28C600387370 /* QuizViewController.swift */; };
+		2932EAE728AF376E00387370 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932EAE628AF376E00387370 /* QuizResultViewController.swift */; };
+		2932EAE928AF381E00387370 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932EAE828AF381E00387370 /* QuizCollectionViewCell.swift */; };
+		2932EAEB28AF39E500387370 /* QuizTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932EAEA28AF39E500387370 /* QuizTitleViewController.swift */; };
 		297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A528A600AD00C3291A /* Leaderboards.swift */; };
 		297AF0A828A600E900C3291A /* Minigames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A728A600E900C3291A /* Minigames.swift */; };
 		297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0AB28A601B300C3291A /* WagerQuizzes.swift */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2932EAE428AF28C600387370 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2932EAE628AF376E00387370 /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
+		2932EAE828AF381E00387370 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		2932EAEA28AF39E500387370 /* QuizTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTitleViewController.swift; sourceTree = "<group>"; };
 		297AF0A528A600AD00C3291A /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
 		297AF0AB28A601B300C3291A /* WagerQuizzes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerQuizzes.swift; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 		3528941328A330E9002C980C /* COSC345-Lang */ = {
 			isa = PBXGroup;
 			children = (
+				2932EAE628AF376E00387370 /* QuizResultViewController.swift */,
+				2932EAE428AF28C600387370 /* QuizViewController.swift */,
 				3528941428A330E9002C980C /* AppDelegate.swift */,
 				353B11D028AAF23D00B996DB /* test.swift */,
 				3528941628A330E9002C980C /* SceneDelegate.swift */,
@@ -126,6 +136,8 @@
 				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941828A330E9002C980C /* ViewController.swift */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
+				2932EAEA28AF39E500387370 /* QuizTitleViewController.swift */,
+				2932EAE828AF381E00387370 /* QuizCollectionViewCell.swift */,
 				357FD70D28AB3C5E00D060C4 /* Config.swift */,
 				353B11CE28A9FDDA00B996DB /* CheatSheet.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
@@ -323,9 +335,13 @@
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
 				357FD73628AB5E4200D060C4 /* CounterLabelView.swift in Sources */,
+				2932EAEB28AF39E500387370 /* QuizTitleViewController.swift in Sources */,
+				2932EAE928AF381E00387370 /* QuizCollectionViewCell.swift in Sources */,
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 				357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */,
+				2932EAE528AF28C600387370 /* QuizViewController.swift in Sources */,
+				2932EAE728AF376E00387370 /* QuizResultViewController.swift in Sources */,
 				357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */,
 				357FD73228AB5E1A00D060C4 /* StopWatchView.swift in Sources */,
 				357FD72828AB526D00D060C4 /* GameController.swift in Sources */,
