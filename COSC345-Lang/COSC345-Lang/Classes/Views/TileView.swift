@@ -27,4 +27,11 @@ class TileView:UIImageView{
         letterLabel.textAlignment = NSTextAlignment.center
         self.addSubview(letterLabel)
     }
+    
+    func randomize(){
+        let rotation = CGFloat(randomNumber(minX: 0, maxX: 50)) / 100.0 - 0.2
+        self.transform = CGAffineTransform(rotationAngle: rotation)
+        let yOffset = CGFloat(randomNumber(minX: 0, maxX: 10) - 10)
+        self.center = CGPoint(x: self.center.x, y: self.center.y + yOffset)
+    }
 }
