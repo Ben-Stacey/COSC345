@@ -31,6 +31,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="nameTextField:" destination="wKw-KK-Vto" eventType="editingDidEnd" id="ugO-KZ-4gZ"/>
+                                    <action selector="refreshEcho:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hHX-xt-bD1"/>
                                 </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="1lw-LL-4kt">
@@ -169,9 +170,19 @@
                                     <segue destination="Hnz-AN-i7s" kind="show" id="faM-0p-aOC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-67-mIw">
+                                <rect key="frame" x="26" y="173" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <connections>
+                            <outlet property="nameDisplay" destination="wTi-67-mIw" id="54u-D0-4ob"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
                 </viewController>
@@ -208,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zk-CW-1ND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="743"/>
+            <point key="canvasLocation" x="1634.7826086956522" y="742.63392857142856"/>
         </scene>
         <!--Minigames-->
         <scene sceneID="ima-cW-czX">
