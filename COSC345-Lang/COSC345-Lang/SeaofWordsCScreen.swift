@@ -2,6 +2,12 @@ import UIKit
 import SwiftUI
 
 // Quiz Collectioon Cell
+enum SelectedOption {
+    case optionA
+    case optionB
+    case optionC
+    case optionD
+}
 
 class SeaofWordsCScreen: UICollectionViewCell {
     weak var questionlabel: UILabel!
