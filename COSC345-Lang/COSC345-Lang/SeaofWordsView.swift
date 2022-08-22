@@ -64,3 +64,37 @@ class SeaofWordsView: UIViewController {
     }
 }
 
+extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return questions?.count ?? 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizCollectionViewCell", for: indexPath)  as? QuizCollectionViewCell else {
+            return QuizCollectionViewCell()
+        }
+    cell.optionA.layer.cornerRadius = 5
+    cell.optionB.layer.cornerRadius = 5
+    cell.optionC.layer.cornerRadius = 5
+    cell.optionD.layer.cornerRadius = 5
+    cell.setValues = questions?[indexPath.row]
+    cell.selectedOption = { [weak self] isCorrect in
+        self?.answerSelected = true
+        self?.isCorrectAnswer = isCorrect
+        }
+        return cell
+    }
+
+    func collectionView(_ collectionView: UIColelctionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
+}
