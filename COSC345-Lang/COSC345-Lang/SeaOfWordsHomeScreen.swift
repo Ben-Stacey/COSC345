@@ -5,13 +5,13 @@ import SwiftUI
 
 class SeaofWordsHomeScreen: UIViewController {
     weak var playbutton: UIButton! {
-        didset {
+        didSet {
             playButton.layer.cornerRadius = playButton.frame.height/2
         }
     }
 
     weak var topicButton: UIButton! {
-        didset {
+        didSet {
             topicButton.layer.cornerRadius = topicButton.frame.height/2
         }
     }
