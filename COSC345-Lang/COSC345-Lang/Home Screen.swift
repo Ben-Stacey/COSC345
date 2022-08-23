@@ -9,7 +9,6 @@ import UIKit
 import Foundation
 
 class HomeScreen: UIViewController {
-    @IBOutlet weak var nameDisplay: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

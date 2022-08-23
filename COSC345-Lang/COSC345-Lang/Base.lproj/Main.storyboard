@@ -16,24 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7nA-Vr-xKo">
-                                <rect key="frame" x="77" y="117" width="226.5" height="166.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7nA-Vr-xKo">
+                                <rect key="frame" x="92" y="365" width="226.5" height="166.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-IH-hgy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-IH-hgy" propertyAccessControl="all">
                                         <rect key="frame" x="0.0" y="0.0" width="226.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Name Fag" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-gM-fML">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Name Fag" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-gM-fML" propertyAccessControl="all">
                                         <rect key="frame" x="0.0" y="20.5" width="226.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="enterNameTextfield:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YDa-Fd-pbh"/>
-                                            <action selector="nameTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VWm-bw-k13"/>
-                                            <action selector="nameTextfield:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PHv-bR-egR"/>
-                                        </connections>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtQ-Oy-Oq7">
                                         <rect key="frame" x="0.0" y="54.5" width="226.5" height="31"/>
@@ -43,7 +38,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Maori"/>
                                                 <connections>
-                                                    <action selector="maoriButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghg-dj-vsu"/>
+                                                    <action selector="maoriButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gsv-UI-ChD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkR-72-SFr">
@@ -51,8 +46,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="French"/>
                                                 <connections>
-                                                    <action selector="clickFrenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZb-9B-c9E"/>
-                                                    <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIB-rk-4UJ"/>
+                                                    <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aL-6n-yx2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-a7-cYe">
@@ -60,40 +54,45 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Spanish"/>
                                                 <connections>
-                                                    <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nss-xq-XsB"/>
+                                                    <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9r-Ci-OrV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-AR-hTS">
                                         <rect key="frame" x="0.0" y="85.5" width="226.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6f2-un-K03"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-S5-vgc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-S5-vgc" propertyAccessControl="localizable">
                                         <rect key="frame" x="0.0" y="135.5" width="226.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                         <connections>
-                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2A-6h-EeL"/>
-                                            <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyb-JI-MOy"/>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYJ-R2-Y8n"/>
                                             <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="lSS-WG-I7W"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226.5" id="ZPn-DX-aEY"/>
+                                    <constraint firstAttribute="height" constant="166.5" id="jf4-dv-Wua"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="7nA-Vr-xKo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="igB-pw-fgE"/>
+                            <constraint firstItem="7nA-Vr-xKo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="rE8-yW-EIN"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="frenchButton" destination="JkR-72-SFr" id="bNG-YQ-iQB"/>
                         <outlet property="label" destination="KZ9-AR-hTS" id="Zmb-eH-pOs"/>
-                        <outlet property="maoriButton" destination="dMq-8N-XPA" id="JHS-53-2nP"/>
-                        <outlet property="nameTextField" destination="vCo-gM-fML" id="gSF-df-JrR"/>
-                        <outlet property="spanishButton" destination="XQi-a7-cYe" id="6bN-eW-IQg"/>
-                        <outlet property="startButton" destination="8aR-S5-vgc" id="tro-MP-rsu"/>
                         <outlet property="textfield" destination="vCo-gM-fML" id="bSq-eT-Mf4"/>
                     </connections>
                 </viewController>
@@ -101,17 +100,16 @@
             </objects>
             <point key="canvasLocation" x="-257.97101449275362" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen-->
         <scene sceneID="mAg-RD-nND">
             <objects>
-                <viewController id="q2f-da-TVm" sceneMemberID="viewController">
+                <viewController id="q2f-da-TVm" customClass="HomeScreen" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tw-lS-oqZ" customClass="HomeScreen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
                                 <rect key="frame" x="160" y="78" width="94" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Minigames"/>
@@ -119,9 +117,8 @@
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="pzV-pC-8u2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-Oz-vQ2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-Oz-vQ2">
                                 <rect key="frame" x="272" y="78" width="122" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
@@ -129,9 +126,8 @@
                                     <segue destination="m2D-eI-ZLu" kind="presentation" modalPresentationStyle="fullScreen" id="zuH-Lm-wAX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeP-Dk-wGj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeP-Dk-wGj">
                                 <rect key="frame" x="20" y="78" width="114" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
@@ -139,9 +135,8 @@
                                     <segue destination="t9U-5O-Zy7" kind="presentation" id="N6a-PO-Osn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-4m-OG4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-4m-OG4">
                                 <rect key="frame" x="26" y="819" width="104" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -151,19 +146,21 @@
                                     <segue destination="Hnz-AN-i7s" kind="show" id="faM-0p-aOC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-67-mIw">
-                                <rect key="frame" x="26" y="173" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <connections>
-                            <outlet property="nameDisplay" destination="wTi-67-mIw" id="54u-D0-4ob"/>
-                        </connections>
+                        <constraints>
+                            <constraint firstItem="VeP-Dk-wGj" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="9Ws-6S-eQI"/>
+                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="8" symbolic="YES" id="Cqn-am-fyL"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vMN-4m-OG4" secondAttribute="trailing" symbolic="YES" id="MX3-en-2Yh"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="vMN-4m-OG4" secondAttribute="bottom" constant="12" id="XD4-k8-kxZ"/>
+                            <constraint firstItem="VeP-Dk-wGj" firstAttribute="baseline" secondItem="SVu-Oz-vQ2" secondAttribute="baseline" id="esH-PY-ZX3"/>
+                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="gOw-7M-BJ2"/>
+                            <constraint firstItem="VeP-Dk-wGj" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" constant="34" id="htL-Xe-j5n"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="26" id="icE-Cb-hLc"/>
+                            <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="um0-Ch-dD5"/>
+                            <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="wX6-pe-hlK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
                 </viewController>
