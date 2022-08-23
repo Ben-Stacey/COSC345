@@ -13,6 +13,7 @@ class MainMenu: UIViewController {
     var name = ""
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textfield: UITextField!
     
     @IBAction func nameTextField(_ sender: Any) {
         
@@ -31,6 +32,14 @@ class MainMenu: UIViewController {
     @IBAction func spanishButton(_ sender: Any) {
         language = "spanish"
         label.text = ("Spanish")
+    }
+    
+    @IBAction func startButton(_ sender: Any) {
+        if let n = textfield.text, !(language.isEmpty){
+            name = n
+        }else{
+            print("error")
+        }
     }
     
     override func viewDidLoad() {

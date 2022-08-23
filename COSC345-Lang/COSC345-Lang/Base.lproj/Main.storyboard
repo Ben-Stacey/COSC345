@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7nA-Vr-xKo">
-                                <rect key="frame" x="77" y="117" width="226.5" height="137"/>
+                                <rect key="frame" x="77" y="117" width="226.5" height="166.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-IH-hgy">
                                         <rect key="frame" x="0.0" y="0.0" width="226.5" height="20.5"/>
@@ -65,18 +65,20 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-AR-hTS">
-                                        <rect key="frame" x="0.0" y="85.5" width="226.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-AR-hTS">
+                                        <rect key="frame" x="0.0" y="85.5" width="226.5" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-S5-vgc">
-                                        <rect key="frame" x="0.0" y="106" width="226.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="226.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                         <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2A-6h-EeL"/>
                                             <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyb-JI-MOy"/>
+                                            <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="lSS-WG-I7W"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +94,7 @@
                         <outlet property="nameTextField" destination="vCo-gM-fML" id="gSF-df-JrR"/>
                         <outlet property="spanishButton" destination="XQi-a7-cYe" id="6bN-eW-IQg"/>
                         <outlet property="startButton" destination="8aR-S5-vgc" id="tro-MP-rsu"/>
+                        <outlet property="textfield" destination="vCo-gM-fML" id="bSq-eT-Mf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
