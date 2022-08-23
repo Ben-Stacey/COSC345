@@ -30,3 +30,4 @@ class ViewController: UIViewController {
         controller.level = level1
         controller.dealRandomSentence()
     }
+}
