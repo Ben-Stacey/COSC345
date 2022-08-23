@@ -15,7 +15,6 @@ class GameController {
     private var targets = [TargetView]()
     
     init(){
-        
     }
     
     func dealRandomSentence(){

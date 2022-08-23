@@ -34,6 +34,38 @@
             endingLineNumber = "15"
             landmarkName = "init(coder:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3551991C-D24E-4383-998C-6F488B1D77C6 - 74b77732d707c513"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COSC345_Lang.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; COSC345_Lang.ViewController"
+                  moduleName = "COSC345-Lang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benstacey/Documents/GitHub/COSC345/COSC345-Lang/COSC345-Lang/Minigames.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "3551991C-D24E-4383-998C-6F488B1D77C6 - 3d199e68c277245f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COSC345_Lang.ViewController.init(coder: __C.NSCoder) -&gt; COSC345_Lang.ViewController"
+                  moduleName = "COSC345-Lang"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benstacey/Documents/GitHub/COSC345/COSC345-Lang/COSC345-Lang/Minigames.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

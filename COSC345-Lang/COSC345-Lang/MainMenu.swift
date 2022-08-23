@@ -15,19 +15,19 @@ class MainMenu: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textfield: UITextField!
     
-    @IBAction func maoriButton(_ sender: Any) {
+    @IBAction func maoriButtion(_ sender: Any) {
         language = "maori"
-        label.text = ("Maori")
+        label.text = (language)
     }
     
     @IBAction func frenchButton(_ sender: Any) {
         language = "french"
-        label.text = ("French")
+        label.text = (language)
     }
     
     @IBAction func spanishButton(_ sender: Any) {
         language = "spanish"
-        label.text = ("Spanish")
+        label.text = (language)
     }
     
     @IBAction func startButton(_ sender: Any) {
