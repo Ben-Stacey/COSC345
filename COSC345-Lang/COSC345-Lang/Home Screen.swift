@@ -6,43 +6,12 @@
 //
 
 import UIKit
+import Foundation
 
 class HomeScreen: UIViewController {
+    @IBOutlet weak var nameDisplay: UILabel!
     
-    var language = ""
-    var name = ""
-    
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var languageLabel: UITextField!
-
-    @IBAction func maoriButton(_ sender: Any) {
-        language = ""
-        language = "maori"
-        languageLabel.text = "Set to Moari"
-    }
-    
-    @IBAction func frenchButton(_ sender: Any) {
-        language = ""
-        language = "french"
-        languageLabel.text = "Set to French"
-    }
-    
-    @IBAction func spanishButton(_ sender: Any) {
-        language = ""
-        language = "spanish"
-        languageLabel.text = "Set to Spanish"
-    }
-    
-    @IBAction func nameTextField(_ sender: Any) {
-        //name = nameTextField.text
-        if let x = nameTextField.text {
-            name = x
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }

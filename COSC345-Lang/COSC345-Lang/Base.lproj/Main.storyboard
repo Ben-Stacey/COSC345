@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7nA-Vr-xKo">
-                                <rect key="frame" x="77" y="117" width="226.5" height="116.5"/>
+                                <rect key="frame" x="77" y="117" width="226.5" height="137"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-IH-hgy">
                                         <rect key="frame" x="0.0" y="0.0" width="226.5" height="20.5"/>
@@ -25,10 +25,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="Enter name:" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Name:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-gM-fML">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Name Fag" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-gM-fML">
                                         <rect key="frame" x="0.0" y="20.5" width="226.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="enterNameTextfield:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YDa-Fd-pbh"/>
+                                            <action selector="nameTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VWm-bw-k13"/>
+                                            <action selector="nameTextfield:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PHv-bR-egR"/>
+                                        </connections>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtQ-Oy-Oq7">
                                         <rect key="frame" x="0.0" y="54.5" width="226.5" height="31"/>
@@ -37,23 +42,42 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Maori"/>
+                                                <connections>
+                                                    <action selector="maoriButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghg-dj-vsu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkR-72-SFr">
                                                 <rect key="frame" x="75.5" y="0.0" width="75.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="French"/>
+                                                <connections>
+                                                    <action selector="clickFrenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZb-9B-c9E"/>
+                                                    <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIB-rk-4UJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-a7-cYe">
                                                 <rect key="frame" x="151" y="0.0" width="75.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Spanish"/>
+                                                <connections>
+                                                    <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nss-xq-XsB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-AR-hTS">
+                                        <rect key="frame" x="0.0" y="85.5" width="226.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-S5-vgc">
-                                        <rect key="frame" x="0.0" y="85.5" width="226.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="106" width="226.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                        <connections>
+                                            <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyb-JI-MOy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +85,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
+                    <connections>
+                        <outlet property="frenchButton" destination="JkR-72-SFr" id="bNG-YQ-iQB"/>
+                        <outlet property="label" destination="KZ9-AR-hTS" id="Zmb-eH-pOs"/>
+                        <outlet property="maoriButton" destination="dMq-8N-XPA" id="JHS-53-2nP"/>
+                        <outlet property="nameTextField" destination="vCo-gM-fML" id="gSF-df-JrR"/>
+                        <outlet property="spanishButton" destination="XQi-a7-cYe" id="6bN-eW-IQg"/>
+                        <outlet property="startButton" destination="8aR-S5-vgc" id="tro-MP-rsu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
