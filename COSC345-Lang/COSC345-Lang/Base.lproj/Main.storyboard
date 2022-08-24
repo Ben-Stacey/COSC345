@@ -253,7 +253,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Quiz"/>
                                 <connections>
-                                    <segue destination="THr-DU-ltY" kind="presentation" modalPresentationStyle="fullScreen" id="2ak-aW-wuk"/>
+                                    <segue destination="G8y-cS-hor" kind="presentation" modalPresentationStyle="fullScreen" id="2ak-aW-wuk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -280,10 +280,10 @@
             </objects>
             <point key="canvasLocation" x="716" y="-613"/>
         </scene>
-        <!--Quiz Title View Controller-->
+        <!--Quiz Menu View Controller-->
         <scene sceneID="kqC-bG-o4k">
             <objects>
-                <viewController storyboardIdentifier="QuizTitleViewController" id="THr-DU-ltY" customClass="QuizTitleViewController" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizMenuViewController" id="THr-DU-ltY" customClass="QuizMenuViewController" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xls-tI-odx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,8 +294,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play"/>
                                 <connections>
-                                    <action selector="onClickPlay:" destination="THr-DU-ltY" eventType="touchUpInside" id="OLx-7f-jx5"/>
-                                    <segue destination="NEz-6J-tLC" kind="presentation" modalPresentationStyle="fullScreen" id="MdD-Fb-n8o"/>
+                                    <action selector="onClickPlay:" destination="THr-DU-ltY" eventType="touchUpInside" id="OSI-L7-tgZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U85-6n-qhg">
@@ -304,22 +303,22 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
-                                    <action selector="onClickBack:" destination="THr-DU-ltY" eventType="touchUpInside" id="wm7-uv-iwh"/>
-                                    <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="RFu-Y8-cPc"/>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="zGA-IB-4KM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="80d-dY-2xT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RP2-tx-XiH"/>
                     <connections>
-                        <outlet property="backButton" destination="U85-6n-qhg" id="UEa-3a-37U"/>
-                        <outlet property="playButton" destination="5hD-Xz-Gpt" id="vKO-zO-D2S"/>
+                        <outlet property="backButton" destination="U85-6n-qhg" id="coV-tp-n2r"/>
+                        <outlet property="playButton" destination="5hD-Xz-Gpt" id="ESy-Ty-aPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvE-zV-bqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715.9420289855075" y="-633.48214285714278"/>
+            <point key="canvasLocation" x="3454" y="-633"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="gNs-bj-Nof">
@@ -338,7 +337,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                                 <connections>
-                                    <action selector="onClickExit:" destination="NEz-6J-tLC" eventType="touchUpInside" id="dck-ma-l4I"/>
+                                    <action selector="onClickExit:" destination="NEz-6J-tLC" eventType="touchUpInside" id="3C9-Qh-c97"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2f-Le-Mp4">
@@ -350,13 +349,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
-                                    <action selector="onClickNext:" destination="NEz-6J-tLC" eventType="touchUpInside" id="iNg-3H-ZZe"/>
+                                    <action selector="onClickNext:" destination="NEz-6J-tLC" eventType="touchUpInside" id="8RU-9D-nvr"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-nL-BGj">
                                 <rect key="frame" x="0.0" y="114" width="414" height="748"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kfB-ws-Edb">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kfB-ws-Edb">
                                     <size key="itemSize" width="414" height="744"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -408,7 +407,7 @@
                                                                         <constraint firstAttribute="width" secondItem="EgB-uD-rlu" secondAttribute="height" multiplier="1:1" id="r5k-aX-Qc0"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionA:" destination="atd-xm-ZSg" eventType="valueChanged" id="Ryu-gf-ll6"/>
+                                                                        <action selector="onClickOptionA:" destination="atd-xm-ZSg" eventType="touchUpInside" id="yKG-kB-LeK"/>
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noq-0c-ln3" customClass="UIControl">
@@ -433,7 +432,7 @@
                                                                         <constraint firstItem="t9D-k1-RxT" firstAttribute="leading" secondItem="noq-0c-ln3" secondAttribute="leading" constant="20" id="iiD-uJ-BVi"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionB:" destination="atd-xm-ZSg" eventType="valueChanged" id="BC6-IE-1Im"/>
+                                                                        <action selector="onClickOptionB:" destination="atd-xm-ZSg" eventType="touchUpInside" id="IYj-3q-CBH"/>
                                                                     </connections>
                                                                 </view>
                                                             </subviews>
@@ -464,7 +463,7 @@
                                                                         <constraint firstAttribute="trailing" secondItem="hWw-Md-es9" secondAttribute="trailing" constant="20" id="oWd-Yi-1Iv"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionC:" destination="atd-xm-ZSg" eventType="valueChanged" id="BLB-cE-bVy"/>
+                                                                        <action selector="onClickOptionC:" destination="atd-xm-ZSg" eventType="touchUpInside" id="TLH-Tl-cir"/>
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHf-P2-5sU" customClass="UIControl">
@@ -489,7 +488,7 @@
                                                                         <constraint firstItem="1sU-en-kLD" firstAttribute="top" secondItem="KHf-P2-5sU" secondAttribute="top" constant="20" id="sow-aU-t2g"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionD:" destination="atd-xm-ZSg" eventType="valueChanged" id="c7q-Uo-Icf"/>
+                                                                        <action selector="onClickOptionD:" destination="atd-xm-ZSg" eventType="touchUpInside" id="Ke2-gd-LnI"/>
                                                                     </connections>
                                                                 </view>
                                                             </subviews>
@@ -509,15 +508,15 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="744"/>
                                         <connections>
-                                            <outlet property="option1" destination="m4G-Ai-ROG" id="PB6-o4-l1T"/>
-                                            <outlet property="option2" destination="t9D-k1-RxT" id="X6I-PM-yHR"/>
-                                            <outlet property="option3" destination="hWw-Md-es9" id="GyS-cy-GiU"/>
-                                            <outlet property="option4" destination="1sU-en-kLD" id="xQg-hW-PCH"/>
-                                            <outlet property="optionA" destination="EgB-uD-rlu" id="Aep-Ro-3Es"/>
-                                            <outlet property="optionB" destination="noq-0c-ln3" id="uiB-ik-WhK"/>
-                                            <outlet property="optionC" destination="WzW-hJ-Bda" id="ETx-9U-u43"/>
-                                            <outlet property="optionD" destination="KHf-P2-5sU" id="ROJ-ao-5WT"/>
-                                            <outlet property="questionLabel" destination="FqA-bV-Cot" id="NeB-dv-VEI"/>
+                                            <outlet property="option1" destination="m4G-Ai-ROG" id="fkC-Bt-DvW"/>
+                                            <outlet property="option2" destination="t9D-k1-RxT" id="Uhr-f5-gSi"/>
+                                            <outlet property="option3" destination="hWw-Md-es9" id="owj-o8-NBL"/>
+                                            <outlet property="option4" destination="1sU-en-kLD" id="FLY-LW-CHP"/>
+                                            <outlet property="optionA" destination="EgB-uD-rlu" id="Mob-mR-zWz"/>
+                                            <outlet property="optionB" destination="noq-0c-ln3" id="ksh-pw-3qj"/>
+                                            <outlet property="optionC" destination="WzW-hJ-Bda" id="KCr-Zh-wSf"/>
+                                            <outlet property="optionD" destination="KHf-P2-5sU" id="Is9-gd-uxO"/>
+                                            <outlet property="questionLabel" destination="FqA-bV-Cot" id="GFy-Zy-v92"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -537,14 +536,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="6DH-nL-BGj" id="0DF-RK-50a"/>
-                        <outlet property="exitButton" destination="TBL-y8-cmn" id="GrR-UA-C4n"/>
-                        <outlet property="nextButton" destination="j2f-Le-Mp4" id="5In-5o-hcN"/>
+                        <outlet property="collectionView" destination="6DH-nL-BGj" id="eYG-e3-7qS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM8-jJ-PMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3631.884057971015" y="-633.48214285714278"/>
+            <point key="canvasLocation" x="4207" y="-633"/>
         </scene>
         <!--Quiz Result View Controller-->
         <scene sceneID="ShU-Vg-wwW">
@@ -560,12 +557,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Home"/>
                                 <connections>
-                                    <action selector="onClickHome:" destination="ZTM-zh-fRH" eventType="touchUpInside" id="gn2-BV-ntZ"/>
-                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="7W2-oG-BPy"/>
+                                    <action selector="onClickHome:" destination="ZTM-zh-fRH" eventType="touchUpInside" id="i1M-UG-XHr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQk-pD-yg0">
-                                <rect key="frame" x="186" y="214" width="48" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQk-pD-yg0">
+                                <rect key="frame" x="186" y="214" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -576,18 +572,34 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="homeButton" destination="cJ2-of-dhF" id="6kX-HN-bNT"/>
-                        <outlet property="resultLabel" destination="AQk-pD-yg0" id="EfE-gr-wWu"/>
+                        <outlet property="resultLabel" destination="AQk-pD-yg0" id="fLM-am-UK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl3-iL-KvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4571.0144927536239" y="-633.48214285714278"/>
+            <point key="canvasLocation" x="4967" y="-633"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="84i-ul-snR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G8y-cS-hor" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pDP-ID-3Kp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="THr-DU-ltY" kind="relationship" relationship="rootViewController" id="T1e-O0-5Nx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m78-7X-cvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715.9420289855075" y="-633.48214285714278"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RFu-Y8-cPc"/>
-        <segue reference="7W2-oG-BPy"/>
+        <segue reference="zGA-IB-4KM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

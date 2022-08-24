@@ -1,6 +1,13 @@
+//
+//  QuizCollectionViewCell.swift
+//  COSC345-Lang
+//
+//  Created by Liam Flynn on 24/08/22.
+//
+
 import UIKit
 
-enum SelectedOption {
+enum SelectedOption{
     case optionA
     case optionB
     case optionC
@@ -20,18 +27,18 @@ class QuizCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var optionB: UIControl!
     @IBOutlet weak var optionC: UIControl!
     @IBOutlet weak var optionD: UIControl!
-
+    
     private var correctAnswer: String?
     
     var setValues: Questions? {
-        didSet {
+        didSet{
             questionLabel.text = setValues?.question
             option1.text = setValues?.option_1
             option2.text = setValues?.option_2
             option3.text = setValues?.option_3
             option4.text = setValues?.option_4
-            
             correctAnswer = setValues?.correct_answer
+            
         }
     }
     
@@ -46,45 +53,42 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     @IBAction func onClickOptionA(_ sender: Any) {
         var isCorrect = false
-        
-        if correctAnswer == setValues?.option_1 {
+        if correctAnswer == setValues?.option_1{
             isCorrect = true
         }
         selectedOption?(isCorrect)
+        
         changeBorder(selectedOption: .optionA)
     }
-    
     @IBAction func onClickOptionB(_ sender: Any) {
         var isCorrect = false
-        
-        if correctAnswer == setValues?.option_2 {
+        if correctAnswer == setValues?.option_2{
             isCorrect = true
         }
         selectedOption?(isCorrect)
+        
         changeBorder(selectedOption: .optionB)
     }
-    
     @IBAction func onClickOptionC(_ sender: Any) {
         var isCorrect = false
-        
-        if correctAnswer == setValues?.option_3 {
+        if correctAnswer == setValues?.option_3{
             isCorrect = true
         }
         selectedOption?(isCorrect)
+        
         changeBorder(selectedOption: .optionC)
     }
-    
     @IBAction func onClickOptionD(_ sender: Any) {
         var isCorrect = false
-        
-        if correctAnswer == setValues?.option_4 {
+        if correctAnswer == setValues?.option_4{
             isCorrect = true
         }
         selectedOption?(isCorrect)
+        
         changeBorder(selectedOption: .optionD)
     }
     
-    func changeBorder(selectedOption: SelectedOption) {
+    func changeBorder(selectedOption: SelectedOption){
         switch selectedOption {
         case .optionA:
             updateBorder(myView: optionA, borderWidth: 4)
@@ -92,25 +96,29 @@ class QuizCollectionViewCell: UICollectionViewCell {
             updateBorder(myView: optionC)
             updateBorder(myView: optionD)
         case .optionB:
-            updateBorder(myView: optionB, borderWidth: 4)
             updateBorder(myView: optionA)
+            updateBorder(myView: optionB, borderWidth: 4)
             updateBorder(myView: optionC)
             updateBorder(myView: optionD)
         case .optionC:
-            updateBorder(myView: optionC, borderWidth: 4)
-            updateBorder(myView: optionB)
             updateBorder(myView: optionA)
+            updateBorder(myView: optionB)
+            updateBorder(myView: optionC, borderWidth: 4)
             updateBorder(myView: optionD)
         case .optionD:
-            updateBorder(myView: optionD, borderWidth: 4)
+            updateBorder(myView: optionA)
             updateBorder(myView: optionB)
             updateBorder(myView: optionC)
-            updateBorder(myView: optionA)
+            updateBorder(myView: optionD, borderWidth: 4)
         }
     }
     
-    func updateBorder(myView: UIView, borderWidth: CGFloat = 0) {
+    func updateBorder(myView: UIView, borderWidth: CGFloat = 0){
         myView.layer.borderWidth = borderWidth
         myView.layer.borderColor = UIColor.white.cgColor
     }
+    
+    
+    
+    
 }

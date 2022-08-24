@@ -1,36 +1,32 @@
 //
-//  Quiz.swift
+//  QuizViewController.swift
 //  COSC345-Lang
 //
-//  Created by Liam Flynn on 19/08/22.
+//  Created by Liam Flynn on 24/08/22.
 //
 
 import UIKit
 
 class QuizViewController: UIViewController {
-
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var exitButton: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
     
     var viewModel = QuestionViewModel()
-    var quesitions:[Questions]?
+    var questions:[Questions]?
     
     var answerSelected = false
     var isCorrectAnswer = false
     
-    var  points = 0
+    var points = 0
     var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
-        viewModel.apiToGetQuestionData { [weak self] in
-            self?.quesitions = self?.viewModel.questionData?.data?.questions
-            DispatchQueue.main.async {
+        viewModel.apiToGetQuestionData {
+            [weak self] in self?.questions = self?.viewModel.questionData?.data?.questions
+            DispatchQueue.main.async{
                 self?.collectionView.delegate = self
                 self?.collectionView.dataSource = self
                 self?.collectionView.reloadData()
@@ -47,50 +43,46 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func onClickNext(_ sender: Any) {
-        
-        if !answerSelected {
-            // Show alert
-            let alert = UIAlertController(title: "Select One Option", message: "Please select one option before moving to the next question.", preferredStyle: .alert)
+        if !answerSelected{
+            let alert = UIAlertController(title: "Select an Option", message: "You must select an option before moving on to the next question.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
+            
             return
         }
         answerSelected = false
-        if isCorrectAnswer {
+        
+        if isCorrectAnswer{
             points += 1
         }
         
-        print(index)
-        if index<(self.quesitions?.count ?? 0) - 1 {
+        if index < (self.questions?.count ?? 0) - 1{
             index += 1
             collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
-
-        } else {
-            // Move the user on the result controller
-            guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else {return}
+        }else{
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else{return}
             vc.result = points
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-        
     }
-    
 }
 
-extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return quesitions?.count ?? 0
+        return questions?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizCollectionViewCell", for: indexPath) as? QuizCollectionViewCell else {return QuizCollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizCollectionViewCell", for: indexPath) as? QuizCollectionViewCell else{
+            return QuizCollectionViewCell()
+        }
         cell.optionA.layer.cornerRadius = 5
         cell.optionB.layer.cornerRadius = 5
         cell.optionC.layer.cornerRadius = 5
         cell.optionD.layer.cornerRadius = 5
-        cell.setValues = quesitions?[indexPath.row]
-        cell.selectedOption = { [weak self] isCorrect in
+        cell.setValues = questions?[indexPath.row]
+        cell.selectedOption = {[weak self] isCorrect in
             self?.answerSelected = true
             self?.isCorrectAnswer = isCorrect
         }
