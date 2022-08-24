@@ -25,7 +25,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Name Fag" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-gM-fML" propertyAccessControl="all">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZb-pe-gfp">
                                         <rect key="frame" x="0.0" y="20.5" width="226.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -73,8 +73,8 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                         <connections>
-                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYJ-R2-Y8n"/>
-                                            <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="lSS-WG-I7W"/>
+                                            <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="quh-H5-dyg"/>
+                                            <segue destination="q2f-da-TVm" kind="presentation" destinationCreationSelector="startReady:" modalPresentationStyle="fullScreen" id="lSS-WG-I7W"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,7 +93,8 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="KZ9-AR-hTS" id="Zmb-eH-pOs"/>
-                        <outlet property="textfield" destination="vCo-gM-fML" id="bSq-eT-Mf4"/>
+                        <outlet property="start" destination="8aR-S5-vgc" id="TTm-LM-EZu"/>
+                        <outlet property="textfield" destination="eZb-pe-gfp" id="dDl-hw-oW2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
