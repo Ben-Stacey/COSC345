@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-ro-93T">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-ro-93T">
                                 <rect key="frame" x="87" y="234" width="268" height="187"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnx-fZ-CFh">
@@ -37,7 +37,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-Cm-4Tf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-Cm-4Tf">
                                         <rect key="frame" x="0.0" y="75" width="268" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -46,7 +46,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0c-xS-bdj">
                                         <rect key="frame" x="0.0" y="125" width="268" height="31"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrc-yQ-Aff">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrc-yQ-Aff">
                                                 <rect key="frame" x="0.0" y="0.0" width="89.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="maori"/>
@@ -54,7 +54,7 @@
                                                     <action selector="maoriButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxM-BT-7tA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-vO-lhI">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-vO-lhI">
                                                 <rect key="frame" x="89.5" y="0.0" width="89" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="spanish"/>
@@ -82,10 +82,18 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="Aq3-wA-Sea"/>
+                                    <constraint firstAttribute="width" constant="268" id="OEb-GE-TYW"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="a9k-ro-93T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5gY-pR-At6"/>
+                            <constraint firstItem="a9k-ro-93T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="Wah-y3-OKm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5xg-vc-Ra0"/>
                     <connections>
@@ -149,31 +157,20 @@
                                     <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="faM-0p-aOC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-MW-OaN">
-                                <rect key="frame" x="297" y="819" width="48" height="43"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="tER-Gy-Ppn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="8" symbolic="YES" id="1Rq-VD-kc8"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="Hpn-MW-OaN" secondAttribute="trailing" constant="69" id="FKn-ow-d5i"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="18" id="Gxg-lX-QyD"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="VeP-Dk-wGj" secondAttribute="baseline" id="PhE-nT-Lfd"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="RQX-4O-P4c"/>
                             <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="Tij-Bs-xs3"/>
                             <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="TjV-Kl-gN2"/>
-                            <constraint firstItem="vMN-4m-OG4" firstAttribute="top" secondItem="Hpn-MW-OaN" secondAttribute="top" id="our-jp-3x8"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" constant="34" id="pyU-h6-cbu"/>
-                            <constraint firstItem="Hpn-MW-OaN" firstAttribute="bottom" secondItem="4bb-5b-sSg" secondAttribute="bottom" id="tYL-Y5-Prq"/>
                             <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="vMN-4m-OG4" secondAttribute="bottom" constant="12" id="uyd-wL-OuN"/>
-                            <constraint firstItem="Hpn-MW-OaN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vMN-4m-OG4" secondAttribute="trailing" constant="8" symbolic="YES" id="w5L-SR-9L4"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vMN-4m-OG4" secondAttribute="trailing" symbolic="YES" id="xfY-6l-hJZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
@@ -670,7 +667,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pG6-Gq-Hmg"/>
+        <segue reference="zGA-IB-4KM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
