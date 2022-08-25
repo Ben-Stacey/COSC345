@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MainMenu: UIViewController {
     
@@ -29,7 +30,7 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction func maoriButtion(_ sender: Any) {
+    @IBAction public func maoriButtion(_ sender: Any) {
         language = "maori"
         label.text = (language)
     }
@@ -39,7 +40,7 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction func frenchButton(_ sender: Any) {
+    @IBAction public func frenchButton(_ sender: Any) {
         language = "french"
         label.text = (language)
     }
@@ -49,7 +50,7 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction func spanishButton(_ sender: Any) {
+    @IBAction public func spanishButton(_ sender: Any) {
         language = "spanish"
         label.text = (language)
     }
@@ -59,7 +60,7 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction func start(_ sender: Any) {
+    @IBAction public func start(_ sender: Any) {
         if let n = textfield.text{
             name = n
         }
@@ -74,7 +75,7 @@ class MainMenu: UIViewController {
             - nil: if the parameters are empty then do not let the segue happen
     */
     /**
-    @IBSegueAction func startReady(_ coder: NSCoder) -> HomeScreen? {
+    @IBSegueAction public func startReady(_ coder: NSCoder) -> HomeScreen? {
         if !language.isEmpty, !name.isEmpty{
             return HomeScreen(coder: coder, language: language, name: name)
         }else{
