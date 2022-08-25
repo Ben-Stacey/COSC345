@@ -118,7 +118,6 @@
 			children = (
 				3528941428A330E9002C980C /* AppDelegate.swift */,
 				3528941628A330E9002C980C /* SceneDelegate.swift */,
-				357FD71528AB3D5200D060C4 /* Assets */,
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
@@ -176,13 +175,6 @@
 				357FD72728AB526D00D060C4 /* GameController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		357FD71528AB3D5200D060C4 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		357FD71628AB3D7F00D060C4 /* Models */ = {
