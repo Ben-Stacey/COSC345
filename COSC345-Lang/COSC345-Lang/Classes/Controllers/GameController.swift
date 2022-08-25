@@ -14,9 +14,9 @@ class GameController {
     private var tiles = [TileView]()
     private var targets = [TargetView]()
     
-    init(){
-    }
-    
+    /**
+        dealRandomSentence() adds the targets and tiles to the game screen. Adds the strings to the tile on the game
+    */
     func dealRandomSentence(){
         assert(level.sentence.count > 0, "no level loaded")
         

@@ -6,6 +6,9 @@
 //
 import Foundation
 
+/**
+    Stores the score of the player after each game
+ */
 class GameData {
   //store the user's game achievement
   var points:Int = 0 {

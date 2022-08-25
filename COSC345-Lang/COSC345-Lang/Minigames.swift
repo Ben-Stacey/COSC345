@@ -12,11 +12,19 @@ class ViewController: UIViewController {
     
     private let controller:GameController
     
+    /**
+        Creates an instance of the game to be played
+        - Parameters:
+            - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
+    */
     required init(coder aDecorder: NSCoder){
         controller = GameController()
         super.init(coder: aDecorder)!
     }
     
+    /**
+        viewDidLoad() loads the view controller with what we want to see. In this case it loads the game and level we are playing
+    */
     override func viewDidLoad() {
       super.viewDidLoad()
         let level1 = Level(levelNumber: 1)
