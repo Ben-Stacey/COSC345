@@ -12,14 +12,23 @@ struct DataModel: Codable {
 }
 
 struct QuestionModel: Codable {
-    var questions: [Questions]?
+    var questions: [Question]?
 }
     
-struct Questions: Codable {
+struct Question: Codable {
     var correct_answer: String?
     var option_1: String?
     var option_2: String?
     var option_3: String?
     var option_4: String?
     var question: String?
+    
+    init(correct_answer: String, option_1: String, option_2: String, option_3: String, option_4: String, question: String) {
+        self.correct_answer = correct_answer
+        self.option_1 = option_1
+        self.option_2 = option_2
+        self.option_3 = option_3
+        self.option_4 = option_4
+        self.question = question
+      }
 }

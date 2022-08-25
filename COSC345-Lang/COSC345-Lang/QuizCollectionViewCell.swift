@@ -30,7 +30,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     private var correctAnswer: String?
     
-    var setValues: Questions? {
+    var setValues: Question? {
         didSet{
             questionLabel.text = setValues?.question
             option1.text = setValues?.option_1

@@ -9,6 +9,7 @@ import UIKit
 
 class MainMenu: UIViewController {
     
+    var languageNum = 0
     var language = ""
     var name = ""
     
@@ -16,16 +17,19 @@ class MainMenu: UIViewController {
     @IBOutlet weak var textfield: UITextField!
     
     @IBAction func maoriButtion(_ sender: Any) {
+        languageNum = 3
         language = "maori"
         label.text = (language)
     }
     
     @IBAction func frenchButton(_ sender: Any) {
+        languageNum = 1
         language = "french"
         label.text = (language)
     }
     
     @IBAction func spanishButton(_ sender: Any) {
+        languageNum = 2
         language = "spanish"
         label.text = (language)
     }
@@ -41,5 +45,9 @@ class MainMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+     func getLanguageNum() -> Int{
+        return languageNum
     }
 }
