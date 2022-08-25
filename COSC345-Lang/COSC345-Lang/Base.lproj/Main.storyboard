@@ -109,6 +109,7 @@
                             <constraint firstItem="1lw-LL-4kt" firstAttribute="centerX" secondItem="Qex-RA-8CN" secondAttribute="centerX" id="q38-2e-4df"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5xg-vc-Ra0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="wKw-KK-Vto" userLabel="Exit" sceneMemberID="exit"/>
@@ -170,6 +171,15 @@
                                     <segue destination="Hnz-AN-i7s" kind="show" id="faM-0p-aOC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-MW-OaN">
+                                <rect key="frame" x="297" y="819" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="tER-Gy-Ppn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -178,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUe-Mh-cTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="66"/>
+            <point key="canvasLocation" x="715.94202898550725" y="65.625"/>
         </scene>
         <!--Wager Quizzes-->
         <scene sceneID="C2P-f4-QF7">
@@ -187,6 +197,17 @@
                     <view key="view" contentMode="scaleToFill" id="mQI-1D-RgB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-Ud-mPI">
+                                <rect key="frame" x="305" y="793" width="48" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="1cf-4q-ZVO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="w4W-Uz-DtN"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
@@ -202,6 +223,17 @@
                     <view key="view" contentMode="scaleToFill" id="ufN-E1-BRH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWJ-Rl-NgO">
+                                <rect key="frame" x="313" y="754" width="48" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="rzw-jd-5eZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wa8-SZ-9cm"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
@@ -209,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zk-CW-1ND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="743"/>
+            <point key="canvasLocation" x="1634.7826086956522" y="742.63392857142856"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="zVs-8N-Oh4">
@@ -256,6 +288,15 @@
                                     <segue destination="G8y-cS-hor" kind="presentation" modalPresentationStyle="fullScreen" id="2ak-aW-wuk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBf-nc-sas">
+                                <rect key="frame" x="307" y="820" width="48" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="99A-1Y-rFS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -272,6 +313,17 @@
                     <view key="view" contentMode="scaleToFill" id="Lp7-rn-E3k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bu-rp-FRr">
+                                <rect key="frame" x="305" y="747" width="48" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="QUu-Vn-s6e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="20G-OB-fmQ"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
@@ -599,7 +651,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zGA-IB-4KM"/>
+        <segue reference="QUu-Vn-s6e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
