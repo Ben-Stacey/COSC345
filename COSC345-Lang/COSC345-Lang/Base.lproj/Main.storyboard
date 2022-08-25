@@ -78,6 +78,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="start"/>
                                         <connections>
                                             <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk3-1U-hLA"/>
+                                            <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="pG6-Gq-Hmg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -669,8 +670,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T1e-O0-5Nx"/>
-        <segue reference="zGA-IB-4KM"/>
+        <segue reference="pG6-Gq-Hmg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
