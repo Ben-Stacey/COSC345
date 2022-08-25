@@ -73,6 +73,7 @@ class MainMenu: UIViewController {
             - HomeScreen: If the the parameters arent empty then the home screen object is called
             - nil: if the parameters are empty then do not let the segue happen
     */
+    /**
     @IBSegueAction func startReady(_ coder: NSCoder) -> HomeScreen? {
         if !language.isEmpty, !name.isEmpty{
             return HomeScreen(coder: coder, language: language, name: name)
@@ -80,6 +81,7 @@ class MainMenu: UIViewController {
             return nil
         }
     }
+     */
     
     
     override func viewDidLoad() {
