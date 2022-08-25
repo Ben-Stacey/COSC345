@@ -51,7 +51,7 @@ class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     /**
-        Example of SwiftDoc stuff in SWIFT.
+        Example of SwiftDoc stuff in SWIFT xxxx.
         - Parameters:
             - value: [in] The number to return.
         - Returns: The parameter passed to it.
