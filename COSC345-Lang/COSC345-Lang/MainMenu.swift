@@ -69,6 +69,9 @@ class MainMenu: UIViewController {
         When the start button is clicked it checks that the name and language are not null and then allows the segue to happen
         - Parameters:
             - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
+        - Returns:
+            - HomeScreen: If the the parameters arent empty then the home screen object is called
+            - nil: if the parameters are empty then do not let the segue happen
     */
     @IBSegueAction func startReady(_ coder: NSCoder) -> HomeScreen? {
         if !language.isEmpty, !name.isEmpty{
