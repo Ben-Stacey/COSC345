@@ -12,10 +12,19 @@ class TileView:UIImageView{
     var letter: Character
     var isMatched: Bool = false
     
+    /**
+        Init shouldnt be called and if it is diaplays the fatal error
+    */
     required init(coder aDecorder:NSCoder){
         fatalError("use other init")
     }
     
+    /**
+        This init function displays the tile with the letter inside of it
+        - Parameters:
+            - Letter: [in] the string that will be displayed on the tile
+            - sideLength: [in] the length of the tile
+    */
     init(letter:Character, sideLength:CGFloat){
         self.letter = letter
         let image = UIImage(named: "tile")!
@@ -28,6 +37,9 @@ class TileView:UIImageView{
         self.addSubview(letterLabel)
     }
     
+    /**
+        randomize() randomly tilts the tiles to give an asthetic look
+     */
     func randomize(){
         let rotation = CGFloat(randomNumber(minX: 0, maxX: 50)) / 100.0 - 0.2
         self.transform = CGAffineTransform(rotationAngle: rotation)
