@@ -9,47 +9,75 @@ import UIKit
 
 class MainMenu: UIViewController {
     
+    
     var language = ""
     var name = ""
-    var checkOne = false
-    var checkTwo = false
     
-    
+    /**
+        Declarations for UI elements
+        - Parameters:
+            - label: outlet for the label
+            - textfield: outlet for the textfield
+            - start: outlet set for the start button
+    */
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var start: UIButton!
     
+    /**
+        When the maori button is clicked it stores that and displays it on the screen
+        - Parameters:
+            - any: [in] allows method to be sent anything
+    */
     @IBAction func maoriButtion(_ sender: Any) {
         language = "maori"
         label.text = (language)
-        checkTwo = true
     }
     
+    /**
+        When the french button is clicked it stores that and displays it on the screen
+        - Parameters:
+            - any: [in] allows method to be sent anything
+    */
     @IBAction func frenchButton(_ sender: Any) {
         language = "french"
         label.text = (language)
-        checkTwo = true
     }
     
+    /**
+        When the spanish button is clicked it stores that and displays it on the screen
+        - Parameters:
+            - any: [in] allows method to be sent anything
+    */
     @IBAction func spanishButton(_ sender: Any) {
         language = "spanish"
         label.text = (language)
-        checkTwo = true
     }
     
+    /**
+        When the start button is clicked the text that is entered into the textfield it stores that as the name
+        - Parameters:
+            - any: [in] allows method to be sent anything
+    */
     @IBAction func start(_ sender: Any) {
         if let n = textfield.text{
             name = n
         }
     }
     
+    /**
+        When the start button is clicked it checks that the name and language are not null and then allows the segue to happen
+        - Parameters:
+            - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
+    */
     @IBSegueAction func startReady(_ coder: NSCoder) -> HomeScreen? {
         if !language.isEmpty, !name.isEmpty{
-            return HomeScreen(coder: coder)
+            return HomeScreen(coder: coder, language: language, name: name)
         }else{
             return nil
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

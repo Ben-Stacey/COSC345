@@ -10,6 +10,19 @@ import Foundation
 
 class HomeScreen: UIViewController {
     
+    var language: String
+    var name: String
+    
+    init(name: String, language: String){
+        self.language = language
+        self.name = name
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
