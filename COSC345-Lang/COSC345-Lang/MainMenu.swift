@@ -50,6 +50,12 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
+    /**
+        Example of SwiftDoc stuff in SWIFT.
+        - Parameters:
+            - value: [in] The number to return.
+        - Returns: The parameter passed to it.
+    */
     @IBAction public func spanishButton(_ sender: Any) {
         language = "spanish"
         label.text = (language)
