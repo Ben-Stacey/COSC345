@@ -26,9 +26,10 @@ class QuizViewController: UIViewController {
         
         var z = 0
         while z < 10{
-            if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Words", ofType: "plist")!) as? [String: [String]] {
+            if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Phrases", ofType: "plist")!) as? [String: [String]] {
                 
-                let languageNum = 2 //MainMenu().getLanguageNum() //1 for french, 2 for spanish, 3 for maori.
+                let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
+                print(languageNum)
                 var language: String = ""
                 if languageNum == 1{
                     language = "French"

@@ -1,4 +1,4 @@
- //
+//
 //  ViewController.swift
 //  COSC345-Lang
 //
@@ -8,11 +8,13 @@
 import UIKit
 import Foundation
 
+var languageNum: Int = 0
+var language = ""
+var name = ""
+
 class MainMenu: UIViewController {
     
-    var languageNum = 0
-    var language = ""
-    var name = ""
+    
     
     /**
         Declarations for UI elements
@@ -99,7 +101,8 @@ class MainMenu: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-     func getLanguageNum() -> Int{
+    class func getLanguageNum() -> Int{
         return languageNum
     }
+    
 }
