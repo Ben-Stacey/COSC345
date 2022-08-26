@@ -8,8 +8,7 @@
 import UIKit
 import Foundation
 
-class MainMenu: UIViewController {
-    
+internal class MainMenu: UIViewController {
     
     var language = ""
     var name = ""
@@ -49,12 +48,6 @@ class MainMenu: UIViewController {
         When the spanish button is clicked it stores that and displays it on the screen
         - Parameters:
             - any: [in] allows method to be sent anything
-    */
-    /**
-        Example of SwiftDoc stuff in SWIFT xxxx.
-        - Parameters:
-            - value: [in] The number to return.
-        - Returns: The parameter passed to it.
     */
     @IBAction public func spanishButton(_ sender: Any) {
         language = "spanish"

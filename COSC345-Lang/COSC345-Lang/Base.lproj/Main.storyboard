@@ -165,6 +165,14 @@
                                     <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="pTE-T3-VfT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyq-YJ-lvg">
+                                <rect key="frame" x="185" y="449" width="48" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="6A0-xY-R2m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -172,10 +180,13 @@
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="8" symbolic="YES" id="1Rq-VD-kc8"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
                             <constraint firstItem="3vR-7S-OSM" firstAttribute="centerX" secondItem="SVu-Oz-vQ2" secondAttribute="centerX" id="Agd-7C-0J6"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="iyq-YJ-lvg" secondAttribute="trailing" constant="181" id="GNd-KV-z7U"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="18" id="Gxg-lX-QyD"/>
                             <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="3vR-7S-OSM" secondAttribute="trailing" constant="25" id="K33-mB-imP"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="iyq-YJ-lvg" secondAttribute="bottom" constant="382" id="P0g-2q-Rob"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="VeP-Dk-wGj" secondAttribute="baseline" id="PhE-nT-Lfd"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="RQX-4O-P4c"/>
+                            <constraint firstItem="iyq-YJ-lvg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4bb-5b-sSg" secondAttribute="leading" id="RcT-vL-tRk"/>
                             <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="Tij-Bs-xs3"/>
                             <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="TjV-Kl-gN2"/>
                             <constraint firstItem="3vR-7S-OSM" firstAttribute="baseline" secondItem="vMN-4m-OG4" secondAttribute="baseline" id="ktg-jL-gTv"/>
@@ -188,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUe-Mh-cTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715.94202898550725" y="65.625"/>
+            <point key="canvasLocation" x="714.49275362318849" y="65.625"/>
         </scene>
         <!--Wager Quizzes-->
         <scene sceneID="C2P-f4-QF7">
@@ -355,7 +366,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWP-Up-kOH">
-                                <rect key="frame" x="53" y="226" width="305" height="21"/>
+                                <rect key="frame" x="53" y="226" width="305" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -788,6 +799,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pTE-T3-VfT"/>
         <segue reference="6bR-GS-Jzi"/>
     </inferredMetricsTieBreakers>
     <resources>
