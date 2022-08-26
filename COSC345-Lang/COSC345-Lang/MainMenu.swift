@@ -11,14 +11,10 @@ import Foundation
 var languageNum: Int = 0
 var language = ""
 var name = ""
+var langSelected: Bool = false
+var nameSelected: Bool = false
 
 class MainMenu: UIViewController {
-    
-    var language = ""
-    var name = ""
-    
-    var langSelected: Bool = false
-    var nameSelected: Bool = false
     
     /**
         Declarations for UI elements
@@ -103,6 +99,38 @@ class MainMenu: UIViewController {
     
     class func getLanguageNum() -> Int{
         return languageNum
+    }
+    
+    class func getLanguage() -> String{
+        return language
+    }
+    
+    class func setLanguage(lang: String){
+        language = lang
+    }
+    
+    class func getName() -> String{
+        return name
+    }
+    
+    class func setName(n: String){
+        name = n
+    }
+    
+    class func getLangSelected() -> Bool{
+        return langSelected
+    }
+    
+    class func setLangSelected(ls: Bool){
+        langSelected = ls
+    }
+    
+    class func getNameSelected() -> Bool{
+        return nameSelected
+    }
+    
+    class func setNameSelected(ns: Bool){
+        nameSelected = ns
     }
     
 }
