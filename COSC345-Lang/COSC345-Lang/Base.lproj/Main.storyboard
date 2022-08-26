@@ -78,7 +78,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="start"/>
                                         <connections>
                                             <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk3-1U-hLA"/>
-                                            <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="pG6-Gq-Hmg"/>
+                                            <segue destination="q2f-da-TVm" kind="presentation" destinationCreationSelector="erge:" modalPresentationStyle="fullScreen" id="pG6-Gq-Hmg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="-257.97101449275362" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen-->
         <scene sceneID="mAg-RD-nND">
             <objects>
-                <viewController id="q2f-da-TVm" sceneMemberID="viewController">
+                <viewController id="q2f-da-TVm" customClass="HomeScreen" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tw-lS-oqZ" customClass="HomeScreen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

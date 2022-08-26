@@ -19,6 +19,8 @@
 		2996AAC028B70F81005B36E1 /* Phrases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2996AABF28B70F81005B36E1 /* Phrases.plist */; };
 		2996AAC228B7109B005B36E1 /* Words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2996AAC128B7109B005B36E1 /* Words.plist */; };
 		2996AAC828B7504B005B36E1 /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2996AAC728B7504B005B36E1 /* Language.plist */; };
+        352675C928B84B99007C7942 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352675C828B84B99007C7942 /* HomeScreen.swift */; };
+		2996AAC828B7504B005B36E1 /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2996AAC728B7504B005B36E1 /* Language.plist */; };
 		3528941528A330E9002C980C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528941428A330E9002C980C /* AppDelegate.swift */; };
 		3528941728A330E9002C980C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528941628A330E9002C980C /* SceneDelegate.swift */; };
 		3528941C28A330E9002C980C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941A28A330E9002C980C /* Main.storyboard */; };
@@ -59,8 +61,10 @@
 		297AF0AB28A601B300C3291A /* WagerQuizzes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerQuizzes.swift; sourceTree = "<group>"; };
 		2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMenuViewController.swift; sourceTree = "<group>"; };
 		2996AAB928B5D27D005B36E1 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		2996AABB28B5D29B005B36E1 /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
-		2996AABD28B5D2B5005B36E1 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		2996AABF28B70F81005B36E1 /* Phrases.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Phrases.plist; sourceTree = "<group>"; };
+		2996AAC128B7109B005B36E1 /* Words.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Words.plist; sourceTree = "<group>"; };
+		2996AAC728B7504B005B36E1 /* Language.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = "<group>"; };
+        352675C828B84B99007C7942 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		2996AABF28B70F81005B36E1 /* Phrases.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Phrases.plist; sourceTree = "<group>"; };
 		2996AAC128B7109B005B36E1 /* Words.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Words.plist; sourceTree = "<group>"; };
 		2996AAC728B7504B005B36E1 /* Language.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 		3528941D28A330EB002C980C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3528942028A330EB002C980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3528942228A330EB002C980C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3528942828A335AF002C980C /* Home Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Screen.swift"; sourceTree = "<group>"; };
 		353B11CE28A9FDDA00B996DB /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		357EC44A28B461A40092F1B4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		357FD70D28AB3C5E00D060C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -111,7 +114,6 @@
 		2996AAB628B59D5E005B36E1 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				3528942828A335AF002C980C /* Home Screen.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 				2996AAC728B7504B005B36E1 /* Language.plist */,
 				2996AABB28B5D29B005B36E1 /* QuizResultViewController.swift */,
 				2996AABD28B5D2B5005B36E1 /* QuizCollectionViewCell.swift */,
+				352675C828B84B99007C7942 /* HomeScreen.swift */,
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */,
@@ -333,6 +336,7 @@
 			files = (
 				357FD73428AB5E2F00D060C4 /* HUDView.swift in Sources */,
 				353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */,
+				352675C928B84B99007C7942 /* HomeScreen.swift in Sources */,
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
 				2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */,
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
