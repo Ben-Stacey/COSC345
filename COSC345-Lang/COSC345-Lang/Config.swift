@@ -21,23 +21,39 @@ let TileMargin: CGFloat = 20.0
     - Returns:
         - Int(result): returns the randomly generated number
 */
-func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
+public func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
   let result = (arc4random() % (maxX - minX + 1)) + minX
   return Int(result)
 }
 
-func getScreenWidth() -> CGFloat{
+/**
+    Getter method for ScreenHeight
+ */
+public func getScreenWidth() -> CGFloat{
     return ScreenWidth
 }
 
-func setScreenWidth(width: CGFloat){
+/**
+    Setter method for ScreenWidth
+     - Parameters:
+         - width: [in] the width of the tile
+ */
+public func setScreenWidth(width: CGFloat){
     ScreenWidth = width
 }
 
-func getScreenHeight() -> CGFloat{
+/**
+    Getter method for ScreenHeight
+ */
+public func getScreenHeight() -> CGFloat{
     return ScreenHeight
 }
 
-func setScreenHeight(height: CGFloat){
+/**
+    Setter method for ScreenHeight
+     - Parameters:
+         - height: [in] the height of the tile
+ */
+public func setScreenHeight(height: CGFloat){
     ScreenHeight = height
 }
