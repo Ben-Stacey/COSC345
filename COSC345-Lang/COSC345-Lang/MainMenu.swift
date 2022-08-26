@@ -100,6 +100,11 @@ class MainMenu: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    /*! \brief Gets language num
+     *
+     *
+     *  Gets language num bruv
+     */
     class func getLanguageNum() -> Int{
         return languageNum
     }
