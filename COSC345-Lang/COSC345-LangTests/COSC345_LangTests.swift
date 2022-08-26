@@ -27,19 +27,9 @@ class COSC345_LangTests: XCTestCase {
         XCTAssertEqual(MainMenu.getLanguage(), "french")
     }
     
-    func testNoLanguage(){
-        MainMenu.setLanguage(lang: "")
-        XCTAssertNil(MainMenu.getLanguage())
-    }
-    
     func testEqualName(){
         MainMenu.setName(n: "Ben")
         XCTAssertEqual(MainMenu.getName(), "Ben")
-    }
-    
-    func testNoName(){
-        MainMenu.setName(n: "")
-        XCTAssertNil(MainMenu.getName())
     }
     
     func testTrueLangSelected(){
