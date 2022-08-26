@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
-                                <rect key="frame" x="160" y="78" width="94" height="31"/>
+                                <rect key="frame" x="161" y="86.5" width="94" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Minigames"/>
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-Oz-vQ2">
-                                <rect key="frame" x="272" y="78" width="122" height="31"/>
+                                <rect key="frame" x="273" y="78" width="121" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeP-Dk-wGj">
-                                <rect key="frame" x="20" y="78" width="114" height="31"/>
+                                <rect key="frame" x="20" y="86.5" width="114" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
@@ -157,9 +157,8 @@
                                     <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="faM-0p-aOC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-7S-OSM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-7S-OSM">
                                 <rect key="frame" x="278" y="819" width="111" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sea of Words"/>
                                 <connections>
@@ -171,12 +170,15 @@
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="8" symbolic="YES" id="1Rq-VD-kc8"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
+                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
+                            <constraint firstItem="3vR-7S-OSM" firstAttribute="centerX" secondItem="SVu-Oz-vQ2" secondAttribute="centerX" id="Agd-7C-0J6"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="18" id="Gxg-lX-QyD"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="3vR-7S-OSM" secondAttribute="trailing" constant="25" id="K33-mB-imP"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="VeP-Dk-wGj" secondAttribute="baseline" id="PhE-nT-Lfd"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="RQX-4O-P4c"/>
                             <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="Tij-Bs-xs3"/>
                             <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="TjV-Kl-gN2"/>
+                            <constraint firstItem="3vR-7S-OSM" firstAttribute="baseline" secondItem="vMN-4m-OG4" secondAttribute="baseline" id="ktg-jL-gTv"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" constant="34" id="pyU-h6-cbu"/>
                             <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="vMN-4m-OG4" secondAttribute="bottom" constant="12" id="uyd-wL-OuN"/>
                             <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vMN-4m-OG4" secondAttribute="trailing" symbolic="YES" id="xfY-6l-hJZ"/>
@@ -285,18 +287,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95K-Qg-eBd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95K-Qg-eBd">
                                 <rect key="frame" x="180" y="264" width="56" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                 <connections>
                                     <segue destination="cst-bK-xir" kind="presentation" modalPresentationStyle="fullScreen" id="tUD-PF-wG0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zox-Mw-xOy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zox-Mw-xOy">
                                 <rect key="frame" x="184" y="411" width="48" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                                 <connections>
@@ -306,6 +306,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c4c-38-WHG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zox-Mw-xOy" firstAttribute="centerX" secondItem="95K-Qg-eBd" secondAttribute="centerX" id="7xc-yK-OgN"/>
+                            <constraint firstItem="95K-Qg-eBd" firstAttribute="top" secondItem="c4c-38-WHG" secondAttribute="top" constant="220" id="dYo-tT-q9m"/>
+                            <constraint firstItem="Zox-Mw-xOy" firstAttribute="leading" secondItem="c4c-38-WHG" secondAttribute="leading" constant="184" id="gRw-xi-CNt"/>
+                            <constraint firstItem="c4c-38-WHG" firstAttribute="bottom" secondItem="Zox-Mw-xOy" secondAttribute="bottom" constant="420" id="yBP-oP-Pup"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="95K-Qg-eBd" id="F7h-jo-LIM"/>
@@ -348,9 +354,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWP-Up-kOH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWP-Up-kOH">
                                 <rect key="frame" x="53" y="226" width="305" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -358,6 +363,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yJE-wE-sIR"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="xWP-Up-kOH" firstAttribute="leading" secondItem="yJE-wE-sIR" secondAttribute="leading" constant="53" id="5II-rv-dYp"/>
+                            <constraint firstItem="yJE-wE-sIR" firstAttribute="trailing" secondItem="xWP-Up-kOH" secondAttribute="trailing" constant="56" id="ntD-2O-pLD"/>
+                            <constraint firstItem="xWP-Up-kOH" firstAttribute="top" secondItem="yJE-wE-sIR" secondAttribute="top" constant="182" id="oxe-dD-0bX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZU-qC-rzc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
