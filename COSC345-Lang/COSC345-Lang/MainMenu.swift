@@ -14,7 +14,7 @@ var name = ""
 var langSelected: Bool = false
 var nameSelected: Bool = false
 
-class MainMenu: UIViewController {
+public class MainMenu: UIViewController {
     
     /**
         Declarations for UI elements
@@ -95,7 +95,7 @@ class MainMenu: UIViewController {
     /**
         
      */
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -105,7 +105,7 @@ class MainMenu: UIViewController {
      *
      *  Gets language num bruv
      */
-    class func getLanguageNum() -> Int{
+    public class func getLanguageNum() -> Int{
         return languageNum
     }
     
