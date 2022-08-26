@@ -1,8 +1,14 @@
+//
+//  SeaOfWordsHomeScreen.swift
+//  COSC345-Lang
+//
+//  Created by Ben Stacey on 26/08/22.
+//
+/**
 import UIKit
 import SwiftUI
 
 //Home Screen for Sea of Words
-
 class SeaofWordsHomeScreen: UIViewController {
     weak var playbutton: UIButton! {
         didSet {
@@ -31,3 +37,5 @@ class SeaofWordsHomeScreen: UIViewController {
         
     }
 }
+ */
+

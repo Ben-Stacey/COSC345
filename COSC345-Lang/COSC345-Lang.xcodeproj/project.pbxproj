@@ -39,6 +39,10 @@
 		357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD72D28AB5DE300D060C4 /* TileView.swift */; };
 		357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD72F28AB5E0B00D060C4 /* TargetView.swift */; };
 		357FD73428AB5E2F00D060C4 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD73328AB5E2F00D060C4 /* HUDView.swift */; };
+		3580634828B857C300923D95 /* SeaOfWordsHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634728B857C300923D95 /* SeaOfWordsHomeScreen.swift */; };
+		3580634A28B8582100923D95 /* SeaofWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634928B8582100923D95 /* SeaofWordsView.swift */; };
+		3580634C28B8589300923D95 /* SeaofWordsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634B28B8589300923D95 /* SeaofWordsResult.swift */; };
+		3580634E28B8591600923D95 /* SeaofWordsCScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +91,10 @@
 		357FD72D28AB5DE300D060C4 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		357FD72F28AB5E0B00D060C4 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		357FD73328AB5E2F00D060C4 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		3580634728B857C300923D95 /* SeaOfWordsHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaOfWordsHomeScreen.swift; sourceTree = "<group>"; };
+		3580634928B8582100923D95 /* SeaofWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsView.swift; sourceTree = "<group>"; };
+		3580634B28B8589300923D95 /* SeaofWordsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsResult.swift; sourceTree = "<group>"; };
+		3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsCScreen.swift; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +150,10 @@
 				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
+				3580634B28B8589300923D95 /* SeaofWordsResult.swift */,
+				3580634928B8582100923D95 /* SeaofWordsView.swift */,
+				3580634728B857C300923D95 /* SeaOfWordsHomeScreen.swift */,
+				3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */,
 				352675C828B84B99007C7942 /* HomeScreen.swift */,
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
@@ -345,13 +357,17 @@
 				357EC44B28B461A40092F1B4 /* MainMenu.swift in Sources */,
 				2996AACC28B85B2A005B36E1 /* QuizResultViewController.swift in Sources */,
 				2996AABA28B5D27D005B36E1 /* QuizViewController.swift in Sources */,
+				3580634C28B8589300923D95 /* SeaofWordsResult.swift in Sources */,
+				3580634E28B8591600923D95 /* SeaofWordsCScreen.swift in Sources */,
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
+				3580634A28B8582100923D95 /* SeaofWordsView.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 				357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */,
 				2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */,
 				357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */,
 				2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */,
 				357FD72828AB526D00D060C4 /* GameController.swift in Sources */,
+				3580634828B857C300923D95 /* SeaOfWordsHomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

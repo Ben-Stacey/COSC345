@@ -11,8 +11,11 @@ import Foundation
 var languageNum: Int = 0
 var language = ""
 var name = ""
+var langSelected: Bool = false
+var nameSelected: Bool = false
 
 class MainMenu: UIViewController {
+    
     /**
         Declarations for UI elements
         - Parameters:
@@ -33,6 +36,7 @@ class MainMenu: UIViewController {
         languageNum = 3
         language = "maori"
         label.text = (language)
+        langSelected = true
     }
     
     /**
@@ -44,6 +48,7 @@ class MainMenu: UIViewController {
         languageNum = 1
         language = "french"
         label.text = (language)
+        langSelected = true
     }
     
     /**
@@ -51,48 +56,44 @@ class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    /**
-        Example of SwiftDoc stuff in SWIFT xxxx.
-        - Parameters:
-            - value: [in] The number to return.
-        - Returns: The parameter passed to it.
-    */
     @IBAction public func spanishButton(_ sender: Any) {
         languageNum = 2
         language = "spanish"
         label.text = (language)
+        langSelected = true
     }
     
     /**
-        When the start button is clicked the text that is entered into the textfield it stores that as the name
+        When the start button is clicked the text that is entered into the textfield it stores that as the name.
+        This also checks that the paramters are filled before entering the next screen
         - Parameters:
             - any: [in] allows method to be sent anything
     */
     @IBAction public func start(_ sender: Any) {
         if let n = textfield.text{
             name = n
+            nameSelected = true
         }
-    }
-    
-    /**
-        When the start button is clicked it checks that the name and language are not null and then allows the segue to happen
-        - Parameters:
-            - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
-        - Returns:
-            - HomeScreen: If the the parameters arent empty then the home screen object is called
-            - nil: if the parameters are empty then do not let the segue happen
-    */
-    /**
-    @IBSegueAction func erge(_ coder: NSCoder) -> HomeScreen? {
-        print("In function")
-        if !language.isEmpty && !name.isEmpty{
-            print("in if statement")
-            return HomeScreen(coder: coder)
+        
+        if nameSelected == true && langSelected == true{
+            guard let vc = storyboard?
+                .instantiateViewController(withIdentifier:
+                                            "HomeScreen") as? HomeScreen else{return}
+            self.navigationController?.pushViewController(vc, animated: true)
         }else{
-            print("in else")
-            return nil
+            let alert = UIAlertController(title: "not selected", message: "Name or Language not selected", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
+            return
         }
     }
+
+    /**
+        
      */
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +106,38 @@ class MainMenu: UIViewController {
     
     class func getLanguageNum() -> Int{
         return languageNum
+    }
+    
+    class func getLanguage() -> String{
+        return language
+    }
+    
+    class func setLanguage(lang: String){
+        language = lang
+    }
+    
+    class func getName() -> String{
+        return name
+    }
+    
+    class func setName(n: String){
+        name = n
+    }
+    
+    class func getLangSelected() -> Bool{
+        return langSelected
+    }
+    
+    class func setLangSelected(ls: Bool){
+        langSelected = ls
+    }
+    
+    class func getNameSelected() -> Bool{
+        return nameSelected
+    }
+    
+    class func setNameSelected(ns: Bool){
+        nameSelected = ns
     }
     
 }

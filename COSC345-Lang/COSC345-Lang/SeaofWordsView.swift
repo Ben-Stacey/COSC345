@@ -1,8 +1,14 @@
+//
+//  SeaofWordsView.swift
+//  COSC345-Lang
+//
+//  Created by Ben Stacey on 26/08/22.
+//
+/**
 import UIKit
 import SwiftUI
 
 //Quiz Screen for sea of words
-
 class SeaofWordsView: UIViewController {
     weak var collectionView: UICollectionView!
 
@@ -96,5 +102,5 @@ extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-
 }
+ */

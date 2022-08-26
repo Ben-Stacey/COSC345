@@ -6,8 +6,41 @@
 //
 
 import XCTest
+@testable import COSC345_Lang
 
 class COSC345_LangTests: XCTestCase {
+    
+    var mainMenuSubjects: MainMenu!
+    
+    func testEqualMaoriLanguage(){
+        MainMenu.setLanguage(lang: "maori")
+        XCTAssertEqual(MainMenu.getLanguage(), "maori")
+    }
+    
+    func testEqualSpanishLanguage(){
+        MainMenu.setLanguage(lang: "spanish")
+        XCTAssertEqual(MainMenu.getLanguage(), "spanish")
+    }
+    
+    func testEqualFrenchLanguage(){
+        MainMenu.setLanguage(lang: "french")
+        XCTAssertEqual(MainMenu.getLanguage(), "french")
+    }
+    
+    func testEqualName(){
+        MainMenu.setName(n: "Ben")
+        XCTAssertEqual(MainMenu.getName(), "Ben")
+    }
+    
+    func testTrueLangSelected(){
+        MainMenu.setLangSelected(ls: true)
+        XCTAssertTrue(MainMenu.getLangSelected())
+    }
+    
+    func testTrueNameSelected(){
+        MainMenu.setNameSelected(ns: true)
+        XCTAssertTrue(MainMenu.getNameSelected())
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

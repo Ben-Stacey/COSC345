@@ -1,3 +1,11 @@
+//
+//  SeaofWordsCScreen.swift
+//  COSC345-Lang
+//
+//  Created by Ben Stacey on 26/08/22.
+//
+/**
+import Foundation
 import UIKit
 import SwiftUI
 
@@ -115,6 +123,5 @@ class SeaofWordsCScreen: UICollectionViewCell {
         myView.layer.borderWidth = borderWidth
         myView.layer.borderColor = UIColor.white.cgColor
     }
-
-
 }
+ */
