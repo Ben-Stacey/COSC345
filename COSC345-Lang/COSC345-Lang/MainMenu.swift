@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-internal class MainMenu: UIViewController {
+class MainMenu: UIViewController {
     
     var language = ""
     var name = ""
