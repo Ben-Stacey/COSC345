@@ -1,8 +1,14 @@
+//
+//  SeaofWordsResult.swift
+//  COSC345-Lang
+//
+//  Created by Ben Stacey on 26/08/22.
+//
+
 import UIKit
 import SwiftUI
 
 //Result Screen for Sea of Words
-
 class SeaofWordsResult: UIViewController {
 
     weak var resultLabel: UILabel!
@@ -16,6 +22,6 @@ class SeaofWordsResult: UIViewController {
     }
 
     func onClickHome(_ sender: Any) {
-        navigationController?.popToRootViewController(animate: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }
