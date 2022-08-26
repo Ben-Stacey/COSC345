@@ -41,6 +41,16 @@ class COSC345_LangTests: XCTestCase {
         MainMenu.setNameSelected(ns: true)
         XCTAssertTrue(MainMenu.getNameSelected())
     }
+    
+    func textEqualScreenWidth(){
+        setScreenWidth(width: ScreenWidth)
+        XCTAssertEqual(getScreenWidth(), ScreenWidth)
+    }
+    
+    func textEqualScreenHeight(){
+        setScreenHeight(height: ScreenHeight)
+        XCTAssertEqual(getScreenWidth(), ScreenHeight)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

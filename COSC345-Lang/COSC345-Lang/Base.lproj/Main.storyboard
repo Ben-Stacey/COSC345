@@ -164,14 +164,6 @@
                                     <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="pTE-T3-VfT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyq-YJ-lvg">
-                                <rect key="frame" x="185" y="449" width="48" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
-                                <connections>
-                                    <segue destination="4ex-9i-gqE" kind="presentation" modalPresentationStyle="fullScreen" id="6A0-xY-R2m"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -179,13 +171,10 @@
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="8" symbolic="YES" id="1Rq-VD-kc8"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
                             <constraint firstItem="3vR-7S-OSM" firstAttribute="centerX" secondItem="SVu-Oz-vQ2" secondAttribute="centerX" id="Agd-7C-0J6"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="iyq-YJ-lvg" secondAttribute="trailing" constant="181" id="GNd-KV-z7U"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="18" id="Gxg-lX-QyD"/>
                             <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="3vR-7S-OSM" secondAttribute="trailing" constant="25" id="K33-mB-imP"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="iyq-YJ-lvg" secondAttribute="bottom" constant="382" id="P0g-2q-Rob"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="VeP-Dk-wGj" secondAttribute="baseline" id="PhE-nT-Lfd"/>
                             <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="RQX-4O-P4c"/>
-                            <constraint firstItem="iyq-YJ-lvg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4bb-5b-sSg" secondAttribute="leading" id="RcT-vL-tRk"/>
                             <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="Tij-Bs-xs3"/>
                             <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="TjV-Kl-gN2"/>
                             <constraint firstItem="3vR-7S-OSM" firstAttribute="baseline" secondItem="vMN-4m-OG4" secondAttribute="baseline" id="ktg-jL-gTv"/>
