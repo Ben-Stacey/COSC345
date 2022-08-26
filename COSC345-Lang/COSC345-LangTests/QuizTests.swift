@@ -1,13 +1,20 @@
 //
-//  COSC345_LangTests.swift
+//  QuizTests.swift
 //  COSC345-LangTests
 //
-//  Created by Ben Stacey on 12/08/22.
+//  Created by Liam Flynn on 26/08/22.
 //
 
 import XCTest
+@testable import COSC345_Lang
 
-class COSC345_LangTests: XCTestCase {
+class QuizTests: XCTestCase {
+    
+    // Tests function that should retrieve the languageNum from MainMenu
+    func testGetLanguageNum(){
+        MainMenu.setLanguageNum(langNum: 2)
+        XCTAssertEqual(MainMenu.getLanguageNum(), 2)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,16 +31,14 @@ class COSC345_LangTests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-        
-        
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
- */
+     */
 
 }

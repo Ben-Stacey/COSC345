@@ -13,9 +13,6 @@ var language = ""
 var name = ""
 
 class MainMenu: UIViewController {
-    
-    
-    
     /**
         Declarations for UI elements
         - Parameters:
@@ -100,6 +97,10 @@ class MainMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    class func setLanguageNum(langNum: Int){
+        languageNum = langNum
     }
     
     class func getLanguageNum() -> Int{

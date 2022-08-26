@@ -19,6 +19,7 @@
 		2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */; };
 		2996AACC28B85B2A005B36E1 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */; };
 		2996AACD28B85C31005B36E1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352675C828B84B99007C7942 /* HomeScreen.swift */; };
+		2996AACF28B87526005B36E1 /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996AACE28B87526005B36E1 /* QuizTests.swift */; };
 		3528941528A330E9002C980C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528941428A330E9002C980C /* AppDelegate.swift */; };
 		3528941728A330E9002C980C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528941628A330E9002C980C /* SceneDelegate.swift */; };
 		3528941C28A330E9002C980C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941A28A330E9002C980C /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		2996AAC128B7109B005B36E1 /* Words.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Words.plist; sourceTree = "<group>"; };
 		2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
+		2996AACE28B87526005B36E1 /* QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTests.swift; sourceTree = "<group>"; };
 		352675C828B84B99007C7942 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3528941128A330E9002C980C /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3528941428A330E9002C980C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */,
+				2996AACE28B87526005B36E1 /* QuizTests.swift */,
 			);
 			path = "COSC345-LangTests";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2996AACF28B87526005B36E1 /* QuizTests.swift in Sources */,
 				35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

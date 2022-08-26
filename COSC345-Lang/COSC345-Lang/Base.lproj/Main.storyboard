@@ -359,7 +359,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U85-6n-qhg">
-                                <rect key="frame" x="20" y="447" width="374" height="31"/>
+                                <rect key="frame" x="20" y="447" width="374" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="rY7-in-hr9"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
@@ -415,7 +418,7 @@
                                     <constraint firstAttribute="height" constant="40" id="zk6-Bq-3Q2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm"/>
                                 <connections>
                                     <action selector="onClickNext:" destination="NEz-6J-tLC" eventType="touchUpInside" id="8RU-9D-nvr"/>
                                 </connections>
@@ -667,7 +670,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pG6-Gq-Hmg"/>
+        <segue reference="zGA-IB-4KM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

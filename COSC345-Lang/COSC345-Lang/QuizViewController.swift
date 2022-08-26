@@ -74,10 +74,6 @@ class QuizViewController: UIViewController {
             z += 1
         }
         
-        for question in questions{
-            print(question)
-        }
-        
         viewModel.apiToGetQuestionData {
             [weak self] in self?.questions = self!.questions
             DispatchQueue.main.async{
@@ -114,7 +110,6 @@ class QuizViewController: UIViewController {
         if index < (self.questions.count) - 1{
             index += 1
             collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
-            print("hello")
         }else{
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else{return}
             vc.result = points
