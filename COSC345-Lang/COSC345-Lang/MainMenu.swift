@@ -81,16 +81,17 @@ class MainMenu: UIViewController {
             - nil: if the parameters are empty then do not let the segue happen
     */
     /**
-    @IBSegueAction public func startReady(_ coder: NSCoder) -> HomeScreen? {
-        if !language.isEmpty, !name.isEmpty{
-            return HomeScreen(coder: coder, language: language, name: name)
+    @IBSegueAction func erge(_ coder: NSCoder) -> HomeScreen? {
+        print("In function")
+        if !language.isEmpty && !name.isEmpty{
+            print("in if statement")
+            return HomeScreen(coder: coder)
         }else{
+            print("in else")
             return nil
         }
     }
      */
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
