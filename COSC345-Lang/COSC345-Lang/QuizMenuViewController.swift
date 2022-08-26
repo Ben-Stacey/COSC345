@@ -7,7 +7,10 @@
 
 import UIKit
 
-class QuizMenuViewController: UIViewController {
+/**
+    The view controller for the quiz menu.
+*/
+public class QuizMenuViewController: UIViewController {
     
     @IBOutlet weak var playButton: UIButton!{
         didSet{
@@ -20,12 +23,21 @@ class QuizMenuViewController: UIViewController {
         }
     }
 
-    override func viewDidLoad() {
+    /**
+        Loads the view controller
+    */
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onClickPlay(_ sender: Any) {
+    /**
+        Navigates to the quiz view controller when pressed.
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickPlay(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else{return}
         self.navigationController?.pushViewController(vc, animated: true)
     }

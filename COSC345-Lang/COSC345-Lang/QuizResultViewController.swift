@@ -7,13 +7,19 @@
 
 import UIKit
 
-class QuizResultViewController: UIViewController {
+/**
+    The view controller for the quiz result screen. Displays result.
+*/
+public class QuizResultViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     
     var result = 0
     
-    override func viewDidLoad() {
+    /**
+        Loads the view controller and sets the result label to result
+    */
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -21,7 +27,13 @@ class QuizResultViewController: UIViewController {
     }
     
 
-    @IBAction func onClickHome(_ sender: Any) {
+    /**
+        Navigates to the quiz title when pressed.
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
 }

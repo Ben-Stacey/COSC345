@@ -8,19 +8,21 @@
 import XCTest
 @testable import COSC345_Lang
 
-class QuizTests: XCTestCase {
+public class QuizTests: XCTestCase {
     
-    // Tests function that should retrieve the languageNum from MainMenu
-    func testGetLanguageNum(){
+    /**
+        Tests the getLanguageNum method in MainMenu
+    */
+    public func testGetLanguageNum(){
         MainMenu.setLanguageNum(langNum: 2)
         XCTAssertEqual(MainMenu.getLanguageNum(), 2)
     }
 
-    override func setUpWithError() throws {
+    public override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
-    override func tearDownWithError() throws {
+    public override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 

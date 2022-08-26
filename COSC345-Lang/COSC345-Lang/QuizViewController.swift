@@ -7,7 +7,10 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+/**
+    The view controller for the quiz. Also generates the questions and handles the users answers too.
+*/
+public class QuizViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,7 +23,11 @@ class QuizViewController: UIViewController {
     var points = 0
     var index = 0
 
-    override func viewDidLoad() {
+    /**
+        Gets the language phrases from Phrases.plist and creates mulitple questions with answer options.
+        Once generated they are then added to the collection view.
+    */
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -84,15 +91,33 @@ class QuizViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    /**
+        Hides navigation bar
+     
+        - Parameters:
+            - animated: animates if bool is true
+    */
+    public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    @IBAction func onClickExit(_ sender: Any) {
+    /**
+        Navigates to the quiz title when pressed.
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickExit(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func onClickNext(_ sender: Any) {
+    /**
+        Goes to the next question if the user has selected an answer. Throws error if not.
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickNext(_ sender: Any) {
         if !answerSelected{
             let alert = UIAlertController(title: "Select an Option", message: "You must select an option before moving on to the next question.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -119,11 +144,30 @@ class QuizViewController: UIViewController {
 }
 
 extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    
+    /**
+        Returns number of questions.
+     
+        - Parameters:
+            - collectionView: the collection view to be passed
+            - numberOfItemsInSelection: <<
+        - Returns:
+            - Int: number of questions
+    */
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return questions.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    /**
+        Sets up the collection view cells to be displayed correctly
+     
+        - Parameters:
+            - collectionView: the collection view to be passed
+            - indexPath: the path to the index
+        - Returns:
+            - UICollectionViewCell: the correctly layed out cell
+    */
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizCollectionViewCell", for: indexPath) as? QuizCollectionViewCell else{
             return QuizCollectionViewCell()
         }
@@ -139,15 +183,45 @@ extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    /**
+        Returns a CGsize with collectionView width and height.
+     
+        - Parameters:
+            - collectionView: the collection view to be passed
+            - collectionViewLayout: the UICollectionViewLayout to be passed
+            - indexPath: the path to the index
+        - Returns:
+            - CGSize: with collectionView width and height.
+    */
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    /**
+        Sets up the collection view cells to be displayed correctly
+     
+        - Parameters:
+            - collectionView: the collection view to be passed
+            - collectionViewLayout: the UICollectionViewLayout to be passed
+            - section: section number
+        - Returns:
+            - CGFloat: must be 0
+    */
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    /**
+        Sets up the collection view cells to be displayed correctly
+     
+        - Parameters:
+            - collectionView: the collection view to be passed
+            - collectionViewLayout: the UICollectionViewLayout to be passed
+            - section: section number
+        - Returns:
+            - CGFloat: must be 0
+    */
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     

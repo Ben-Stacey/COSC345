@@ -7,14 +7,17 @@
 
 import UIKit
 
-enum SelectedOption{
+public enum SelectedOption{
     case optionA
     case optionB
     case optionC
     case optionD
 }
 
-class QuizCollectionViewCell: UICollectionViewCell {
+/**
+    Handles the selected option and highlights it so the user can tell they pressed it.
+*/
+public class QuizCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -42,7 +45,10 @@ class QuizCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    override func prepareForReuse() {
+    /**
+        Resets option borders to 0
+    */
+    public override func prepareForReuse() {
         updateBorder(myView: optionA)
         updateBorder(myView: optionB)
         updateBorder(myView: optionC)
@@ -51,7 +57,13 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     var selectedOption: ((_ selectedAnswer: Bool) -> Void)?
     
-    @IBAction func onClickOptionA(_ sender: Any) {
+    /**
+        Selects option A and highlights it
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickOptionA(_ sender: Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_1{
             isCorrect = true
@@ -60,7 +72,14 @@ class QuizCollectionViewCell: UICollectionViewCell {
         
         changeBorder(selectedOption: .optionA)
     }
-    @IBAction func onClickOptionB(_ sender: Any) {
+    
+    /**
+        Selects option B and highlights it
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickOptionB(_ sender: Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_2{
             isCorrect = true
@@ -69,7 +88,14 @@ class QuizCollectionViewCell: UICollectionViewCell {
         
         changeBorder(selectedOption: .optionB)
     }
-    @IBAction func onClickOptionC(_ sender: Any) {
+    
+    /**
+        Selects option C and highlights it
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickOptionC(_ sender: Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_3{
             isCorrect = true
@@ -78,7 +104,14 @@ class QuizCollectionViewCell: UICollectionViewCell {
         
         changeBorder(selectedOption: .optionC)
     }
-    @IBAction func onClickOptionD(_ sender: Any) {
+    
+    /**
+        Selects option D and highlights it
+     
+        - Parameters:
+            - sender: allows method to be sent anything
+    */
+    @IBAction public func onClickOptionD(_ sender: Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_4{
             isCorrect = true
@@ -88,7 +121,13 @@ class QuizCollectionViewCell: UICollectionViewCell {
         changeBorder(selectedOption: .optionD)
     }
     
-    func changeBorder(selectedOption: SelectedOption){
+    /**
+        Highlights the border of the selected option
+     
+        - Parameters:
+            - selectedOption: the answer option selected (A, B, C, D)
+    */
+    public func changeBorder(selectedOption: SelectedOption){
         switch selectedOption {
         case .optionA:
             updateBorder(myView: optionA, borderWidth: 4)
@@ -113,7 +152,14 @@ class QuizCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func updateBorder(myView: UIView, borderWidth: CGFloat = 0){
+    /**
+        Highlights the view/option
+     
+        - Parameters:
+            - myView: the UIView to be highlighted
+            - borderWidth: 0 if not passed
+    */
+    public func updateBorder(myView: UIView, borderWidth: CGFloat = 0){
         myView.layer.borderWidth = borderWidth
         myView.layer.borderColor = UIColor.white.cgColor
     }
