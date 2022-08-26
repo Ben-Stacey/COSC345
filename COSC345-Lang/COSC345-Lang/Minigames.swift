@@ -7,7 +7,10 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+/**
+    View Controller for the minigames
+ */
+public class ViewController: UIViewController {
     
     var language = ""
     
@@ -18,7 +21,7 @@ class ViewController: UIViewController {
         - Parameters:
             - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
     */
-    required init(coder aDecorder: NSCoder){
+    public required init(coder aDecorder: NSCoder){
         controller = GameController()
         super.init(coder: aDecorder)!
     }
@@ -26,7 +29,7 @@ class ViewController: UIViewController {
     /**
         viewDidLoad() loads the view controller with what we want to see. In this case it loads the game and level we are playing
     */
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
       super.viewDidLoad()
         let level1 = Level(levelNumber: 1)
         print("Tower: \(level1.sentence)")

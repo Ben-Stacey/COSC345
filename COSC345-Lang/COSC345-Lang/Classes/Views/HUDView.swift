@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
-class HUDView: UIView {
+/**
+    View Controller for the HUD on the Drag and Drop Game
+ */
+public class HUDView: UIView {
   //var stopwatch: StopwatchView
   //var gamePoints: CounterLabelView
   //hintButton: UIButton!
@@ -16,7 +19,7 @@ class HUDView: UIView {
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
-    required init(coder aDecorder:NSCoder){
+    public required init(coder aDecorder:NSCoder){
         fatalError("use init(frame:")
     }
     
@@ -25,7 +28,7 @@ class HUDView: UIView {
         - Parameters:
             - frame: [in] This is the frame of HUD to be displayed in the game
     */
-    override init(frame:CGRect){
+    public override init(frame:CGRect){
         super.init(frame:frame)
         self.isUserInteractionEnabled = true
     }

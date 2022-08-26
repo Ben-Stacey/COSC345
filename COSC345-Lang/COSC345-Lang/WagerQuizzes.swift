@@ -7,9 +7,15 @@
 
 import UIKit
 
-class WagerQuizzes: UIViewController {
+/**
+    View Controller for the Quizzes
+ */
+public class WagerQuizzes: UIViewController {
 
-    override func viewDidLoad() {
+    /**
+        Loads the View Controller
+     */
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

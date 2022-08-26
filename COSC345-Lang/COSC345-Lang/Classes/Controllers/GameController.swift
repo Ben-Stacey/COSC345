@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
-class GameController {
+/**
+    Game Controller for the Drag and Drop game
+ */
+public class GameController {
     var gameView: UIView!
     var level: Level!
     private var tiles = [TileView]()
@@ -17,7 +20,7 @@ class GameController {
     /**
         dealRandomSentence() adds the targets and tiles to the game screen. Adds the strings to the tile on the game
     */
-    func dealRandomSentence(){
+    public func dealRandomSentence(){
         assert(level.sentence.count > 0, "no level loaded")
         
         let randomIndex = randomNumber(minX: 0, maxX: UInt32(level.sentence.count-1))

@@ -7,9 +7,15 @@
 
 import UIKit
 
-class Leaderboards: UIViewController {
+/**
+    View Controller for the Leaderboards
+ */
+public class Leaderboards: UIViewController {
 
-    override func viewDidLoad() {
+    /**
+        Loads the View Controller
+     */
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -19,5 +25,5 @@ class Leaderboards: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBOutlet weak var LeaderboardTable: UITableView!
+    @IBOutlet public weak var LeaderboardTable: UITableView!
 }

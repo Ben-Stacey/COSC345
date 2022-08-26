@@ -7,13 +7,24 @@
 
 import UIKit
 
-class HomeScreen: UIViewController {
+/**
+    View Controller for the Home Screen
+ */
+public class HomeScreen: UIViewController {
     
-    override func viewDidLoad() {
+    /**
+        Loads the View Controller
+     */
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    /**
+     Removes the back button from the top of the view controller
+     - Parameters:
+      - animates: [in] gives the bool for the animation on the view controller
+     */
+    public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }

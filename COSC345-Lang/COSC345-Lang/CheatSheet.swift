@@ -7,9 +7,15 @@
 
 import UIKit
 
-class CheatSheet: UIViewController {
+/**
+    View Controller for the Cheat Sheet
+ */
+public class CheatSheet: UIViewController {
 
-    override func viewDidLoad() {
+    /**
+        Loads the View Controller
+     */
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

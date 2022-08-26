@@ -6,7 +6,11 @@
 //
 
 import Foundation
-struct Level {
+
+/**
+    Struct that finds the data that will be displayed in the Drag and Drop game
+ */
+public struct Level {
   //let pointsPerTile: Int
   //let timeToSolve: Int
   let sentence: [NSArray]

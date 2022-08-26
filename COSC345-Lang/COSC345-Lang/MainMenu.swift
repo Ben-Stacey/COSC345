@@ -14,6 +14,9 @@ var name = ""
 var langSelected: Bool = false
 var nameSelected: Bool = false
 
+/**
+    View Controller for the Main Menu
+ */
 public class MainMenu: UIViewController {
     
     /**
@@ -23,9 +26,9 @@ public class MainMenu: UIViewController {
             - textfield: outlet for the textfield
             - start: outlet set for the start button
     */
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var textfield: UITextField!
-    @IBOutlet weak var start: UIButton!
+    @IBOutlet public weak var label: UILabel!
+    @IBOutlet public weak var textfield: UITextField!
+    @IBOutlet public weak var start: UIButton!
     
     /**
         When the maori button is clicked it stores that and displays it on the screen
@@ -93,51 +96,80 @@ public class MainMenu: UIViewController {
     }
 
     /**
-        
+        Loads the View Controller
      */
     public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    /*! \brief Gets language num
-     *
-     *
-     *  Gets language num bruv
+    /**
+        Getter method for languageNum
      */
     public class func getLanguageNum() -> Int{
         return languageNum
     }
     
-    class func getLanguage() -> String{
+    /**
+        Getter method for language
+     */
+    public class func getLanguage() -> String{
         return language
     }
     
-    class func setLanguage(lang: String){
+    /**
+        Setter method for language
+         - Parameters:
+             - lang: [in] sends the language string
+     */
+    public class func setLanguage(lang: String){
         language = lang
     }
     
-    class func getName() -> String{
+    /**
+        Getter method for name
+     */
+    public class func getName() -> String{
         return name
     }
     
-    class func setName(n: String){
+    /**
+        Setter method for name
+         - Parameters:
+             - n: [in] sends the name string
+     */
+    public class func setName(n: String){
         name = n
     }
     
-    class func getLangSelected() -> Bool{
+    /**
+        Getter method for langSelected
+     */
+    public class func getLangSelected() -> Bool{
         return langSelected
     }
     
-    class func setLangSelected(ls: Bool){
+    /**
+        Setter method for langSelected
+         - Parameters:
+             - ls: [in] sends the language bool
+     */
+    public class func setLangSelected(ls: Bool){
         langSelected = ls
     }
     
-    class func getNameSelected() -> Bool{
+    /**
+        Getter method for nameSelected
+     */
+    public class func getNameSelected() -> Bool{
         return nameSelected
     }
     
-    class func setNameSelected(ns: Bool){
+    /**
+        Setter method for nameSelected
+         - Parameters:
+             - ns: [in] sends the name bool
+     */
+    public class func setNameSelected(ns: Bool){
         nameSelected = ns
     }
     
