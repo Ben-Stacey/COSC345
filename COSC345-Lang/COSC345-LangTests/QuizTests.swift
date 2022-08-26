@@ -14,7 +14,7 @@ public class QuizTests: XCTestCase {
         Tests the getLanguageNum method in MainMenu
     */
     public func testGetLanguageNum(){
-        MainMenu.setLanguageNum(langNum: 2)
+        MainMenu.setLanguageNum(l: 2)
         XCTAssertEqual(MainMenu.getLanguageNum(), 2)
     }
 

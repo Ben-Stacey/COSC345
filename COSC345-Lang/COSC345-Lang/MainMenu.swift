@@ -103,6 +103,13 @@ public class MainMenu: UIViewController {
     }
     
     /**
+        Setter method for languageNum
+     */
+    public class func setLanguageNum(l: Int){
+        languageNum = l
+    }
+    
+    /**
         Getter method for languageNum
      */
     public class func getLanguageNum() -> Int{
