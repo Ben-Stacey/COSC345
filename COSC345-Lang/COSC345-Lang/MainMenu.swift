@@ -1,4 +1,4 @@
- //
+//
 //  ViewController.swift
 //  COSC345-Lang
 //
@@ -7,6 +7,10 @@
 
 import UIKit
 import Foundation
+
+var languageNum: Int = 0
+var language = ""
+var name = ""
 
 class MainMenu: UIViewController {
     
@@ -33,6 +37,7 @@ class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     @IBAction public func maoriButtion(_ sender: Any) {
+        languageNum = 3
         language = "maori"
         label.text = (language)
         langSelected = true
@@ -44,6 +49,7 @@ class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     @IBAction public func frenchButton(_ sender: Any) {
+        languageNum = 1
         language = "french"
         label.text = (language)
         langSelected = true
@@ -55,6 +61,7 @@ class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     @IBAction public func spanishButton(_ sender: Any) {
+        languageNum = 2
         language = "spanish"
         label.text = (language)
         langSelected = true
@@ -93,4 +100,9 @@ class MainMenu: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    class func getLanguageNum() -> Int{
+        return languageNum
+    }
+    
 }
