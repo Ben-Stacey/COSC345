@@ -49,7 +49,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrc-yQ-Aff">
                                                 <rect key="frame" x="0.0" y="0.0" width="89.5" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="maori"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Maori"/>
                                                 <connections>
                                                     <action selector="maoriButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxM-BT-7tA"/>
                                                 </connections>
@@ -57,7 +57,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-vO-lhI">
                                                 <rect key="frame" x="89.5" y="0.0" width="89" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="spanish"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Spanish"/>
                                                 <connections>
                                                     <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEw-67-80w"/>
                                                 </connections>
@@ -65,7 +65,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0e-Gu-Gfw">
                                                 <rect key="frame" x="178.5" y="0.0" width="89.5" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="french"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="French"/>
                                                 <connections>
                                                     <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vO-IG-xR5"/>
                                                 </connections>
@@ -75,7 +75,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We9-IR-czI">
                                         <rect key="frame" x="0.0" y="156" width="268" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="start"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                         <connections>
                                             <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk3-1U-hLA"/>
                                         </connections>
@@ -118,8 +118,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
-                                <rect key="frame" x="161" y="86.5" width="94" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
+                                <rect key="frame" x="138" y="257" width="139" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Minigames"/>
@@ -127,61 +128,9 @@
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="pzV-pC-8u2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-Oz-vQ2">
-                                <rect key="frame" x="273" y="78" width="121" height="31"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
-                                <connections>
-                                    <segue destination="m2D-eI-ZLu" kind="presentation" modalPresentationStyle="fullScreen" id="zuH-Lm-wAX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeP-Dk-wGj">
-                                <rect key="frame" x="20" y="86.5" width="114" height="31"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
-                                <connections>
-                                    <segue destination="t9U-5O-Zy7" kind="presentation" modalPresentationStyle="fullScreen" id="N6a-PO-Osn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-4m-OG4">
-                                <rect key="frame" x="26" y="819" width="104" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="faM-0p-aOC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-7S-OSM">
-                                <rect key="frame" x="278" y="819" width="111" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sea of Words"/>
-                                <connections>
-                                    <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="pTE-T3-VfT"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <constraints>
-                            <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VeP-Dk-wGj" secondAttribute="trailing" constant="8" symbolic="YES" id="1Rq-VD-kc8"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Tw-lS-oqZ" secondAttribute="trailingMargin" id="3D2-F1-FYK"/>
-                            <constraint firstItem="3vR-7S-OSM" firstAttribute="centerX" secondItem="SVu-Oz-vQ2" secondAttribute="centerX" id="Agd-7C-0J6"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="leading" secondItem="8sU-fG-BKI" secondAttribute="trailing" constant="18" id="Gxg-lX-QyD"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="3vR-7S-OSM" secondAttribute="trailing" constant="25" id="K33-mB-imP"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="VeP-Dk-wGj" secondAttribute="baseline" id="PhE-nT-Lfd"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="baseline" secondItem="8sU-fG-BKI" secondAttribute="baseline" id="RQX-4O-P4c"/>
-                            <constraint firstItem="VeP-Dk-wGj" firstAttribute="leading" secondItem="1Tw-lS-oqZ" secondAttribute="leadingMargin" id="Tij-Bs-xs3"/>
-                            <constraint firstItem="vMN-4m-OG4" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="26" id="TjV-Kl-gN2"/>
-                            <constraint firstItem="3vR-7S-OSM" firstAttribute="baseline" secondItem="vMN-4m-OG4" secondAttribute="baseline" id="ktg-jL-gTv"/>
-                            <constraint firstItem="SVu-Oz-vQ2" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" constant="34" id="pyU-h6-cbu"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="vMN-4m-OG4" secondAttribute="bottom" constant="12" id="uyd-wL-OuN"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vMN-4m-OG4" secondAttribute="trailing" symbolic="YES" id="xfY-6l-hJZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
                 </viewController>
@@ -200,7 +149,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-Ud-mPI">
                                 <rect key="frame" x="305" y="793" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w4W-Uz-DtN"/>
@@ -227,7 +176,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWJ-Rl-NgO">
                                 <rect key="frame" x="313" y="754" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wa8-SZ-9cm"/>
@@ -398,7 +347,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBf-nc-sas">
                                 <rect key="frame" x="307" y="820" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="wUH-Cl-14S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
@@ -428,7 +380,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bu-rp-FRr">
                                 <rect key="frame" x="305" y="747" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="exit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="20G-OB-fmQ"/>
@@ -464,7 +416,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U85-6n-qhg">
-                                <rect key="frame" x="20" y="447" width="374" height="31"/>
+                                <rect key="frame" x="20" y="447" width="374" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="uTo-C4-11T"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
                                 <connections>
@@ -733,10 +688,17 @@
                                     <action selector="onClickHome:" destination="ZTM-zh-fRH" eventType="touchUpInside" id="i1M-UG-XHr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQk-pD-yg0">
-                                <rect key="frame" x="186" y="214" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVN-Ys-GwT">
+                                <rect key="frame" x="213" y="194" width="68" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQk-pD-yg0">
+                                <rect key="frame" x="131" y="194" width="123" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -790,15 +752,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pzV-pC-8u2"/>
         <segue reference="9ff-eo-xKJ"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
