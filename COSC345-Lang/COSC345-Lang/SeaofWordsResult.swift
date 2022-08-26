@@ -4,7 +4,7 @@
 //
 //  Created by Ben Stacey on 26/08/22.
 //
-
+/**
 import UIKit
 import SwiftUI
 
@@ -25,3 +25,4 @@ class SeaofWordsResult: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
 }
+ */

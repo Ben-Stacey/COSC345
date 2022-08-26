@@ -307,6 +307,9 @@
                         <viewLayoutGuide key="safeArea" id="c4c-38-WHG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="95K-Qg-eBd" id="F7h-jo-LIM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5I-Sb-WQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
