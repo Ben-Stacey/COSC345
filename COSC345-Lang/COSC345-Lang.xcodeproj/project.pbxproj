@@ -147,13 +147,11 @@
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
+				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
 				3580634B28B8589300923D95 /* SeaofWordsResult.swift */,
 				3580634928B8582100923D95 /* SeaofWordsView.swift */,
 				3580634728B857C300923D95 /* SeaOfWordsHomeScreen.swift */,
 				3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */,
-				2996AAB928B5D27D005B36E1 /* QuizViewController.swift */,
-				2996AABB28B5D29B005B36E1 /* QuizResultViewController.swift */,
-				2996AABD28B5D2B5005B36E1 /* QuizCollectionViewCell.swift */,
 				352675C828B84B99007C7942 /* HomeScreen.swift */,
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
@@ -366,7 +364,6 @@
 				357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */,
 				2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */,
 				357FD72828AB526D00D060C4 /* GameController.swift in Sources */,
-				2996AABC28B5D29B005B36E1 /* QuizResultViewController.swift in Sources */,
 				3580634828B857C300923D95 /* SeaOfWordsHomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
