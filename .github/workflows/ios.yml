@@ -17,7 +17,7 @@ jobs:
            inputs: "COSC345-Lang"
            module-name: MyLibrary
            output: "Documentation"
-           # # minimum-access-level: internal
+           # minimum-access-level: internal
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
