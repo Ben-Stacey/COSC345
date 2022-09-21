@@ -128,6 +128,42 @@
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="pzV-pC-8u2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-dO-d7O">
+                                <rect key="frame" x="156" y="778" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet"/>
+                                <connections>
+                                    <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="BXE-Em-dqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baT-eh-fUh">
+                                <rect key="frame" x="151" y="44" width="114" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
+                                <connections>
+                                    <segue destination="t9U-5O-Zy7" kind="presentation" modalPresentationStyle="fullScreen" id="gXO-mS-ip2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Su-sRC">
+                                <rect key="frame" x="16" y="778" width="122" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
+                                <connections>
+                                    <segue destination="m2D-eI-ZLu" kind="presentation" modalPresentationStyle="fullScreen" id="ahf-6f-uKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czJ-AK-ZEC">
+                                <rect key="frame" x="283" y="778" width="111" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sea of Words"/>
+                                <connections>
+                                    <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="mTm-Sf-2ik"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -150,6 +186,9 @@
                                 <rect key="frame" x="305" y="793" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="Eff-7f-Rqs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w4W-Uz-DtN"/>
@@ -177,6 +216,9 @@
                                 <rect key="frame" x="313" y="754" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="qkX-hR-JCr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wa8-SZ-9cm"/>
@@ -241,6 +283,9 @@
                                 <rect key="frame" x="184" y="411" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="Gpr-qc-IiQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c4c-38-WHG"/>
@@ -381,6 +426,9 @@
                                 <rect key="frame" x="305" y="747" width="48" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="rhj-0N-DlQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="20G-OB-fmQ"/>
@@ -391,6 +439,7 @@
                             <constraint firstItem="20G-OB-fmQ" firstAttribute="trailing" secondItem="6bu-rp-FRr" secondAttribute="trailing" constant="61" id="fyC-bI-kWj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="72R-bC-y6H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AlW-FP-GIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -752,8 +801,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pzV-pC-8u2"/>
-        <segue reference="9ff-eo-xKJ"/>
+        <segue reference="Gpr-qc-IiQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
