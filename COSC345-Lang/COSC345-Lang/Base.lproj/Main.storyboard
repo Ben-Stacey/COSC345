@@ -402,6 +402,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Drag and  Drop"/>
+                                <connections>
+                                    <segue destination="E1t-c0-Kd4" kind="presentation" modalPresentationStyle="fullScreen" id="S2i-C7-9aK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
@@ -435,6 +438,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88h-Gk-28l">
+                                <rect key="frame" x="20" y="446" width="374" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                <connections>
+                                    <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="AUB-Nu-b80"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-Lp-X3V">
+                                <rect key="frame" x="20" y="307" width="374" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <segue destination="6Zc-4g-AGj" kind="presentation" modalPresentationStyle="fullScreen" id="MpM-tY-EJF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FqN-jR-hKz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -442,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEl-bR-SQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6457" y="66"/>
+            <point key="canvasLocation" x="6456.521739130435" y="65.625"/>
         </scene>
         <!--DragN Drop-->
         <scene sceneID="Bkr-HI-OuP">
@@ -863,6 +884,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="AUB-Nu-b80"/>
         <segue reference="wUH-Cl-14S"/>
     </inferredMetricsTieBreakers>
     <resources>
