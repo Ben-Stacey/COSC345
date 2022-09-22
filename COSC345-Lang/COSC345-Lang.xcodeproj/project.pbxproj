@@ -44,6 +44,7 @@
 		3580634C28B8589300923D95 /* SeaofWordsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634B28B8589300923D95 /* SeaofWordsResult.swift */; };
 		3580634E28B8591600923D95 /* SeaofWordsCScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */; };
 		35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1028DBD1AE002C179C /* DragNDrop.swift */; };
+		35865C1328DC1170002C179C /* DragNDrop MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDrop MainMenu.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsCScreen.swift; sourceTree = "<group>"; };
 		35865C0828DBD0BB002C179C /* COSC345-Lang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COSC345-Lang-Bridging-Header.h"; sourceTree = "<group>"; };
 		35865C1028DBD1AE002C179C /* DragNDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDrop.swift; sourceTree = "<group>"; };
+		35865C1228DC1170002C179C /* DragNDrop MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DragNDrop MainMenu.swift"; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 		3528940828A330E9002C980C = {
 			isa = PBXGroup;
 			children = (
+				35865C1228DC1170002C179C /* DragNDrop MainMenu.swift */,
 				3528941328A330E9002C980C /* COSC345-Lang */,
 				35CE493228A5F3430093CC7E /* COSC345-LangTests */,
 				3528941228A330E9002C980C /* Products */,
@@ -367,6 +370,7 @@
 				3580634C28B8589300923D95 /* SeaofWordsResult.swift in Sources */,
 				3580634E28B8591600923D95 /* SeaofWordsCScreen.swift in Sources */,
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
+				35865C1328DC1170002C179C /* DragNDrop MainMenu.swift in Sources */,
 				3580634A28B8582100923D95 /* SeaofWordsView.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 				357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */,
