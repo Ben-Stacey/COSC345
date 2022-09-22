@@ -402,9 +402,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Drag and  Drop"/>
-                                <connections>
-                                    <segue destination="6Zc-4g-AGj" kind="presentation" modalPresentationStyle="fullScreen" id="R3x-NQ-w88"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
@@ -423,6 +420,30 @@
             </objects>
             <point key="canvasLocation" x="4444.927536231884" y="65.625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="VSV-Me-4Kl">
+            <objects>
+                <viewController id="E1t-c0-Kd4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7kc-sZ-oCB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag N Drop Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-y1-eMl">
+                                <rect key="frame" x="135" y="67" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FqN-jR-hKz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEl-bR-SQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6457" y="66"/>
+        </scene>
         <!--DragN Drop-->
         <scene sceneID="Bkr-HI-OuP">
             <objects>
@@ -431,15 +452,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWa-F2-ZkU">
-                                <rect key="frame" x="67" y="831" width="48" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
-                                <connections>
-                                    <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="j0q-aD-0J4"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-it-Nag" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="148" y="386" width="119" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -462,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCD-3s-25N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6666.666666666667" y="85.714285714285708"/>
+            <point key="canvasLocation" x="7259" y="66"/>
         </scene>
         <!--Leaderboards-->
         <scene sceneID="7eW-PJ-Wi5">
@@ -851,7 +863,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="j0q-aD-0J4"/>
         <segue reference="wUH-Cl-14S"/>
     </inferredMetricsTieBreakers>
     <resources>
