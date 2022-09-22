@@ -7,12 +7,17 @@
 
 import UIKit
 
+var xp: Int = 0
+var level: Int = 1
+var xpToLevelUp: Int = 5
+
 /**
     View Controller for the Home Screen
  */
 public class HomeScreen: UIViewController{
     
     @IBOutlet public weak var welcomeLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
     
     /**
         Loads the View Controller
@@ -21,6 +26,16 @@ public class HomeScreen: UIViewController{
         super.viewDidLoad()
         
         welcomeLabel.text = "Welcome, " + MainMenu.getName() + "."
+        
+        
+        xpToLevelUp = level * 5
+        if xp >= xpToLevelUp{
+            level = level + 1
+            xp = xp - xpToLevelUp
+        }
+        
+        
+        levelLabel.text = "XP Level " + String(level) + "\nAnswer " + String(xpToLevelUp - xp) + " more questions correctly to level up!"
     }
     
     /**
@@ -30,6 +45,14 @@ public class HomeScreen: UIViewController{
      */
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    public class func getXp() -> Int{
+        return xp
+    }
+    
+    public class func increaseXp(amount: Int){
+        xp += amount
     }
     
 }

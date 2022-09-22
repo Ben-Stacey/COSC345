@@ -41,4 +41,5 @@ public class QuizMenuViewController: UIViewController {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else{return}
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }

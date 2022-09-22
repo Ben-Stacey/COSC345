@@ -36,9 +36,10 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func submitButton(_ sender: Any) {
-        if let n = nameField.text{
-            MainMenu.setName(n: n)
+        if nameField.text != ""{
+            MainMenu.setName(n: nameField.text ?? MainMenu.getName())
         }
+        
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "HomeScreen") as? HomeScreen else{return}
         self.navigationController?.pushViewController(vc, animated: true)
