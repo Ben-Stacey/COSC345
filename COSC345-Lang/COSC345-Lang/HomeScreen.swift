@@ -10,13 +10,17 @@ import UIKit
 /**
     View Controller for the Home Screen
  */
-public class HomeScreen: UIViewController {
+public class HomeScreen: UIViewController{
+    
+    @IBOutlet public weak var welcomeLabel: UILabel!
     
     /**
         Loads the View Controller
      */
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
+        welcomeLabel.text = "Welcome, " + MainMenu.getName() + "."
     }
     
     /**
@@ -27,4 +31,5 @@ public class HomeScreen: UIViewController {
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
 }
