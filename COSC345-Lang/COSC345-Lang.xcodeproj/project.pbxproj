@@ -43,6 +43,7 @@
 		3580634A28B8582100923D95 /* SeaofWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634928B8582100923D95 /* SeaofWordsView.swift */; };
 		3580634C28B8589300923D95 /* SeaofWordsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634B28B8589300923D95 /* SeaofWordsResult.swift */; };
 		3580634E28B8591600923D95 /* SeaofWordsCScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */; };
+		35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1028DBD1AE002C179C /* DragNDrop.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		3580634928B8582100923D95 /* SeaofWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsView.swift; sourceTree = "<group>"; };
 		3580634B28B8589300923D95 /* SeaofWordsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsResult.swift; sourceTree = "<group>"; };
 		3580634D28B8591600923D95 /* SeaofWordsCScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWordsCScreen.swift; sourceTree = "<group>"; };
+		35865C0828DBD0BB002C179C /* COSC345-Lang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COSC345-Lang-Bridging-Header.h"; sourceTree = "<group>"; };
+		35865C1028DBD1AE002C179C /* DragNDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDrop.swift; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +152,7 @@
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				3528941A28A330E9002C980C /* Main.storyboard */,
+				35865C1028DBD1AE002C179C /* DragNDrop.swift */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
 				3580634B28B8589300923D95 /* SeaofWordsResult.swift */,
 				3580634928B8582100923D95 /* SeaofWordsView.swift */,
@@ -173,6 +177,7 @@
 				3528941628A330E9002C980C /* SceneDelegate.swift */,
 				3528941D28A330EB002C980C /* Assets.xcassets */,
 				3528942228A330EB002C980C /* Info.plist */,
+				35865C0828DBD0BB002C179C /* COSC345-Lang-Bridging-Header.h */,
 			);
 			path = "COSC345-Lang";
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				TargetAttributes = {
 					3528941028A330E9002C980C = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					35CE493028A5F3430093CC7E = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -350,6 +356,7 @@
 				2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */,
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
 				357FD72628AB504900D060C4 /* Level.swift in Sources */,
+				35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */,
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
 				2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */,
@@ -529,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RL35JKD39V;
@@ -548,6 +556,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-Lang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "COSC345-Lang/COSC345-Lang-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RL35JKD39V;
@@ -577,6 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-Lang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "COSC345-Lang/COSC345-Lang-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
