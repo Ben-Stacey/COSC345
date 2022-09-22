@@ -118,9 +118,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
-                                <rect key="frame" x="138" y="257" width="139" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-fG-BKI">
+                                <rect key="frame" x="138" y="257" width="138" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Scg-1H-crw"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Minigames"/>
@@ -128,27 +130,24 @@
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="pzV-pC-8u2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-dO-d7O">
-                                <rect key="frame" x="156" y="778" width="104" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-dO-d7O">
+                                <rect key="frame" x="154" y="778" width="106" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet"/>
                                 <connections>
                                     <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="BXE-Em-dqJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baT-eh-fUh">
-                                <rect key="frame" x="151" y="44" width="114" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baT-eh-fUh">
+                                <rect key="frame" x="151" y="44" width="112" height="48"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
                                 <connections>
                                     <segue destination="t9U-5O-Zy7" kind="presentation" modalPresentationStyle="fullScreen" id="gXO-mS-ip2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Su-sRC">
-                                <rect key="frame" x="16" y="778" width="122" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Su-sRC">
+                                <rect key="frame" x="14" y="778" width="122" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
                                 <connections>
@@ -158,6 +157,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="7Nk-dO-d7O" secondAttribute="bottom" constant="53" id="72x-MF-dh5"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="1Tw-lS-oqZ" secondAttribute="centerX" id="DWl-Jg-T66"/>
+                            <constraint firstItem="baT-eh-fUh" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="151" id="GL6-kY-5bp"/>
+                            <constraint firstItem="BIb-Su-sRC" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="14" id="LL9-7Z-bub"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="top" secondItem="1Tw-lS-oqZ" secondAttribute="top" constant="257" id="OGT-9y-ZJQ"/>
+                            <constraint firstItem="7Nk-dO-d7O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BIb-Su-sRC" secondAttribute="trailing" symbolic="YES" id="b9Y-QP-Yb6"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="baT-eh-fUh" secondAttribute="centerX" id="ct4-li-hEM"/>
+                            <constraint firstItem="7Nk-dO-d7O" firstAttribute="baseline" secondItem="BIb-Su-sRC" secondAttribute="baseline" id="idT-gT-BX1"/>
+                            <constraint firstItem="baT-eh-fUh" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" id="omZ-IT-sgu"/>
+                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="7Nk-dO-d7O" secondAttribute="trailing" constant="154" id="va1-oE-aFI"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="138" id="zPG-Df-NNE"/>
+                            <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="7Nk-dO-d7O" secondAttribute="centerX" id="zY4-A3-vq5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
                 </viewController>
@@ -373,7 +386,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-AI-Kog">
-                                <rect key="frame" x="181" y="269" width="54" height="31"/>
+                                <rect key="frame" x="182" y="269" width="53" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Quiz"/>
                                 <connections>
@@ -388,18 +401,16 @@
                                     <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="wUH-Cl-14S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czJ-AK-ZEC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czJ-AK-ZEC">
                                 <rect key="frame" x="153" y="370" width="111" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sea of Words"/>
                                 <connections>
                                     <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="mTm-Sf-2ik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gb-w4-5ZX">
-                                <rect key="frame" x="147" y="498" width="123" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gb-w4-5ZX">
+                                <rect key="frame" x="147" y="498" width="123" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Drag and  Drop"/>
                                 <connections>
@@ -410,12 +421,16 @@
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="7gb-w4-5ZX" firstAttribute="top" secondItem="czJ-AK-ZEC" secondAttribute="bottom" constant="97" id="8d0-2o-p4G"/>
                             <constraint firstItem="bip-2t-Q9n" firstAttribute="trailing" secondItem="nVH-AI-Kog" secondAttribute="trailing" constant="179" id="DCt-4I-dzJ"/>
+                            <constraint firstItem="czJ-AK-ZEC" firstAttribute="centerX" secondItem="nVH-AI-Kog" secondAttribute="centerX" id="L1r-hi-fgp"/>
+                            <constraint firstItem="czJ-AK-ZEC" firstAttribute="centerX" secondItem="7gb-w4-5ZX" secondAttribute="centerX" id="LVC-Gn-Iqm"/>
                             <constraint firstItem="EBf-nc-sas" firstAttribute="top" secondItem="bip-2t-Q9n" secondAttribute="top" constant="776" id="Pca-pl-YqK"/>
                             <constraint firstItem="bip-2t-Q9n" firstAttribute="trailing" secondItem="EBf-nc-sas" secondAttribute="trailing" constant="59" id="XOr-HG-aNp"/>
                             <constraint firstItem="nVH-AI-Kog" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bip-2t-Q9n" secondAttribute="leading" id="hwV-ek-x4h"/>
                             <constraint firstItem="nVH-AI-Kog" firstAttribute="top" secondItem="bip-2t-Q9n" secondAttribute="top" constant="225" id="khQ-MA-wgd"/>
                             <constraint firstItem="EBf-nc-sas" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bip-2t-Q9n" secondAttribute="leading" id="y0P-CX-6ah"/>
+                            <constraint firstItem="czJ-AK-ZEC" firstAttribute="top" secondItem="nVH-AI-Kog" secondAttribute="bottom" constant="70" id="y9G-7w-YUo"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -431,25 +446,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag N Drop Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-y1-eMl">
-                                <rect key="frame" x="135" y="67" width="145" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag N Drop Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-y1-eMl">
+                                <rect key="frame" x="135" y="67" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88h-Gk-28l">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88h-Gk-28l">
                                 <rect key="frame" x="20" y="446" width="374" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                                 <connections>
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="AUB-Nu-b80"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-Lp-X3V">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-Lp-X3V">
                                 <rect key="frame" x="20" y="307" width="374" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="uIL-2y-HSd"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                 <connections>
@@ -460,6 +475,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FqN-jR-hKz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="trailing" secondItem="88h-Gk-28l" secondAttribute="trailing" id="XVs-3U-VLh"/>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="leading" secondItem="7kc-sZ-oCB" secondAttribute="leadingMargin" id="YZi-LN-xYe"/>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="trailing" secondItem="7kc-sZ-oCB" secondAttribute="trailingMargin" id="Zh6-9i-V5q"/>
+                            <constraint firstItem="88h-Gk-28l" firstAttribute="top" secondItem="Kkd-Lp-X3V" secondAttribute="bottom" constant="28" id="bwW-y8-fIh"/>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="centerX" secondItem="2Ic-y1-eMl" secondAttribute="centerX" id="gSI-Ha-rc8"/>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="leading" secondItem="88h-Gk-28l" secondAttribute="leading" id="h71-ng-jdy"/>
+                            <constraint firstItem="Kkd-Lp-X3V" firstAttribute="top" secondItem="7kc-sZ-oCB" secondAttribute="top" constant="307" id="lnn-hM-7Yk"/>
+                            <constraint firstItem="2Ic-y1-eMl" firstAttribute="leading" secondItem="FqN-jR-hKz" secondAttribute="leading" constant="135" id="rdr-ZQ-BgO"/>
+                            <constraint firstItem="2Ic-y1-eMl" firstAttribute="top" secondItem="FqN-jR-hKz" secondAttribute="top" constant="23" id="wzo-gK-bSC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="exitButton" destination="88h-Gk-28l" id="yaX-8u-lXM"/>
@@ -480,7 +506,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-it-Nag" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="148" y="386" width="119" height="125"/>
+                                <rect key="frame" x="20" y="286" width="119" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
@@ -491,17 +517,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-sS-ezP">
+                                <rect key="frame" x="174" y="286" width="118" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lU8-od-ya3">
+                                <rect key="frame" x="174" y="481" width="118" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F3Q-UG-IeT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="draggableView" destination="8oj-it-Nag" id="Ijk-oe-bOZ"/>
+                        <outlet property="tile1" destination="8oj-it-Nag" id="s3G-jp-44v"/>
+                        <outlet property="tile2" destination="YvL-sS-ezP" id="S0e-n9-BgA"/>
+                        <outlet property="tile3" destination="lU8-od-ya3" id="Jlm-hL-4eC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCD-3s-25N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8936" y="44"/>
+            <point key="canvasLocation" x="8933.3333333333339" y="43.526785714285715"/>
         </scene>
         <!--DragN Drop Result-->
         <scene sceneID="szr-9f-2xm">
@@ -511,18 +549,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-hv-n1a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-hv-n1a">
                                 <rect key="frame" x="20" y="390" width="374" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="j8S-pU-crc"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Home"/>
                                 <connections>
                                     <action selector="homeButton:" destination="6cK-s0-X0g" eventType="touchUpInside" id="U2i-EQ-8t6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Br-Wm-d2A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Br-Wm-d2A">
                                 <rect key="frame" x="141" y="201" width="147" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gzT-EX-yWN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -530,6 +572,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ETv-9A-y1q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Br-Wm-d2A" firstAttribute="leading" secondItem="ETv-9A-y1q" secondAttribute="leading" constant="141" id="4TI-4u-9Lu"/>
+                            <constraint firstItem="ETv-9A-y1q" firstAttribute="trailing" secondItem="5Br-Wm-d2A" secondAttribute="trailing" constant="126" id="5wS-K0-VJk"/>
+                            <constraint firstItem="ETv-9A-y1q" firstAttribute="bottom" secondItem="Zok-hv-n1a" secondAttribute="bottom" constant="398" id="5zh-za-d6b"/>
+                            <constraint firstItem="Zok-hv-n1a" firstAttribute="leading" secondItem="p9V-cq-eTw" secondAttribute="leadingMargin" id="E4d-zK-C5w"/>
+                            <constraint firstItem="5Br-Wm-d2A" firstAttribute="top" secondItem="ETv-9A-y1q" secondAttribute="top" constant="157" id="NlL-Zd-RwC"/>
+                            <constraint firstItem="Zok-hv-n1a" firstAttribute="trailing" secondItem="p9V-cq-eTw" secondAttribute="trailingMargin" id="qSa-Q5-0S6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="5Br-Wm-d2A" id="vqj-zK-vXa"/>
