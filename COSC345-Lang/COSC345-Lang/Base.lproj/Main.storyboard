@@ -398,12 +398,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gb-w4-5ZX">
-                                <rect key="frame" x="147" y="498" width="123" height="31"/>
+                                <rect key="frame" x="147" y="498" width="123" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Drag and  Drop"/>
                                 <connections>
-                                    <segue destination="E1t-c0-Kd4" kind="presentation" modalPresentationStyle="fullScreen" id="S2i-C7-9aK"/>
+                                    <segue destination="MHG-Se-8Wh" kind="presentation" modalPresentationStyle="fullScreen" id="ZQQ-wj-Jp3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -421,12 +421,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfu-BG-6gj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4444.927536231884" y="65.625"/>
+            <point key="canvasLocation" x="4840.579710144928" y="-3.3482142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--DragN Drop Main Menu-->
         <scene sceneID="VSV-Me-4Kl">
             <objects>
-                <viewController id="E1t-c0-Kd4" sceneMemberID="viewController">
+                <viewController id="E1t-c0-Kd4" customClass="DragNDrop_MainMenu" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7kc-sZ-oCB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -453,6 +453,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start"/>
                                 <connections>
+                                    <action selector="onClickStart:" destination="E1t-c0-Kd4" eventType="touchUpInside" id="TrW-tv-0hj"/>
                                     <segue destination="6Zc-4g-AGj" kind="presentation" modalPresentationStyle="fullScreen" id="MpM-tY-EJF"/>
                                 </connections>
                             </button>
@@ -460,10 +461,15 @@
                         <viewLayoutGuide key="safeArea" id="FqN-jR-hKz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="exitButton" destination="88h-Gk-28l" id="yaX-8u-lXM"/>
+                        <outlet property="onPlayStart" destination="Kkd-Lp-X3V" id="hri-m2-6NZ"/>
+                        <outlet property="startButton" destination="Kkd-Lp-X3V" id="yrY-Bl-egc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEl-bR-SQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6456.521739130435" y="65.625"/>
+            <point key="canvasLocation" x="7826" y="44"/>
         </scene>
         <!--DragN Drop-->
         <scene sceneID="Bkr-HI-OuP">
@@ -495,7 +501,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCD-3s-25N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7259" y="66"/>
+            <point key="canvasLocation" x="8936" y="44"/>
+        </scene>
+        <!--DragN Drop Result-->
+        <scene sceneID="szr-9f-2xm">
+            <objects>
+                <viewController id="6cK-s0-X0g" customClass="DragNDropResult" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9V-cq-eTw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-hv-n1a">
+                                <rect key="frame" x="20" y="390" width="374" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Home"/>
+                                <connections>
+                                    <action selector="homeButton:" destination="6cK-s0-X0g" eventType="touchUpInside" id="U2i-EQ-8t6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Br-Wm-d2A">
+                                <rect key="frame" x="141" y="201" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ETv-9A-y1q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="5Br-Wm-d2A" id="vqj-zK-vXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEf-qb-PLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9840.579710144928" y="45.535714285714285"/>
         </scene>
         <!--Leaderboards-->
         <scene sceneID="7eW-PJ-Wi5">
@@ -801,7 +843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM8-jJ-PMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4155" y="-904"/>
+            <point key="canvasLocation" x="4153.623188405797" y="-904.01785714285711"/>
         </scene>
         <!--Quiz Result View Controller-->
         <scene sceneID="ShU-Vg-wwW">
@@ -881,6 +923,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGQ-PX-ack" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1271.0144927536232" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xcP-m7-5t2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="49L-ay-9A1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HFZ-TS-fhD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zM-r1-cPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271.0144927536232" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yg0-pq-qGl">
+            <objects>
+                <navigationController id="MHG-Se-8Wh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EE7-5t-P8p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E1t-c0-Kd4" kind="presentation" modalPresentationStyle="fullScreen" id="7AH-ck-aOZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJr-WW-cLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6561" y="44"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

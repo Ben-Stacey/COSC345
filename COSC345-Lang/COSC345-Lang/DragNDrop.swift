@@ -8,6 +8,14 @@
 import UIKit
 
 class DragNDrop: UIViewController {
+    
+    //var viewModel = TileViewModel()
+    var questions:[Question] = []
+    
+    var isCorrectAnswer = false
+    
+    var points = 0
+    var index = 0
 
     @IBOutlet weak var draggableView: UIView!
     
