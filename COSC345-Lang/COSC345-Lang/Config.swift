@@ -8,12 +8,52 @@
 import Foundation
 import UIKit
 
-let ScreenWidth = UIScreen.main.bounds.size.width
-let ScreenHeight = UIScreen.main.bounds.size.height
+var ScreenWidth = UIScreen.main.bounds.size.width
+var ScreenHeight = UIScreen.main.bounds.size.height
 
 let TileMargin: CGFloat = 20.0
 
-func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
+/**
+    Randomly generates a number that between the two limits
+    - Parameters:
+        - minX: [in] lower limit of the random number
+        - maxX: [in] upper limit of the random number
+    - Returns:
+        - Int(result): returns the randomly generated number
+*/
+public func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
   let result = (arc4random() % (maxX - minX + 1)) + minX
   return Int(result)
+}
+
+/**
+    Getter method for ScreenHeight
+ */
+public func getScreenWidth() -> CGFloat{
+    return ScreenWidth
+}
+
+/**
+    Setter method for ScreenWidth
+     - Parameters:
+         - width: [in] the width of the tile
+ */
+public func setScreenWidth(width: CGFloat){
+    ScreenWidth = width
+}
+
+/**
+    Getter method for ScreenHeight
+ */
+public func getScreenHeight() -> CGFloat{
+    return ScreenHeight
+}
+
+/**
+    Setter method for ScreenHeight
+     - Parameters:
+         - height: [in] the height of the tile
+ */
+public func setScreenHeight(height: CGFloat){
+    ScreenHeight = height
 }

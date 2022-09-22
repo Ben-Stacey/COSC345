@@ -6,43 +6,25 @@
 //
 
 import UIKit
+import Foundation
 
 class HomeScreen: UIViewController {
     
-    var language = ""
-    var name = ""
+    var language: String
+    var name: String
     
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var languageLabel: UITextField!
-
-    @IBAction func maoriButton(_ sender: Any) {
-        language = ""
-        language = "maori"
-        languageLabel.text = "Set to Moari"
+    init(name: String, language: String){
+        self.language = language
+        self.name = name
+        super.init(nibName: nil, bundle: nil)
     }
     
-    @IBAction func frenchButton(_ sender: Any) {
-        language = ""
-        language = "french"
-        languageLabel.text = "Set to French"
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func spanishButton(_ sender: Any) {
-        language = ""
-        language = "spanish"
-        languageLabel.text = "Set to Spanish"
-    }
-    
-    @IBAction func nameTextField(_ sender: Any) {
-        //name = nameTextField.text
-        if let x = nameTextField.text {
-            name = x
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
+

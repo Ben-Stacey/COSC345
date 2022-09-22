@@ -6,11 +6,20 @@
 //
 
 import Foundation
-struct Level {
+
+/**
+    Struct that finds the data that will be displayed in the Drag and Drop game
+ */
+public struct Level {
   //let pointsPerTile: Int
   //let timeToSolve: Int
   let sentence: [NSArray]
   
+    /**
+        Initialser method searches through the .plist file to get the required information for the game
+        - Parameters:
+            - LevelNumber: This gets the strings from the .plist files that are then displayed into the game
+    */
   init(levelNumber: Int) {
     let fileName = "level\(levelNumber).plist"
     let levelPath = "\(Bundle.main.resourcePath!)/\(fileName)"
