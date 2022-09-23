@@ -44,6 +44,7 @@
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
+		AE2D2B3728DE7AC400311548 /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		35865C1228DC1170002C179C /* DragNDropMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropMainMenu.swift; sourceTree = "<group>"; };
 		35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropCollectionViewCell.swift; sourceTree = "<group>"; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
+		AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestion.swift; path = "../../../../../COSC345 copy/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestion.swift"; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAD3B6F28DE699600D9E88A /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAD3B7028DE6A0400D9E88A /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeaOfWords.swift; path = "../../../COSC345 copy/COSC345-Lang/COSC345-Lang/SeaOfWords.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				357FD72328AB4FCB00D060C4 /* GameData.swift */,
 				AEAD3B7228DE6A2800D9E88A /* SoWQuestionBank.swift */,
+				AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */,
 				357FD72528AB504900D060C4 /* Level.swift */,
 			);
 			path = Models;
@@ -345,6 +348,7 @@
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
+				AE2D2B3728DE7AC400311548 /* SoWQuestion.swift in Sources */,
 				2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
 				357EC44B28B461A40092F1B4 /* MainMenu.swift in Sources */,
