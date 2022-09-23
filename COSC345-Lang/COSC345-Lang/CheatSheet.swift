@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/**
 struct Root: word{
     var word: translations
 }
@@ -38,10 +38,14 @@ public class CheatSheet: UIViewController {
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let english = word[indexPath.row]
-        let maori = word[indexPath.row]
-        let french = word[indexPath.row]
-        let spanish = word[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! translations
+        
+        index = indexPath[1]
+        
+        let english = translations.english[index]
+        let maori = translations.moari[index]
+        let french = translations.french[index]
+        let spanish = translations.spanish[index]
         
         cell.englishLabel?.text = english
         cell.moariLabel?.text = moari
@@ -82,3 +86,4 @@ public class CheatSheet: UIViewController {
         // Do any additional setup after loading the view.
     }
 }
+ */

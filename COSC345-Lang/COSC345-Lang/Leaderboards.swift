@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/**
 struct Root: players{
     var players: player
 }
@@ -74,3 +74,4 @@ public class Leaderboards: UIViewController{
         //add data source
     }
 }
+*/
