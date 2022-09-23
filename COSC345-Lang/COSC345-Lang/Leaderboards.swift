@@ -7,7 +7,11 @@
 
 import UIKit
 
-struct players: Decodable{
+struct Root: players{
+    var players: player
+}
+
+struct player: Decodable{
     var name: String
     var score: Int
 }
@@ -15,11 +19,6 @@ struct players: Decodable{
 //declare array
 
 class myCell: UITableViewCell{
-    
-    @IBOutlet weak var englishLabel: UILabel!
-    @IBOutlet weak var moariLebel: UILabel!
-    @IBOutlet weak var frenchLabel: UILabel!
-    @IBOutlet weak var spanishLabel: UILabel!
     
 }
  
@@ -34,11 +33,15 @@ public class Leaderboards: UIViewController{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-    /**
+    
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        return UITableView()
+        
+        let english = countries[indexPath.row]
+        cell.englishLabel?.text = country
+        
+
+        return cell
     }
-     */
     
     public func getData(forName name: String) -> Data?{
         do {
@@ -59,7 +62,6 @@ public class Leaderboards: UIViewController{
         print(player.name)
     }
     
-
     /**
         Loads the View Controller
      */
@@ -71,10 +73,4 @@ public class Leaderboards: UIViewController{
         }
         //add data source
     }
-    
-    /**
-        When the maori button is clicked it stores that and displays it on the screen
-        - Parameters:
-            - any: [in] allows method to be sent anything
-    */
 }
