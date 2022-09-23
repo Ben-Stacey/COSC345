@@ -46,6 +46,7 @@
 		35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1028DBD1AE002C179C /* DragNDrop.swift */; };
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1528DC180B002C179C /* DragNDropResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1428DC180B002C179C /* DragNDropResult.swift */; };
+		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		35865C1028DBD1AE002C179C /* DragNDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDrop.swift; sourceTree = "<group>"; };
 		35865C1228DC1170002C179C /* DragNDropMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropMainMenu.swift; sourceTree = "<group>"; };
 		35865C1428DC180B002C179C /* DragNDropResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropResult.swift; sourceTree = "<group>"; };
+		35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropCollectionViewCell.swift; sourceTree = "<group>"; };
 		35CE493128A5F3430093CC7E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */,
 				2996AAB928B5D27D005B36E1 /* QuizViewController.swift */,
+				35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */,
 				2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */,
 				2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */,
 				297AF0AB28A601B300C3291A /* WagerQuizzes.swift */,
@@ -364,6 +367,7 @@
 				357FD72628AB504900D060C4 /* Level.swift in Sources */,
 				35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */,
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
+				35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
 				2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,

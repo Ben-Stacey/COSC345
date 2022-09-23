@@ -28,6 +28,35 @@ class DragNDrop: UIViewController {
         self.tile2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerTwo)))
         
         self.tile3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerThree)))
+        """
+        var z = 0
+        while z < 10{
+            if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Phrases", ofType: "plist")!) as? [String: [String]] {
+                
+                let languageNum = MainMenu.getLanguageNum()
+                var language: String = ""
+                if languageNum == 1{
+                    language = "French"
+                }else if(languageNum == 2){
+                    language = "Spanish"
+                }else if(languageNum == 3){
+                    language = "Moari"
+                }
+                
+                var randAnswerFromLanguage:[String] = []
+                
+                //randAnswerFromLanguage.append(phraseArray[languageNum])
+                
+                //var randAnswersLength = randAnswerFromLanguage.count - 1
+                //let randomNumber = Int.random(in:0...randAnswersLength)
+                
+                //randAnswerFromLanguage.remove(at: randomNumber)
+                //randAnswersLength -= 1
+                }  
+            }
+            z += 1
+        }
+        """
     }
     
     @objc func handlerOne(gesture: UIPanGestureRecognizer){
