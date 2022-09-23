@@ -130,46 +130,13 @@
                                     <segue destination="KBy-kn-Cqr" kind="presentation" modalPresentationStyle="fullScreen" id="pzV-pC-8u2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-dO-d7O">
-                                <rect key="frame" x="154" y="778" width="106" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet"/>
-                                <connections>
-                                    <segue destination="Hnz-AN-i7s" kind="presentation" modalPresentationStyle="fullScreen" id="BXE-Em-dqJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baT-eh-fUh">
-                                <rect key="frame" x="151" y="44" width="112" height="48"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Leaderboards"/>
-                                <connections>
-                                    <segue destination="t9U-5O-Zy7" kind="presentation" modalPresentationStyle="fullScreen" id="gXO-mS-ip2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Su-sRC">
-                                <rect key="frame" x="14" y="778" width="122" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Wager Quizzes"/>
-                                <connections>
-                                    <segue destination="m2D-eI-ZLu" kind="presentation" modalPresentationStyle="fullScreen" id="ahf-6f-uKF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bb-5b-sSg"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="bottom" secondItem="7Nk-dO-d7O" secondAttribute="bottom" constant="53" id="72x-MF-dh5"/>
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="1Tw-lS-oqZ" secondAttribute="centerX" id="DWl-Jg-T66"/>
-                            <constraint firstItem="baT-eh-fUh" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="151" id="GL6-kY-5bp"/>
-                            <constraint firstItem="BIb-Su-sRC" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="14" id="LL9-7Z-bub"/>
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="top" secondItem="1Tw-lS-oqZ" secondAttribute="top" constant="257" id="OGT-9y-ZJQ"/>
-                            <constraint firstItem="7Nk-dO-d7O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BIb-Su-sRC" secondAttribute="trailing" symbolic="YES" id="b9Y-QP-Yb6"/>
-                            <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="baT-eh-fUh" secondAttribute="centerX" id="ct4-li-hEM"/>
-                            <constraint firstItem="7Nk-dO-d7O" firstAttribute="baseline" secondItem="BIb-Su-sRC" secondAttribute="baseline" id="idT-gT-BX1"/>
-                            <constraint firstItem="baT-eh-fUh" firstAttribute="top" secondItem="4bb-5b-sSg" secondAttribute="top" id="omZ-IT-sgu"/>
-                            <constraint firstItem="4bb-5b-sSg" firstAttribute="trailing" secondItem="7Nk-dO-d7O" secondAttribute="trailing" constant="154" id="va1-oE-aFI"/>
                             <constraint firstItem="8sU-fG-BKI" firstAttribute="leading" secondItem="4bb-5b-sSg" secondAttribute="leading" constant="138" id="zPG-Df-NNE"/>
-                            <constraint firstItem="8sU-fG-BKI" firstAttribute="centerX" secondItem="7Nk-dO-d7O" secondAttribute="centerX" id="zY4-A3-vq5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-oN-Ib6"/>
@@ -480,22 +447,12 @@
                                     <segue destination="elw-IO-A13" kind="presentation" modalPresentationStyle="fullScreen" id="mTm-Sf-2ik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gb-w4-5ZX">
-                                <rect key="frame" x="147" y="498" width="123" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Drag and  Drop"/>
-                                <connections>
-                                    <segue destination="E1t-c0-Kd4" kind="presentation" modalPresentationStyle="fullScreen" id="gQS-3p-u9B"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bip-2t-Q9n"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="7gb-w4-5ZX" firstAttribute="top" secondItem="czJ-AK-ZEC" secondAttribute="bottom" constant="97" id="8d0-2o-p4G"/>
                             <constraint firstItem="bip-2t-Q9n" firstAttribute="trailing" secondItem="nVH-AI-Kog" secondAttribute="trailing" constant="179" id="DCt-4I-dzJ"/>
                             <constraint firstItem="czJ-AK-ZEC" firstAttribute="centerX" secondItem="nVH-AI-Kog" secondAttribute="centerX" id="L1r-hi-fgp"/>
-                            <constraint firstItem="czJ-AK-ZEC" firstAttribute="centerX" secondItem="7gb-w4-5ZX" secondAttribute="centerX" id="LVC-Gn-Iqm"/>
                             <constraint firstItem="nVH-AI-Kog" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bip-2t-Q9n" secondAttribute="leading" id="hwV-ek-x4h"/>
                             <constraint firstItem="nVH-AI-Kog" firstAttribute="top" secondItem="bip-2t-Q9n" secondAttribute="top" constant="225" id="khQ-MA-wgd"/>
                             <constraint firstItem="czJ-AK-ZEC" firstAttribute="top" secondItem="nVH-AI-Kog" secondAttribute="bottom" constant="70" id="y9G-7w-YUo"/>
