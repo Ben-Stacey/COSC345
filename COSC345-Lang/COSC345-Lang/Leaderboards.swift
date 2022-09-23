@@ -14,7 +14,7 @@ struct players: Decodable{
 
 //declare array
 
-class myCell{
+class myCell: UITableViewCell{
     //outlets
 }
  
