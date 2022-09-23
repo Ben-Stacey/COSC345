@@ -7,7 +7,7 @@
 
 import UIKit
 
-class myCell: UIViewController{
+class myCellCheatSheet: UIViewController{
     
 }
 
@@ -19,10 +19,10 @@ public class CheatSheet: UIViewController, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-    
+    /**
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         return UITableView()
-    }
+    }*/
     
     public func getData(){
         
@@ -45,9 +45,7 @@ public class CheatSheet: UIViewController, UITableViewDataSource {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(){
-            
-        }
+
 
         // Do any additional setup after loading the view.
     }
