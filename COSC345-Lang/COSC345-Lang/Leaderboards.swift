@@ -6,16 +6,25 @@
 //
 
 import UIKit
-/**
-class myCell{
-    
+
+struct players{
+    var name: String
+    var score: Int
 }
- */
+
+//declare array
+
+class myCell{
+    //outlets
+}
+ 
 
 /**
     View Controller for the Leaderboards
  */
-public class Leaderboards: UIViewController, UITableViewDataSource{
+public class Leaderboards: UIViewController{
+    
+    //size of rows
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -30,12 +39,9 @@ public class Leaderboards: UIViewController, UITableViewDataSource{
         
     }
     
-    public func getJSON(){
+    public func getJSON() -> Int{
         
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        //return cell
     }
     
 
@@ -45,6 +51,8 @@ public class Leaderboards: UIViewController, UITableViewDataSource{
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //if statement
+        //add
     }
     
     /**

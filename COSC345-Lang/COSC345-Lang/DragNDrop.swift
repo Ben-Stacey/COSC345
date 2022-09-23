@@ -17,18 +17,18 @@ class DragNDrop: UIViewController {
     var points = 0
     var index = 0
 
-    @IBOutlet weak var tile1: UIView!
+    @IBOutlet weak var tile: UIView!
     @IBOutlet weak var tile2: UIView!
     @IBOutlet weak var tile3: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tile1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerOne)))
-        
+        self.tile.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerOne)))
+        /**
         self.tile2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerTwo)))
         
         self.tile3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerThree)))
-        """
+        
         var z = 0
         while z < 10{
             if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Phrases", ofType: "plist")!) as? [String: [String]] {
@@ -45,7 +45,11 @@ class DragNDrop: UIViewController {
                 
                 var randAnswerFromLanguage:[String] = []
                 
-                //randAnswerFromLanguage.append(phraseArray[languageNum])
+                
+                print()
+                randAnswerFromLanguage.append("X")
+                
+                
                 
                 //var randAnswersLength = randAnswerFromLanguage.count - 1
                 //let randomNumber = Int.random(in:0...randAnswersLength)
@@ -56,7 +60,7 @@ class DragNDrop: UIViewController {
             }
             z += 1
         }
-        """
+         */
     }
     
     @objc func handlerOne(gesture: UIPanGestureRecognizer){
@@ -65,13 +69,13 @@ class DragNDrop: UIViewController {
         tile1?.center = location
                 
         if gesture.state == .ended {
-            if self.tile1.frame.midX >= self.view.layer.frame.width / 2 {
+            if self.tile.frame.midX >= self.view.layer.frame.width / 2 {
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                            self.tile1.center.x = self.view.layer.frame.width - 40
+                            self.tile.center.x = self.view.layer.frame.width - 40
                         }, completion: nil)
             }else{
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                    self.tile1.center.x = 40
+                    self.tile.center.x = 40
                 }, completion: nil)
             }
         }
