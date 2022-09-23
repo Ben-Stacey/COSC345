@@ -36,7 +36,6 @@ public class QuizViewController: UIViewController {
             if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Phrases", ofType: "plist")!) as? [String: [String]] {
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
-                print(languageNum)
                 var language: String = ""
                 if languageNum == 1{
                     language = "French"
@@ -48,7 +47,6 @@ public class QuizViewController: UIViewController {
                 var randAnswersFromLanguage:[String] = []
                 
                 for (_, phraseArray) in root {
-                    print(phraseArray[languageNum])
                     randAnswersFromLanguage.append(phraseArray[languageNum])
                 }
                 
@@ -138,6 +136,7 @@ public class QuizViewController: UIViewController {
         }else{
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else{return}
             vc.result = points
+            HomeScreen.increaseXp(amount: points)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
