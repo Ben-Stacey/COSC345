@@ -44,8 +44,6 @@
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
-		AEAD3B7128DE6A0400D9E88A /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD3B7028DE6A0400D9E88A /* SeaOfWords.swift */; };
-		AEAD3B7328DE6A2800D9E88A /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD3B7228DE6A2800D9E88A /* SoWQuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -338,7 +336,6 @@
 			files = (
 				293B93F028DBF5C900FE5AAA /* HomeScreen.swift in Sources */,
 				357FD73428AB5E2F00D060C4 /* HUDView.swift in Sources */,
-				AEAD3B7328DE6A2800D9E88A /* SoWQuestionBank.swift in Sources */,
 				353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */,
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
 				2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */,
@@ -357,7 +354,6 @@
 				35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
 				357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */,
-				AEAD3B7128DE6A0400D9E88A /* SeaOfWords.swift in Sources */,
 				2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */,
 				357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */,
 				2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */,
