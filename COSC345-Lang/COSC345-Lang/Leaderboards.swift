@@ -15,7 +15,12 @@ struct players: Decodable{
 //declare array
 
 class myCell: UITableViewCell{
-    //outlets
+    
+    @IBOutlet weak var englishLabel: UILabel!
+    @IBOutlet weak var moariLebel: UILabel!
+    @IBOutlet weak var frenchLabel: UILabel!
+    @IBOutlet weak var spanishLabel: UILabel!
+    
 }
  
 

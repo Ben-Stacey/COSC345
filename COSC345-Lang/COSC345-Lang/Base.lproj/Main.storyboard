@@ -229,7 +229,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="VvH-7o-Y2P">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="VvH-7o-Y2P" customClass="myCell" customModule="COSC345_Lang" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="240" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="myCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VvH-7o-Y2P" id="qRp-Ni-9Lk">
@@ -294,6 +294,12 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="englishLabel" destination="m14-T4-e65" id="skb-HX-mCw"/>
+                                            <outlet property="frenchLabel" destination="ONu-Ps-15B" id="17s-12-Hfp"/>
+                                            <outlet property="moariLebel" destination="Njt-T4-h7o" id="cwP-Mo-DSw"/>
+                                            <outlet property="spanishLabel" destination="JrR-R8-4ep" id="HaT-mn-FA8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
