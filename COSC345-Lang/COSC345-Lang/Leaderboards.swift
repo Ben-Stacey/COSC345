@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct players{
+struct players: Decodable{
     var name: String
     var score: Int
 }
@@ -35,13 +35,23 @@ public class Leaderboards: UIViewController{
     }
      */
     
-    public func getData(){
-        
+    public func getData(forName name: String) -> Data?{
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
+                    let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                    return jsonData
+                }
+            } catch {
+                print(error)
+            }
+        return nil
     }
     
-    public func getJSON(){
-        
-        //return cell
+    public func getJSON(jsonData: Data){
+        let decoder = JSONDecoder()
+        let player = try! decoder.decode(players.self, from: jsonData)
+
+        print(player.name)
     }
     
 
@@ -51,8 +61,10 @@ public class Leaderboards: UIViewController{
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //if statement
-        //add
+        if let localData = self.getData(forName: "leaderboard") {
+            self.getJSON(jsonData: localData)
+        }
+        //add data source
     }
     
     /**
