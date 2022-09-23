@@ -39,7 +39,7 @@ public class Leaderboards: UIViewController{
         
     }
     
-    public func getJSON() -> Int{
+    public func getJSON(){
         
         //return cell
     }
