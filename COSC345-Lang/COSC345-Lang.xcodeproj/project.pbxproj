@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47028B44B2B00A4493A /* QuestionModel.swift */; };
 		2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47228B44B4600A4493A /* QuestionViewModel.swift */; };
+		2935E01928DE74330071C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E01828DE74330071C3D5 /* Main.storyboard */; };
 		293B93EF28DBCFF800FE5AAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */; };
 		293B93F028DBF5C900FE5AAA /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352675C828B84B99007C7942 /* HomeScreen.swift */; };
 		297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A528A600AD00C3291A /* Leaderboards.swift */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		2923D47028B44B2B00A4493A /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		297AF0A528A600AD00C3291A /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				35865C1028DBD1AE002C179C /* DragNDrop.swift */,
 				35865C1228DC1170002C179C /* DragNDropMainMenu.swift */,
 				352675C828B84B99007C7942 /* HomeScreen.swift */,
+				2935E01828DE74330071C3D5 /* Main.storyboard */,
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */,
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2996AAC028B70F81005B36E1 /* Phrases.plist in Resources */,
+				2935E01928DE74330071C3D5 /* Main.storyboard in Resources */,
 				3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */,
 				357FD71C28AB3EFE00D060C4 /* TowerThree.plist in Resources */,
 				3528941E28A330EB002C980C /* Assets.xcassets in Resources */,
