@@ -63,14 +63,14 @@ public class QuizViewController: UIViewController {
 
                         
                         
-                        let correct_answer = phraseArray[languageNum]
+                        let correctAnswer = phraseArray[languageNum]
                         let option_1 = shuffledOptions[0]
                         let option_2 = shuffledOptions[1]
                         let option_3 = shuffledOptions[2]
                         let option_4 = shuffledOptions[3]
                         let question = "Translate \"\(phraseArray[0])\" to \(language)"
                         
-                        questions.append(Question(correctAnswer: correct_answer, option_1: option_1, option_2: option_2, option_3: option_3, option_4: option_4, question: question))
+                        questions.append(Question(correctAnswer: correctAnswer, option_1: option_1, option_2: option_2, option_3: option_3, option_4: option_4, question: question))
                     }
                     
                     index += 1
