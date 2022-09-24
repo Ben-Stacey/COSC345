@@ -10,11 +10,11 @@ import UIKit
 /**
     The view controller for the quiz. Also generates the questions and handles the users answers too.
 */
-public class QuizViewController:UIViewController {
-    @IBOutlet weak var collectionView:UICollectionView!
+public class QuizViewController: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel = QuestionViewModel()
-    var questions:[Question] = []
+    var questions: [Question] = []
     
     var answerSelected = false
     var isCorrectAnswer = false
@@ -31,7 +31,7 @@ public class QuizViewController:UIViewController {
         // Do any additional setup after loading the view.
         
         var dex = 0
-        while dex < 10{
+        while dex < 10 {
             if let root = NSDictionary(contentsOfFile:Bundle.main.path(forResource: "Phrases", ofType:"plist")!) as? [String:[String]] {
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
@@ -92,8 +92,8 @@ public class QuizViewController:UIViewController {
         - Parameters:
             - animated: animates if bool is true
     */
-    public override func viewWillAppear(_ animated:Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated:false)
+    public override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     /**
@@ -102,8 +102,8 @@ public class QuizViewController:UIViewController {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickExit(_ sender:Any) {
-        navigationController?.popToRootViewController(animated:true)
+    @IBAction public func onClickExit(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     /**
@@ -112,12 +112,12 @@ public class QuizViewController:UIViewController {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickNext(_ sender:Any) {
+    @IBAction public func onClickNext(_ sender: Any) {
         if !answerSelected {
             let alert = UIAlertController(title:"Select an Option", message:"You must select an option before moving on to the next question.", preferredStyle:.alert)
-            let okAction = UIAlertAction(title:"Ok", style:.default, handler:nil)
+            let okAction = UIAlertAction(title:"Ok", style:.default, handler: nil)
             alert.addAction(okAction)
-            present(alert, animated:true, completion:nil)
+            present(alert, animated: true, completion: nil)
             
             return
         }
@@ -129,7 +129,7 @@ public class QuizViewController:UIViewController {
         
         if index < (self.questions.count) - 1 {
             index += 1
-            collectionView.scrollToItem(at: IndexPath(row:index, section:0), at:.right, animated:true)
+            collectionView.scrollToItem(at: IndexPath(row:index, section:0), at:.right, animated: true)
         } else {
             guard let vc = storyboard?.instantiateViewController(withIdentifier:"QuizResultViewController") as? QuizResultViewController else{return}
             vc.result = points
