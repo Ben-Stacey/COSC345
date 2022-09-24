@@ -11,7 +11,6 @@ import AVFoundation
 class AudioController {
   private var audio = [String:AVAudioPlayer]()
   
-  
   func playEffect(name:String) {
     if let player = audio[name] {
         if player.isPlaying {
@@ -20,6 +19,5 @@ class AudioController {
         player.play()
       }
     }
-  }
-  
+  } 
 }
