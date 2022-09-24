@@ -8,7 +8,6 @@
 import Foundation
 
 class QuestionViewModel {
-    
     var questionData:DataModel?
     private let sourcesURL = URL(string: "https://quiz-68112-default-rtdb.firebaseio.com/quiz.json")!
 
@@ -23,7 +22,7 @@ class QuestionViewModel {
                     self?.questionData = empData
                     print(empData)
                     completion()
-                }catch{
+                } catch {
                     print("Error decoding JSON")
                 }
             }
