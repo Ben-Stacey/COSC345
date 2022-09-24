@@ -12,7 +12,7 @@ import Foundation
 public class GameData {
   //store the user's game achievement
   var points:Int = 0 {
-    didSet {
+    didSet { 
       points = max(points, 0)
     }
   }

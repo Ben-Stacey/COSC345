@@ -16,7 +16,6 @@ public class GameController {
     var level: Level!
     private var tiles = [TileView]()
     private var targets = [TargetView]()
-    
     /**
         dealRandomSentence() adds the targets and tiles to the game screen. Adds the strings to the tile on the game
     */

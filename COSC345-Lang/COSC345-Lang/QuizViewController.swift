@@ -31,17 +31,17 @@ public class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var z = 0
-        while z < 10{
+        var dex = 0
+        while dex < 10{
             if let root = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Phrases", ofType: "plist")!) as? [String: [String]] {
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
                 var language: String = ""
                 if languageNum == 1{
                     language = "French"
-                }else if(languageNum == 2){
+                }else if languageNum == 2 { 
                     language = "Spanish"
-                }else if(languageNum == 3){
+                }else if languageNum == 3 {
                     language = "Maori"
                 }
                 var randAnswersFromLanguage:[String] = []
@@ -76,7 +76,7 @@ public class QuizViewController: UIViewController {
                     i += 1
                 }
             }
-            z += 1
+            dex += 1
         }
         
         viewModel.apiToGetQuestionData {
@@ -116,7 +116,7 @@ public class QuizViewController: UIViewController {
             - sender: allows method to be sent anything
     */
     @IBAction public func onClickNext(_ sender: Any) {
-        if !answerSelected{
+        if !answerSelected {
             let alert = UIAlertController(title: "Select an Option", message: "You must select an option before moving on to the next question.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(okAction)
@@ -126,14 +126,14 @@ public class QuizViewController: UIViewController {
         }
         answerSelected = false
         
-        if isCorrectAnswer{
+        if isCorrectAnswer {
             points += 1
         }
         
         if index < (self.questions.count) - 1{
             index += 1
             collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
-        }else{
+        } else {
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizResultViewController") as? QuizResultViewController else{return}
             vc.result = points
             HomeScreen.increaseXp(amount: points)
@@ -142,7 +142,7 @@ public class QuizViewController: UIViewController {
     }
 }
 
-extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{ 
     
     /**
         Returns number of questions.

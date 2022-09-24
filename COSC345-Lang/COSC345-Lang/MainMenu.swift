@@ -73,16 +73,16 @@ public class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     @IBAction public func start(_ sender: Any) {
-        if let n = textfield.text{
-            name = n
+        if let nam = textfield.text{
+            name = nam
             nameSelected = true
         }
         
         if nameSelected == true && langSelected == true{
-            guard let vc = storyboard?
+            guard let view = storyboard?
                 .instantiateViewController(withIdentifier:
                                             "HomeScreen") as? HomeScreen else{return}
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(view, animated: true)
         }else{
             let alert = UIAlertController(title: "not selected", message: "Name or Language not selected", preferredStyle: .alert)
             
@@ -144,8 +144,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - n: [in] sends the name string
      */
-    public class func setName(n: String){
-        name = n
+    public class func setName(nam: String){
+        name = nam
     }
     
     /**
@@ -160,8 +160,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ls: [in] sends the language bool
      */
-    public class func setLangSelected(ls: Bool){
-        langSelected = ls
+    public class func setLangSelected(lang: Bool){
+        langSelected = lang
     }
     
     /**
@@ -176,8 +176,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ns: [in] sends the name bool
      */
-    public class func setNameSelected(ns: Bool){
-        nameSelected = ns
+    public class func setNameSelected(name: Bool){
+        nameSelected = name
     }
     
 }

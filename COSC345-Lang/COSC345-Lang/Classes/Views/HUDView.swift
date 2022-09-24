@@ -19,7 +19,7 @@ public class HUDView: UIView {
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
-    public required init(coder aDecorder:NSCoder){
+    public required init(coder aDecorder:NSCoder){ 
         fatalError("use init(frame:")
     }
     
