@@ -12,16 +12,12 @@ import UIKit
 */
 public class QuizViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
     var viewModel = QuestionViewModel()
     var questions: [Question] = []
-    
     var answerSelected = false
     var isCorrectAnswer = false
-    
     var points = 0
     var index = 0
-
     /**
         Gets the language phrases from Phrases.plist and creates mulitple questions with answer options.
         Once generated they are then added to the collection view.
@@ -36,7 +32,7 @@ public class QuizViewController: UIViewController {
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
                 var language: String = ""
-                if languageNum == 1{
+                if languageNum == 1 {
                     language = "French"
                 }else if languageNum == 2 {
                     language = "Spanish"

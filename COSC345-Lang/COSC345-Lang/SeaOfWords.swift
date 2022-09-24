@@ -58,7 +58,7 @@ public class SeaofWords: UIViewController {
         if sender.tag == selectedAnswer {
             print("correct")
             score += 1
-        }else{
+        } else {
             print("wrong")
         }
         questionNumber += 1
@@ -89,7 +89,7 @@ public class SeaofWords: UIViewController {
         updateUI()
     }
     
-    func updateUI(){
+    func updateUI() {
         scoreCounter.text = "Score: \(score)"
         if questionNumber <= allQuestions.list.count - 1{
             questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"

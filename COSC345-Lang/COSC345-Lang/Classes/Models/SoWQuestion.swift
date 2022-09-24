@@ -15,7 +15,6 @@ class SoWQuestions {
     let optionC: String
     let optionD: String
     let correctAnswer: Int
-    
     init(quest:String, questWord:String, choiceA:String, choiceB:String, choiceC:String, choiceD:String, answer:Int){
         question = quest
         questionWord = questWord
@@ -24,6 +23,5 @@ class SoWQuestions {
         optionC = choiceC
         optionD = choiceD
         correctAnswer = answer
-        
     }
 }

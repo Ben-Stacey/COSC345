@@ -20,7 +20,6 @@ public class TargetView: UIImageView {
     public required init(coder aDecoder: NSCoder) {
       fatalError("use init(letter:, sideLength:")
     }
-    
     /**
         This init function displays the empty tile that the user will drag the string into
         - Parameters:
