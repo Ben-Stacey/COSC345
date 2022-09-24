@@ -8,15 +8,15 @@
 import Foundation
 
 class SoWQuestions {
-    let question: String
-    let questionWord: String
-    let optionA: String
-    let optionB: String
-    let optionC: String
-    let optionD: String
-    let correctAnswer: Int
+    let question:String
+    let questionWord:String
+    let optionA:String
+    let optionB:String
+    let optionC:String
+    let optionD:String
+    let correctAnswer:Int
     
-    init(quest: String, questWord: String, choiceA: String, choiceB: String, choiceC: String, choiceD : String, answer: Int){
+    init(quest:String, questWord:String, choiceA:String, choiceB:String, choiceC:String, choiceD:String, answer:Int){
         question = quest
         questionWord = questWord
         optionA = choiceA
