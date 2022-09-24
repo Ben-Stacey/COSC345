@@ -10,7 +10,7 @@ import Foundation
 /**
     View Controller for the minigames
  */
-public class ViewController: UIViewController {
+public class ViewController:UIViewController {
     
     var language = ""
     
@@ -21,9 +21,9 @@ public class ViewController: UIViewController {
         - Parameters:
             - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
     */
-    public required init(coder aDecorder: NSCoder) {
+    public required init(coder aDecorder:NSCoder) {
         controller = GameController()
-        super.init(coder: aDecorder)!
+        super.init(coder:aDecorder)!
     }
     
     /**
@@ -35,7 +35,7 @@ public class ViewController: UIViewController {
         print("Tower: \(level1.sentence)")
         
         super.viewDidLoad()
-        let gameView = UIView(frame: CGRect(x:0, y: 0, width: screenWidth, height: screenHeight))
+        let gameView = UIView(frame:CGRect(x:0, y: 0, width:screenWidth, height:screenHeight))
         self.view.addSubview(gameView)
         controller.gameView = gameView
         controller.level = level1
