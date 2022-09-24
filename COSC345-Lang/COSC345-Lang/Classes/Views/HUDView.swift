@@ -15,7 +15,6 @@ public class HUDView: UIView {
   //var stopwatch: StopwatchView
   //var gamePoints: CounterLabelView
   //hintButton: UIButton!
-    
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
