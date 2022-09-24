@@ -17,7 +17,7 @@ public class TileView:UIImageView{
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
-    public required init(coder aDecorder:NSCoder){
+    public required init(coder aDecorder:NSCoder) {
         fatalError("use other init")
     }
     
@@ -27,7 +27,7 @@ public class TileView:UIImageView{
             - Letter: [in] the string that will be displayed on the tile
             - sideLength: [in] the length of the tile
     */
-    public init(letter:Character, sideLength:CGFloat){
+    public init(letter:Character, sideLength:CGFloat) {
         self.letter = letter
         let image = UIImage(named: "tile")!
         super.init(image:image)
@@ -42,7 +42,7 @@ public class TileView:UIImageView{
     /**
         randomize() randomly tilts the tiles to give an asthetic look
      */
-    public func randomize(){
+    public func randomize() {
         let rotation = CGFloat(randomNumber(minX: 0, maxX: 50)) / 100.0 - 0.2
         self.transform = CGAffineTransform(rotationAngle: rotation)
         let yOffset = CGFloat(randomNumber(minX: 0, maxX: 10) - 10)
