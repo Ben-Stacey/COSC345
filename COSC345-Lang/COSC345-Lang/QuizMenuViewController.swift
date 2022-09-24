@@ -11,13 +11,12 @@ import UIKit
     The view controller for the quiz menu.
 */
 public class QuizMenuViewController: UIViewController {
-    
-    @IBOutlet weak var playButton: UIButton!{
+    @IBOutlet weak var playButton: UIButton! {
         didSet{
             playButton.layer.cornerRadius = playButton.frame.height/2
         }
     }
-    @IBOutlet weak var backButton: UIButton!{
+    @IBOutlet weak var backButton: UIButton! {
         didSet{
             backButton.layer.cornerRadius = backButton.frame.height/2
         }
