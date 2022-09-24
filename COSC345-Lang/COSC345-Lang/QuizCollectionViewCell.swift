@@ -40,7 +40,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
             option2.text = setValues?.option_2
             option3.text = setValues?.option_3
             option4.text = setValues?.option_4
-            correctAnswer = setValues?.correct_answer
+            correctAnswer = setValues?.correctAnswer
             
         }
     }
@@ -65,7 +65,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     */
     @IBAction public func onClickOptionA(_ sender: Any) {
         var isCorrect = false
-        if correctAnswer == setValues?.option_1{
+        if correctAnswer == setValues?.option_1 {
             isCorrect = true
         }
         selectedOption?(isCorrect)
@@ -81,7 +81,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     */
     @IBAction public func onClickOptionB(_ sender: Any) {
         var isCorrect = false
-        if correctAnswer == setValues?.option_2{
+        if correctAnswer == setValues?.option_2 {
             isCorrect = true
         }
         selectedOption?(isCorrect)
@@ -97,7 +97,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     */
     @IBAction public func onClickOptionC(_ sender: Any) {
         var isCorrect = false
-        if correctAnswer == setValues?.option_3{
+        if correctAnswer == setValues?.option_3 {
             isCorrect = true
         }
         selectedOption?(isCorrect)
@@ -113,7 +113,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     */
     @IBAction public func onClickOptionD(_ sender: Any) {
         var isCorrect = false
-        if correctAnswer == setValues?.option_4{
+        if correctAnswer == setValues?.option_4 {
             isCorrect = true
         }
         selectedOption?(isCorrect)
@@ -163,8 +163,4 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         myView.layer.borderWidth = borderWidth
         myView.layer.borderColor = UIColor.white.cgColor
     }
-    
-    
-    
-    
 }
