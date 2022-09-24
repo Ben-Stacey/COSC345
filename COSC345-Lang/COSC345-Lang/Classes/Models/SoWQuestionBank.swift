@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SoWQuestionBank{
+class SoWQuestionBank {
     var list = [SoWQuestions]()
     
     init(){
