@@ -17,20 +17,20 @@ public enum SelectedOption {
 /**
     Handles the selected option and highlights it so the user can tell they pressed it.
 */
-public class QuizCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var questionLabel: UILabel!
+public class QuizCollectionViewCell:UICollectionViewCell {
+    @IBOutlet weak var questionLabel:UILabel!
     
-    @IBOutlet weak var option1: UILabel!
-    @IBOutlet weak var option2: UILabel!
-    @IBOutlet weak var option3: UILabel!
-    @IBOutlet weak var option4: UILabel!
+    @IBOutlet weak var option1:UILabel!
+    @IBOutlet weak var option2:UILabel!
+    @IBOutlet weak var option3:UILabel!
+    @IBOutlet weak var option4:UILabel!
     
-    @IBOutlet weak var optionA: UIControl!
-    @IBOutlet weak var optionB: UIControl!
-    @IBOutlet weak var optionC: UIControl!
-    @IBOutlet weak var optionD: UIControl!
+    @IBOutlet weak var optionA:UIControl!
+    @IBOutlet weak var optionB:UIControl!
+    @IBOutlet weak var optionC:UIControl!
+    @IBOutlet weak var optionD:UIControl!
     
-    private var correctAnswer: String?
+    private var correctAnswer:String?
     
     var setValues: Question? {
         didSet {
@@ -54,7 +54,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         updateBorder(myView: optionD)
     }
     
-    var selectedOption: ((_ selectedAnswer: Bool) -> Void)?
+    var selectedOption:((_ selectedAnswer: Bool) -> Void)?
     
     /**
         Selects option A and highlights it
@@ -62,7 +62,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickOptionA(_ sender: Any) {
+    @IBAction public func onClickOptionA(_ sender:Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_1 {
             isCorrect = true
@@ -78,7 +78,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickOptionB(_ sender: Any) {
+    @IBAction public func onClickOptionB(_ sender:Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_2 {
             isCorrect = true
@@ -94,7 +94,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickOptionC(_ sender: Any) {
+    @IBAction public func onClickOptionC(_ sender:Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_3 {
             isCorrect = true
@@ -110,7 +110,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickOptionD(_ sender: Any) {
+    @IBAction public func onClickOptionD(_ sender:Any) {
         var isCorrect = false
         if correctAnswer == setValues?.option_4 {
             isCorrect = true
@@ -126,7 +126,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - selectedOption: the answer option selected (A, B, C, D)
     */
-    public func changeBorder(selectedOption: SelectedOption) {
+    public func changeBorder(selectedOption:SelectedOption) {
         switch selectedOption {
         case .optionA:
             updateBorder(myView: optionA, borderWidth: 4)

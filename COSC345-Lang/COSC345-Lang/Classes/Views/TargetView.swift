@@ -11,7 +11,7 @@ import UIKit
 /**
     Class that controlls the targets for the Drag and Drop game
  */
-public class TargetView: UIImageView {
+public class TargetView:UIImageView {
     var letter:Character
     var isMatched:Bool = false
     /**
@@ -32,6 +32,6 @@ public class TargetView: UIImageView {
       let image = UIImage(named: "slot")!
       super.init(image:image)
       let scale = sideLength / image.size.width
-        self.frame = CGRect(x: 0,y: 0,width: image.size.width * scale,height: image.size.height * scale)
+        self.frame = CGRect(x:0,y:0,width: image.size.width * scale,height: image.size.height * scale)
     }
 }

@@ -11,23 +11,23 @@
  */
 import UIKit
 
-public class SeaofWords: UIViewController {
-    @IBOutlet weak var questionCounter: UILabel!
-    @IBOutlet weak var scoreCounter : UILabel!
-    @IBOutlet weak var progressView : UIView!
-    @IBOutlet weak var questionLabel : UILabel!
-    @IBOutlet weak var questionWord : UILabel!
+public class SeaofWords:UIViewController {
+    @IBOutlet weak var questionCounter:UILabel!
+    @IBOutlet weak var scoreCounter:UILabel!
+    @IBOutlet weak var progressView:UIView!
+    @IBOutlet weak var questionLabel:UILabel!
+    @IBOutlet weak var questionWord:UILabel!
     
     //Outlet for Buttons
-    @IBOutlet weak var optionA : UIButton!
-    @IBOutlet weak var optionB : UIButton!
-    @IBOutlet weak var optionC : UIButton!
-    @IBOutlet weak var optionD : UIButton!
+    @IBOutlet weak var optionA:UIButton!
+    @IBOutlet weak var optionB:UIButton!
+    @IBOutlet weak var optionC:UIButton!
+    @IBOutlet weak var optionD:UIButton!
     
     let allQuestions = SoWQuestionBank()
-    var questionNumber: Int = 0
-    var score: Int = 0
-    var selectedAnswer: Int = 0
+    var questionNumber:Int = 0
+    var score:Int = 0
+    var selectedAnswer:Int = 0
     
     
     public override func viewDidLoad() {
@@ -39,11 +39,11 @@ public class SeaofWords: UIViewController {
     public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    @IBAction func quit(_ sender: UIButton){
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func quit(_ sender:UIButton){
+        self.dismiss(animated:true, completion:nil)
     }
     
-    @IBAction func answerPressed(_ sender: UIButton) {
+    @IBAction func answerPressed(_ sender:UIButton) {
         /*
          if sender.tag == 1 {
          print("option a")
@@ -76,15 +76,15 @@ public class SeaofWords: UIViewController {
             selectedAnswer = allQuestions.list[questionNumber].correctAnswer
             
         }else {
-            let alert = UIAlertController(title: "Awsome !, you got \(score)/\(allQuestions.list.count)", message: "End of Quiz. Do you want to start over ?", preferredStyle: .alert)
-            let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
+            let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
+            let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
                 action in self.restartQuiz()
                 
             })
-            let goBackAction = UIAlertAction(title: "Back to Main Menu", style: .default, handler : { action in self.dismiss(animated: true, completion: nil)})
+            let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
             alert.addAction(restartAction)
             alert.addAction(goBackAction)
-            present(alert, animated: true, completion: nil)
+            present(alert, animated:true, completion:nil)
         }
         updateUI()
     }

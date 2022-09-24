@@ -12,8 +12,8 @@ import UIKit
     Class for the tile in the Drag and Drop game
  */
 public class TileView:UIImageView {
-    var letter: Character
-    var isMatched: Bool = false
+    var letter:Character
+    var isMatched:Bool = false
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
@@ -33,7 +33,7 @@ public class TileView:UIImageView {
         let scale = sideLength / image.size.width
         self.frame = CGRect(x: 0, y: 0, width: image.size.width * scale, height: image.size.height * scale)
         
-        let letterLabel = UILabel(frame: self.bounds)
+        let letterLabel = UILabel(frame:self.bounds)
         letterLabel.textAlignment = NSTextAlignment.center
         self.addSubview(letterLabel)
     }
