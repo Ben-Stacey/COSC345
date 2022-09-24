@@ -28,17 +28,17 @@ class COSC345_LangTests: XCTestCase {
     }
     
     func testEqualName() {
-        MainMenu.setName(n: "Ben")
+        MainMenu.setName(nam: "Ben")
         XCTAssertEqual(MainMenu.getName(), "Ben")
     }
     
     func testTrueLangSelected() {
-        MainMenu.setLangSelected(ls: true)
+        MainMenu.setLangSelected(lang: true)
         XCTAssertTrue(MainMenu.getLangSelected())
     }
     
     func testTrueNameSelected() {
-        MainMenu.setNameSelected(ns: true)
+        MainMenu.setNameSelected(name: true)
         XCTAssertTrue(MainMenu.getNameSelected())
     }
     
