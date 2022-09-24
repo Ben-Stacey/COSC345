@@ -7,7 +7,7 @@
 
 import UIKit
 
-public enum SelectedOption{
+public enum SelectedOption {
     case optionA
     case optionB
     case optionC
@@ -18,7 +18,6 @@ public enum SelectedOption{
     Handles the selected option and highlights it so the user can tell they pressed it.
 */
 public class QuizCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var option1: UILabel!
@@ -34,7 +33,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     private var correctAnswer: String?
     
     var setValues: Question? {
-        didSet{
+        didSet {
             questionLabel.text = setValues?.question
             option1.text = setValues?.option_1
             option2.text = setValues?.option_2
