@@ -8,16 +8,16 @@
 import UIKit
 import Foundation
 
-var languageNum: Int = 0
+var languageNum:Int = 0
 var language = ""
 var name = ""
-var langSelected: Bool = false
-var nameSelected: Bool = false
+var langSelected:Bool = false
+var nameSelected:Bool = false
 
 /**
     View Controller for the Main Menu
  */
-public class MainMenu: UIViewController {
+public class MainMenu:UIViewController {
     
     /**
         Declarations for UI elements
@@ -26,16 +26,16 @@ public class MainMenu: UIViewController {
             - textfield: outlet for the textfield
             - start: outlet set for the start button
     */
-    @IBOutlet public weak var label: UILabel!
-    @IBOutlet public weak var textfield: UITextField!
-    @IBOutlet public weak var start: UIButton!
+    @IBOutlet public weak var label:UILabel!
+    @IBOutlet public weak var textfield:UITextField!
+    @IBOutlet public weak var start:UIButton!
     
     /**
         When the maori button is clicked it stores that and displays it on the screen
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction public func maoriButtion(_ sender: Any) {
+    @IBAction public func maoriButtion(_ sender:Any) {
         languageNum = 3
         language = "maori"
         label.text = (language)
@@ -47,7 +47,7 @@ public class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction public func frenchButton(_ sender: Any) {
+    @IBAction public func frenchButton(_ sender:Any) {
         languageNum = 1
         language = "french"
         label.text = (language)
@@ -59,7 +59,7 @@ public class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction public func spanishButton(_ sender: Any) {
+    @IBAction public func spanishButton(_ sender:Any) {
         languageNum = 2
         language = "spanish"
         label.text = (language)
@@ -72,7 +72,7 @@ public class MainMenu: UIViewController {
         - Parameters:
             - any: [in] allows method to be sent anything
     */
-    @IBAction public func start(_ sender: Any) {
+    @IBAction public func start(_ sender:Any) {
         if let nam = textfield.text {
             name = nam
             nameSelected = true
@@ -81,16 +81,16 @@ public class MainMenu: UIViewController {
         if nameSelected == true && langSelected == true {
             guard let view = storyboard?
                 .instantiateViewController(withIdentifier:
-                                            "HomeScreen") as? HomeScreen else{return}
-            self.navigationController?.pushViewController(view, animated: true)
+                                            "HomeScreen") as? HomeScreen else {return}
+            self.navigationController?.pushViewController(view, animated:true)
         } else {
-            let alert = UIAlertController(title: "not selected", message: "Name or Language not selected", preferredStyle: .alert)
+            let alert = UIAlertController(title:"not selected", message:"Name or Language not selected", preferredStyle:.alert)
             
-            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler:nil)
             
             alert.addAction(okAction)
             
-            present(alert, animated: true, completion: nil)
+            present(alert, animated:true, completion:nil)
             return
         }
     }
@@ -105,7 +105,7 @@ public class MainMenu: UIViewController {
     /**
         Setter method for languageNum
      */
-    public class func setLanguageNum(l: Int) {
+    public class func setLanguageNum(l:Int) {
         languageNum = l
     }
     
@@ -128,7 +128,7 @@ public class MainMenu: UIViewController {
          - Parameters:
              - lang: [in] sends the language string
      */
-    public class func setLanguage(lang: String) {
+    public class func setLanguage(lang:String) {
         language = lang
     }
     
@@ -144,7 +144,7 @@ public class MainMenu: UIViewController {
          - Parameters:
              - n: [in] sends the name string
      */
-    public class func setName(nam: String){
+    public class func setName(nam:String){
         name = nam
     }
     
@@ -160,7 +160,7 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ls: [in] sends the language bool
      */
-    public class func setLangSelected(lang: Bool){
+    public class func setLangSelected(lang:Bool){
         langSelected = lang
     }
     
@@ -176,8 +176,7 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ns: [in] sends the name bool
      */
-    public class func setNameSelected(name: Bool){
+    public class func setNameSelected(name:Bool){
         nameSelected = name
     }
-    
 }
