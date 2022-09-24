@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DragNDrop: UIViewController {
+class DragNDrop:UIViewController {
     
     //var viewModel = TileViewModel()
     var questions:[Question] = []
@@ -15,13 +15,13 @@ class DragNDrop: UIViewController {
     var points = 0
     var index = 0
 
-    @IBOutlet weak var tile: UIView!
-    @IBOutlet weak var tile2: UIView!
-    @IBOutlet weak var tile3: UIView!
+    @IBOutlet weak var tile:UIView!
+    @IBOutlet weak var tile2:UIView!
+    @IBOutlet weak var tile3:UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tile.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerOne)))
+        self.tile.addGestureRecognizer(UIPanGestureRecognizer(target:self, action:#selector(handlerOne)))
         /**
         self.tile2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlerTwo)))
         
@@ -61,8 +61,8 @@ class DragNDrop: UIViewController {
          */
     }
     
-    @objc func handlerOne(gesture: UIPanGestureRecognizer) {
-        let location = gesture.location(in: self.view)
+    @objc func handlerOne(gesture:UIPanGestureRecognizer) {
+        let location = gesture.location(in:self.view)
         let tile1 = gesture.view
         tile1?.center = location
                 
@@ -79,8 +79,8 @@ class DragNDrop: UIViewController {
         }
     }
     
-    @objc func handlerTwo(gesture: UIPanGestureRecognizer) {
-        let location = gesture.location(in: self.view)
+    @objc func handlerTwo(gesture:UIPanGestureRecognizer) {
+        let location = gesture.location(in:self.view)
         let tile1 = gesture.view
         tile1?.center = location
                 
@@ -97,8 +97,8 @@ class DragNDrop: UIViewController {
         }
     }
     
-    @objc func handlerThree(gesture: UIPanGestureRecognizer) {
-        let location = gesture.location(in: self.view)
+    @objc func handlerThree(gesture:UIPanGestureRecognizer) {
+        let location = gesture.location(in:self.view)
         let tile1 = gesture.view
         tile1?.center = location
                 
