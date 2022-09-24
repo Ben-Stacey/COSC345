@@ -910,8 +910,7 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="fid-Iy-SyI"/>
-                                                            <action selector="optionA:" destination="KoA-AS-BT2" eventType="touchUpInside" id="NEq-Wg-468"/>
+                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="P3B-0R-ddQ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2T-KL-nxt" userLabel="optionB">
@@ -950,7 +949,7 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="hXA-sZ-pcI"/>
+                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="MXv-Vw-4v3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1036,10 +1035,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="QUI-0J-QEN"/>
                     <connections>
-                        <outlet property="optionA" destination="Ebn-Kz-Emm" id="Fib-od-Str"/>
-                        <outlet property="optionB" destination="P2T-KL-nxt" id="DDh-Pl-ETb"/>
-                        <outlet property="optionC" destination="8Sq-sa-qhy" id="pxB-YR-4Zw"/>
-                        <outlet property="optionD" destination="f98-Tl-ikb" id="2cK-lI-p9F"/>
+                        <outlet property="optionA" destination="Ebn-Kz-Emm" id="HWD-Vv-yjT"/>
+                        <outlet property="optionB" destination="P2T-KL-nxt" id="ZK2-xC-UgE"/>
+                        <outlet property="optionC" destination="8Sq-sa-qhy" id="Trx-82-ZF5"/>
+                        <outlet property="optionD" destination="f98-Tl-ikb" id="eQ2-lW-Vqb"/>
                         <outlet property="progressView" destination="A1q-QI-PbF" id="YEs-ig-Pxb"/>
                         <outlet property="questionCounter" destination="dpy-3f-Kyf" id="IfY-Ja-L4z"/>
                         <outlet property="questionLabel" destination="gsR-dk-Zf0" id="2CK-8E-RxW"/>
@@ -1048,7 +1047,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAT-KH-d0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="KoA-AS-BT2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4134.7826086956529" y="1172.5446428571429"/>
         </scene>
