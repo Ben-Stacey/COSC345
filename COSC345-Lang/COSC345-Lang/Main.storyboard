@@ -300,36 +300,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-Wq-LeX">
-                                <rect key="frame" x="70" y="292" width="268" height="225"/>
+                                <rect key="frame" x="70" y="292" width="274" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-Ww-3lG">
-                                        <rect key="frame" x="0.0" y="0.0" width="268" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-6S-eNo">
-                                        <rect key="frame" x="0.0" y="20.5" width="268" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m56-qc-UjI">
-                                        <rect key="frame" x="0.0" y="41" width="268" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB6-BJ-PqW">
-                                        <rect key="frame" x="0.0" y="75" width="268" height="81"/>
+                                        <rect key="frame" x="0.0" y="20" width="274" height="81"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-OA-uSx">
-                                        <rect key="frame" x="0.0" y="156" width="268" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="274" height="34.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-B0-nz4">
-                                                <rect key="frame" x="0.0" y="0.0" width="89.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Maori"/>
                                                 <connections>
@@ -338,7 +338,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm6-ej-QpY">
-                                                <rect key="frame" x="89.5" y="0.0" width="89" height="34.5"/>
+                                                <rect key="frame" x="91.5" y="0.0" width="91" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Spanish"/>
                                                 <connections>
@@ -347,7 +347,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-ND-xxC">
-                                                <rect key="frame" x="178.5" y="0.0" width="89.5" height="34.5"/>
+                                                <rect key="frame" x="182.5" y="0.0" width="91.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="French"/>
                                                 <connections>
@@ -358,7 +358,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-B6-gAA">
-                                        <rect key="frame" x="0.0" y="190.5" width="268" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="274" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                         <connections>
@@ -910,8 +910,7 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="fid-Iy-SyI"/>
-                                                            <action selector="optionA:" destination="KoA-AS-BT2" eventType="touchUpInside" id="NEq-Wg-468"/>
+                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="P3B-0R-ddQ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2T-KL-nxt" userLabel="optionB">
@@ -950,7 +949,7 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="hXA-sZ-pcI"/>
+                                                            <action selector="answerPressed:" destination="7Tx-kf-7fR" eventType="touchUpInside" id="MXv-Vw-4v3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1036,10 +1035,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="QUI-0J-QEN"/>
                     <connections>
-                        <outlet property="optionA" destination="Ebn-Kz-Emm" id="Fib-od-Str"/>
-                        <outlet property="optionB" destination="P2T-KL-nxt" id="DDh-Pl-ETb"/>
-                        <outlet property="optionC" destination="8Sq-sa-qhy" id="pxB-YR-4Zw"/>
-                        <outlet property="optionD" destination="f98-Tl-ikb" id="2cK-lI-p9F"/>
+                        <outlet property="optionA" destination="Ebn-Kz-Emm" id="HWD-Vv-yjT"/>
+                        <outlet property="optionB" destination="P2T-KL-nxt" id="ZK2-xC-UgE"/>
+                        <outlet property="optionC" destination="8Sq-sa-qhy" id="Trx-82-ZF5"/>
+                        <outlet property="optionD" destination="f98-Tl-ikb" id="eQ2-lW-Vqb"/>
                         <outlet property="progressView" destination="A1q-QI-PbF" id="YEs-ig-Pxb"/>
                         <outlet property="questionCounter" destination="dpy-3f-Kyf" id="IfY-Ja-L4z"/>
                         <outlet property="questionLabel" destination="gsR-dk-Zf0" id="2CK-8E-RxW"/>
@@ -1048,7 +1047,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAT-KH-d0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="KoA-AS-BT2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4134.7826086956529" y="1172.5446428571429"/>
         </scene>
