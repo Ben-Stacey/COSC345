@@ -29,7 +29,7 @@ public func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
 /**
     Getter method for ScreenHeight
  */
-public func getScreenWidth() -> CGFloat{
+public func getScreenWidth() -> CGFloat {
     return screenWidth
 }
 
@@ -38,14 +38,14 @@ public func getScreenWidth() -> CGFloat{
      - Parameters:
          - width: [in] the width of the tile
  */
-public func setScreenWidth(width: CGFloat){
+public func setScreenWidth(width: CGFloat) {
     screenWidth = width
 }
 
 /**
     Getter method for ScreenHeight
  */
-public func getScreenHeight() -> CGFloat{
+public func getScreenHeight() -> CGFloat {
     return screenHeight
 }
 
@@ -54,6 +54,6 @@ public func getScreenHeight() -> CGFloat{
      - Parameters:
          - height: [in] the height of the tile
  */
-public func setScreenHeight(height: CGFloat){
+public func setScreenHeight(height: CGFloat) {
     screenHeight = height
 }
