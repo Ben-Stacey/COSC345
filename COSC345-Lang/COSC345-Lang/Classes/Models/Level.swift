@@ -14,7 +14,6 @@ public struct Level {
   //let pointsPerTile: Int
   //let timeToSolve: Int
   let sentence: [NSArray]
-  
     /**
         Initialser method searches through the .plist file to get the required information for the game
         - Parameters:
