@@ -10,6 +10,9 @@
 		2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47028B44B2B00A4493A /* QuestionModel.swift */; };
 		2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47228B44B4600A4493A /* QuestionViewModel.swift */; };
 		2935E01928DE74330071C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E01828DE74330071C3D5 /* Main.storyboard */; };
+		2935E02328DE9EE40071C3D5 /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E02228DE9EE40071C3D5 /* SeaOfWords.swift */; };
+		2935E02528DE9EF70071C3D5 /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E02428DE9EF70071C3D5 /* SoWQuestion.swift */; };
+		2935E02728DE9EFC0071C3D5 /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E02628DE9EFC0071C3D5 /* SoWQuestionBank.swift */; };
 		293B93EF28DBCFF800FE5AAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */; };
 		293B93F028DBF5C900FE5AAA /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352675C828B84B99007C7942 /* HomeScreen.swift */; };
 		297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A528A600AD00C3291A /* Leaderboards.swift */; };
@@ -44,6 +47,9 @@
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
+		AE2D2B3F28DE9F1F00311548 /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2B3E28DE9F1F00311548 /* SeaOfWords.swift */; };
+		AE2D2B4128DE9F3F00311548 /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2B4028DE9F3F00311548 /* SoWQuestion.swift */; };
+		AE2D2B4328DE9F4800311548 /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2B4228DE9F4800311548 /* SoWQuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,10 @@
 		2923D47028B44B2B00A4493A /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E02228DE9EE40071C3D5 /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeaOfWords.swift; path = "../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/SeaOfWords.swift"; sourceTree = "<group>"; };
+		2935E02428DE9EF70071C3D5 /* SoWQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestion.swift; path = "../../../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestion.swift"; sourceTree = "<group>"; };
+		2935E02628DE9EFC0071C3D5 /* SoWQuestionBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestionBank.swift; path = "../../../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestionBank.swift"; sourceTree = "<group>"; };
 		293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		297AF0A528A600AD00C3291A /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
@@ -96,11 +106,11 @@
 		35865C1228DC1170002C179C /* DragNDropMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropMainMenu.swift; sourceTree = "<group>"; };
 		35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropCollectionViewCell.swift; sourceTree = "<group>"; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
-		AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestion.swift; path = "../../../../../COSC345 copy/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestion.swift"; sourceTree = "<group>"; };
+		AE2D2B3D28DE9E0600311548 /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2D2B3E28DE9F1F00311548 /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
+		AE2D2B4028DE9F3F00311548 /* SoWQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoWQuestion.swift; sourceTree = "<group>"; };
+		AE2D2B4228DE9F4800311548 /* SoWQuestionBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoWQuestionBank.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEAD3B6F28DE699600D9E88A /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "COSC345-LangTests.xctest"; path = "/Users/benstacey/Documents/COSC345/COSC345-Lang/build/Debug-iphoneos/COSC345-LangTests.xctest"; sourceTree = "<absolute>"; };
-		AEAD3B7028DE6A0400D9E88A /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeaOfWords.swift; path = "../../../COSC345 copy/COSC345-Lang/COSC345-Lang/SeaOfWords.swift"; sourceTree = "<group>"; };
-		AEAD3B7228DE6A2800D9E88A /* SoWQuestionBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestionBank.swift; path = "../../../../../COSC345 copy/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestionBank.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 				3528941328A330E9002C980C /* COSC345-Lang */,
 				35CE493228A5F3430093CC7E /* COSC345-LangTests */,
 				AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */,
+				2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +147,7 @@
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */,
+				2935E02228DE9EE40071C3D5 /* SeaOfWords.swift */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
 				35865C1028DBD1AE002C179C /* DragNDrop.swift */,
 				35865C1228DC1170002C179C /* DragNDropMainMenu.swift */,
@@ -145,13 +157,13 @@
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */,
+				AE2D2B3E28DE9F1F00311548 /* SeaOfWords.swift */,
 				2996AAB928B5D27D005B36E1 /* QuizViewController.swift */,
 				2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */,
 				2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */,
 				297AF0AB28A601B300C3291A /* WagerQuizzes.swift */,
 				297AF0A528A600AD00C3291A /* Leaderboards.swift */,
 				2923D47028B44B2B00A4493A /* QuestionModel.swift */,
-				AEAD3B7028DE6A0400D9E88A /* SeaOfWords.swift */,
 				2923D47228B44B4600A4493A /* QuestionViewModel.swift */,
 				357FD70D28AB3C5E00D060C4 /* Config.swift */,
 				353B11CE28A9FDDA00B996DB /* CheatSheet.swift */,
@@ -209,10 +221,12 @@
 		357FD71628AB3D7F00D060C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE2D2B4028DE9F3F00311548 /* SoWQuestion.swift */,
+				AE2D2B4228DE9F4800311548 /* SoWQuestionBank.swift */,
 				357FD72328AB4FCB00D060C4 /* GameData.swift */,
-				AEAD3B7228DE6A2800D9E88A /* SoWQuestionBank.swift */,
-				AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */,
 				357FD72528AB504900D060C4 /* Level.swift */,
+				2935E02428DE9EF70071C3D5 /* SoWQuestion.swift */,
+				2935E02628DE9EFC0071C3D5 /* SoWQuestionBank.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,7 +275,7 @@
 			);
 			name = "COSC345-LangTests";
 			productName = "COSC345-LangTests";
-			productReference = AEAD3B6F28DE699600D9E88A /* COSC345-LangTests.xctest */;
+			productReference = 2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -354,7 +368,10 @@
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
 				35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */,
 				3528941728A330E9002C980C /* SceneDelegate.swift in Sources */,
+				2935E02528DE9EF70071C3D5 /* SoWQuestion.swift in Sources */,
 				357FD73028AB5E0B00D060C4 /* TargetView.swift in Sources */,
+				2935E02728DE9EFC0071C3D5 /* SoWQuestionBank.swift in Sources */,
+				2935E02328DE9EE40071C3D5 /* SeaOfWords.swift in Sources */,
 				2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */,
 				357FD72E28AB5DE300D060C4 /* TileView.swift in Sources */,
 				2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */,
