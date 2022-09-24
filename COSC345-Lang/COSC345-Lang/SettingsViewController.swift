@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func submitButton(_ sender: Any) {
         if nameField.text != ""{
-            MainMenu.setName(n: nameField.text ?? MainMenu.getName())
+            MainMenu.setName(nam: nameField.text ?? MainMenu.getName())
         }
         
         

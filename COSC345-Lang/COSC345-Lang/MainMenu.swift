@@ -78,7 +78,7 @@ public class MainMenu: UIViewController {
             nameSelected = true
         }
         
-        if nameSelected == true && langSelected == true{
+        if nameSelected == true && langSelected == true {
             guard let view = storyboard?
                 .instantiateViewController(withIdentifier:
                                             "HomeScreen") as? HomeScreen else{return}
@@ -105,21 +105,21 @@ public class MainMenu: UIViewController {
     /**
         Setter method for languageNum
      */
-    public class func setLanguageNum(l: Int){
+    public class func setLanguageNum(l: Int) {
         languageNum = l
     }
     
     /**
         Getter method for languageNum
      */
-    public class func getLanguageNum() -> Int{
+    public class func getLanguageNum() -> Int {
         return languageNum
     }
     
     /**
         Getter method for language
      */
-    public class func getLanguage() -> String{
+    public class func getLanguage() -> String {
         return language
     }
     
@@ -128,14 +128,14 @@ public class MainMenu: UIViewController {
          - Parameters:
              - lang: [in] sends the language string
      */
-    public class func setLanguage(lang: String){
+    public class func setLanguage(lang: String) {
         language = lang
     }
     
     /**
         Getter method for name
      */
-    public class func getName() -> String{
+    public class func getName() -> String {
         return name
     }
     

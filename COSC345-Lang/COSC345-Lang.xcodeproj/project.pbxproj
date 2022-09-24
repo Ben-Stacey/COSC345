@@ -44,7 +44,6 @@
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
-		AE2D2B3728DE7AC400311548 /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2B3628DE7AC400311548 /* SoWQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,7 +346,6 @@
 				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
-				AE2D2B3728DE7AC400311548 /* SoWQuestion.swift in Sources */,
 				2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
 				357EC44B28B461A40092F1B4 /* MainMenu.swift in Sources */,
