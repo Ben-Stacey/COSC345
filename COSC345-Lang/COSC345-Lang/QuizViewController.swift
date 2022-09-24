@@ -55,9 +55,9 @@ public class QuizViewController: UIViewController {
                 randAnswersFromLanguage.remove(at: randomNumber)
                 randAnswersLength -= 1
                 
-                var i = 0
+                var index = 0
                 for (_, phraseArray) in root {
-                    if i == randomNumber {
+                    if index == randomNumber {
                         let options = [phraseArray[languageNum], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)]]
                         let shuffledOptions = options.shuffled()
 
@@ -73,7 +73,7 @@ public class QuizViewController: UIViewController {
                         questions.append(Question(correctAnswer: correct_answer, option_1: option_1, option_2: option_2, option_3: option_3, option_4: option_4, question: question))
                     }
                     
-                    i += 1
+                    index += 1
                 }
             }
             dex += 1

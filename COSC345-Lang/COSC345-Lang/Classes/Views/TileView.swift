@@ -11,7 +11,7 @@ import UIKit
 /**
     Class for the tile in the Drag and Drop game
  */
-public class TileView:UIImageView{
+public class TileView:UIImageView {
     var letter: Character
     var isMatched: Bool = false
     /**

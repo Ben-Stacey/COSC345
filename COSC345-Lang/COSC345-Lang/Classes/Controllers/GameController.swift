@@ -19,7 +19,7 @@ public class GameController {
     /**
         dealRandomSentence() adds the targets and tiles to the game screen. Adds the strings to the tile on the game
     */
-    public func dealRandomSentence(){
+    public func dealRandomSentence() {
         assert(level.sentence.count > 0, "no level loaded")
         
         let randomIndex = randomNumber(minX: 0, maxX: UInt32(level.sentence.count-1))
@@ -42,7 +42,7 @@ public class GameController {
         
         targets = []
         
-        for (index, letter) in sentence2.enumerated(){
+        for (index, letter) in sentence2.enumerated() {
             if letter != " " {
                 let target = TargetView(letter: letter, sideLength: tileSide)
                 target.center = CGPoint(x: xOffset + CGFloat(index) * (tileSide + tileMargin), y: screenHeight/4)
