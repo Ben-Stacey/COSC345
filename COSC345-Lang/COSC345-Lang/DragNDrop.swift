@@ -71,7 +71,7 @@ class DragNDrop: UIViewController {
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                             self.tile.center.x = self.view.layer.frame.width - 40
                         }, completion: nil)
-            }else{
+            } else {
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                     self.tile.center.x = 40
                 }, completion: nil)
@@ -89,7 +89,7 @@ class DragNDrop: UIViewController {
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                             self.tile2.center.x = self.view.layer.frame.width - 40
                         }, completion: nil)
-            }else{
+            } else {
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                     self.tile2.center.x = 40
                 }, completion: nil)
@@ -107,7 +107,7 @@ class DragNDrop: UIViewController {
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                             self.tile3.center.x = self.view.layer.frame.width - 40
                         }, completion: nil)
-            }else{
+            } else {
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                     self.tile3.center.x = 40
                 }, completion: nil)
