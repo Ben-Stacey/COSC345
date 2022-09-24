@@ -126,7 +126,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
         - Parameters:
             - selectedOption: the answer option selected (A, B, C, D)
     */
-    public func changeBorder(selectedOption: SelectedOption){
+    public func changeBorder(selectedOption: SelectedOption) {
         switch selectedOption {
         case .optionA:
             updateBorder(myView: optionA, borderWidth: 4)
@@ -158,7 +158,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
             - myView: the UIView to be highlighted
             - borderWidth: 0 if not passed
     */
-    public func updateBorder(myView: UIView, borderWidth: CGFloat = 0){
+    public func updateBorder(myView: UIView, borderWidth: CGFloat = 0) {
         myView.layer.borderWidth = borderWidth
         myView.layer.borderColor = UIColor.white.cgColor
     }
