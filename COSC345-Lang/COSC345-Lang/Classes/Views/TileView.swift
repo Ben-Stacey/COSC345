@@ -11,13 +11,13 @@ import UIKit
 /**
     Class for the tile in the Drag and Drop game
  */
-public class TileView:UIImageView {
-    var letter:Character
-    var isMatched:Bool = false
+public class TileView: UIImageView {
+    var letter: Character
+    var isMatched: Bool = false
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
-    public required init(coder aDecorder:NSCoder) {
+    public required init(coder aDecorder: NSCoder) {
         fatalError("use other init")
     }
     /**
@@ -26,7 +26,7 @@ public class TileView:UIImageView {
             - Letter: [in] the string that will be displayed on the tile
             - sideLength: [in] the length of the tile
     */
-    public init(letter:Character, sideLength:CGFloat) {
+    public init(letter: Character, sideLength: CGFloat) {
         self.letter = letter
         let image = UIImage(named: "tile")!
         super.init(image:image)

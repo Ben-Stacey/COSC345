@@ -8,7 +8,7 @@
 import Foundation
 
 class QuestionViewModel {
-    var questionData:DataModel?
+    var questionData: DataModel?
     private let sourcesURL = URL(string: "https://quiz-68112-default-rtdb.firebaseio.com/quiz.json")!
 
     func apiToGetQuestionData(completion:@escaping () -> ()) {

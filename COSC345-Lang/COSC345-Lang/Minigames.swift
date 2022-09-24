@@ -10,8 +10,7 @@ import Foundation
 /**
     View Controller for the minigames
  */
-public class ViewController:UIViewController {
-    
+public class ViewController: UIViewController {
     var language = ""
     
     private let controller: GameController
@@ -21,7 +20,7 @@ public class ViewController:UIViewController {
         - Parameters:
             - NSCoder: [in]declares the interface used by concrete subclasses to transfer objects and other values between memory
     */
-    public required init(coder aDecorder:NSCoder) {
+    public required init(coder aDecorder: NSCoder) {
         controller = GameController()
         super.init(coder:aDecorder)!
     }

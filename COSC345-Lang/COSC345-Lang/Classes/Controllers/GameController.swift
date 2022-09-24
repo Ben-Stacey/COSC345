@@ -12,8 +12,8 @@ import UIKit
     Game Controller for the Drag and Drop game
  */
 public class GameController {
-    var gameView:UIView!
-    var level:Level!
+    var gameView: UIView!
+    var level: Level!
     private var tiles = [TileView]()
     private var targets = [TargetView]()
     /**

@@ -7,21 +7,21 @@
 
 import Foundation
 
-struct DataModel:Codable {
+struct DataModel: Codable {
     var data:QuestionModel?
 }
 
-struct QuestionModel:Codable {
+struct QuestionModel: Codable {
     var questions:[Question]?
 }
     
-struct Question:Codable {
+struct Question: Codable {
     var correctAnswer: String?
-    var option_1:String?
-    var option_2:String?
-    var option_3:String?
-    var option_4:String?
-    var question:String?
+    var option_1: String?
+    var option_2: String?
+    var option_3: String?
+    var option_4: String?
+    var question: String?
     
     init(correctAnswer:String, option_1:String, option_2:String, option_3:String, option_4:String, question:String) {
         self.correctAnswer = correctAnswer

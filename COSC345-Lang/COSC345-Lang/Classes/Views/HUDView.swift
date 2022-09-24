@@ -18,7 +18,7 @@ public class HUDView: UIView {
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
-    public required init(coder aDecorder:NSCoder) { 
+    public required init(coder aDecorder: NSCoder) { 
         fatalError("use init(frame:")
     }
     
@@ -27,7 +27,7 @@ public class HUDView: UIView {
         - Parameters:
             - frame: [in] This is the frame of HUD to be displayed in the game
     */
-    public override init(frame:CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame:frame)
         self.isUserInteractionEnabled = true
     }

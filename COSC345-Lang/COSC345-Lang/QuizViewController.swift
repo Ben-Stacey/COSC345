@@ -139,7 +139,7 @@ public class QuizViewController: UIViewController {
     }
 }
 
-extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     /**
         Returns number of questions.
      
@@ -149,7 +149,7 @@ extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegat
         - Returns:
             - Int: number of questions
     */
-    public func collectionView(_ collectionView:UICollectionView, numberOfItemsInSection section:Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return questions.count
     }
     
@@ -162,7 +162,7 @@ extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegat
         - Returns:
             - UICollectionViewCell: the correctly layed out cell
     */
-    public func collectionView(_ collectionView:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"QuizCollectionViewCell", for:indexPath) as? QuizCollectionViewCell else{
             return QuizCollectionViewCell()
         }
@@ -188,7 +188,7 @@ extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegat
         - Returns:
             - CGSize: with collectionView width and height.
     */
-    public func collectionView(_ collectionView:UICollectionView, layout collectionViewLayout:UICollectionViewLayout, sizeForItemAt indexPath:IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
@@ -202,7 +202,7 @@ extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegat
         - Returns:
             - CGFloat: must be 0
     */
-    public func collectionView(_ collectionView:UICollectionView, layout collectionViewLayout:UICollectionViewLayout, minimumLineSpacingForSectionAt section:Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     
@@ -216,7 +216,7 @@ extension QuizViewController:UICollectionViewDataSource, UICollectionViewDelegat
         - Returns:
             - CGFloat: must be 0
     */
-    public func collectionView(_ collectionView:UICollectionView, layout collectionViewLayout:UICollectionViewLayout, minimumInteritemSpacingForSectionAt section:Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     

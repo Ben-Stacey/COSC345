@@ -11,7 +11,7 @@ import UIKit
 var screenWidth = UIScreen.main.bounds.size.width
 var screenHeight = UIScreen.main.bounds.size.height
 
-let tileMargin:CGFloat = 20.0
+let tileMargin: CGFloat = 20.0
 
 /**
     Randomly generates a number that between the two limits
@@ -21,7 +21,7 @@ let tileMargin:CGFloat = 20.0
     - Returns:
         - Int(result): returns the randomly generated number
 */
-public func randomNumber(minX:UInt32, maxX:UInt32) -> Int {
+public func randomNumber(minX: UInt32, maxX: UInt32) -> Int {
   let result = (arc4random() % (maxX - minX + 1)) + minX
   return Int(result)
 }
@@ -38,7 +38,7 @@ public func getScreenWidth() -> CGFloat {
      - Parameters:
          - width: [in] the width of the tile
  */
-public func setScreenWidth(width:CGFloat) {
+public func setScreenWidth(width: CGFloat) {
     screenWidth = width
 }
 
@@ -54,6 +54,6 @@ public func getScreenHeight() -> CGFloat {
      - Parameters:
          - height: [in] the height of the tile
  */
-public func setScreenHeight(height:CGFloat) {
+public func setScreenHeight(height: CGFloat) {
     screenHeight = height
 }

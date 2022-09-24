@@ -10,8 +10,8 @@ import UIKit
 /**
     The view controller for the quiz result screen. Displays result.
 */
-public class QuizResultViewController:UIViewController {
-    @IBOutlet weak var resultLabel:UILabel!
+public class QuizResultViewController: UIViewController {
+    @IBOutlet weak var resultLabel: UILabel!
     var result = 0
     /**
         Loads the view controller and sets the result label to result
@@ -27,7 +27,7 @@ public class QuizResultViewController:UIViewController {
         - Parameters:
             - sender: allows method to be sent anything
     */
-    @IBAction public func onClickHome(_ sender:Any) {
+    @IBAction public func onClickHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated:true)
     }
 }

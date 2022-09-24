@@ -10,7 +10,7 @@ import UIKit
 /**
     View Controller for the Quizzes
  */
-public class WagerQuizzes:UIViewController {
+public class WagerQuizzes: UIViewController {
     /**
         Loads the View Controller
      */
