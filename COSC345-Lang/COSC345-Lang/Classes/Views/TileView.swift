@@ -20,7 +20,6 @@ public class TileView:UIImageView {
     public required init(coder aDecorder:NSCoder) {
         fatalError("use other init")
     }
-    
     /**
         This init function displays the tile with the letter inside of it
         - Parameters:
