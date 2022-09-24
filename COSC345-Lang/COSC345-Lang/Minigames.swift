@@ -35,7 +35,7 @@ public class ViewController: UIViewController {
         print("Tower: \(level1.sentence)")
         
         super.viewDidLoad()
-        let gameView = UIView(frame: CGRect(x:0, y: 0, width: ScreenWidth, height: ScreenHeight))
+        let gameView = UIView(frame: CGRect(x:0, y: 0, width: screenWidth, height: screenHeight))
         self.view.addSubview(gameView)
         controller.gameView = gameView
         controller.level = level1

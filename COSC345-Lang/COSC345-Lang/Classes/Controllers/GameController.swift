@@ -34,9 +34,9 @@ public class GameController {
         print("phrase1[\(sentence1Length)]: \(sentence1)")
         print("phrase2[\(sentence1Length)]: \(sentence2)")
         
-        let tileSide = ceil(ScreenWidth * 0.9 / CGFloat(max(sentence1Length, sentence2Length))) - TileMargin
+        let tileSide = ceil(screenWidth * 0.9 / CGFloat(max(sentence1Length, sentence2Length))) - tileMargin
         
-        var xOffset = (ScreenWidth - CGFloat(max(sentence1Length, sentence2Length)) * (tileSide + TileMargin)) / 2.0
+        var xOffset = (screenWidth - CGFloat(max(sentence1Length, sentence2Length)) * (tileSide + tileMargin)) / 2.0
         
         xOffset += tileSide / 2.0
         
@@ -45,7 +45,7 @@ public class GameController {
         for (index, letter) in sentence2.enumerated(){
             if letter != " " {
                 let target = TargetView(letter: letter, sideLength: tileSide)
-                target.center = CGPoint(x: xOffset + CGFloat(index) * (tileSide + TileMargin), y: ScreenHeight/4)
+                target.center = CGPoint(x: xOffset + CGFloat(index) * (tileSide + tileMargin), y: screenHeight/4)
                 
                 gameView.addSubview(target)
                 targets.append(target)
@@ -58,7 +58,7 @@ public class GameController {
           if letter != " " {
             let tile = TileView(letter: letter, sideLength: tileSide)
               tile.randomize()
-              tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + TileMargin), y: ScreenHeight/4*3)
+              tile.center = CGPoint(x: xOffset + CGFloat(index)*(tileSide + tileMargin), y: screenHeight/4*3)
                 
             gameView.addSubview(tile)
             tiles.append(tile)
