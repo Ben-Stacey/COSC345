@@ -19,17 +19,17 @@ class SettingsViewController: UIViewController {
 
     @IBAction func maoriButton(_ sender: Any) {
         MainMenu.setLanguageNum(l: 3)
-        MainMenu.setLanguage(lang: "maori")
+        MainMenu.setLanguage(lang: "Maori")
         langPicked.text = MainMenu.getLanguage()
     }
     @IBAction func spanishButton(_ sender: Any) {
         MainMenu.setLanguageNum(l: 2)
-        MainMenu.setLanguage(lang: "spanish")
+        MainMenu.setLanguage(lang: "Spanish")
         langPicked.text = MainMenu.getLanguage()
     }
     @IBAction func frenchButton(_ sender: Any) {
         MainMenu.setLanguageNum(l: 1)
-        MainMenu.setLanguage(lang: "french")
+        MainMenu.setLanguage(lang: "French")
         langPicked.text = MainMenu.getLanguage()
     }
     

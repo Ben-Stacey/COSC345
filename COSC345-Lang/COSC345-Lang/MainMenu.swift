@@ -37,7 +37,7 @@ public class MainMenu: UIViewController {
     */
     @IBAction public func maoriButtion(_ sender: Any) {
         languageNum = 3
-        language = "maori"
+        language = "Maori"
         label.text = (language)
         langSelected = true
     }
@@ -49,7 +49,7 @@ public class MainMenu: UIViewController {
     */
     @IBAction public func frenchButton(_ sender: Any) {
         languageNum = 1
-        language = "french"
+        language = "French"
         label.text = (language)
         langSelected = true
     }
@@ -61,7 +61,7 @@ public class MainMenu: UIViewController {
     */
     @IBAction public func spanishButton(_ sender: Any) {
         languageNum = 2
-        language = "spanish"
+        language = "Spanish"
         label.text = (language)
         langSelected = true
     }
