@@ -144,8 +144,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - n: [in] sends the name string
      */
-    public class func setName(n: String){
-        name = n
+    public class func setName(nam: String){
+        name = nam
     }
     
     /**
@@ -160,8 +160,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ls: [in] sends the language bool
      */
-    public class func setLangSelected(ls: Bool){
-        langSelected = ls
+    public class func setLangSelected(lang: Bool){
+        langSelected = lang
     }
     
     /**
@@ -176,8 +176,8 @@ public class MainMenu: UIViewController {
          - Parameters:
              - ns: [in] sends the name bool
      */
-    public class func setNameSelected(ns: Bool){
-        nameSelected = ns
+    public class func setNameSelected(name: Bool){
+        nameSelected = name
     }
     
 }
