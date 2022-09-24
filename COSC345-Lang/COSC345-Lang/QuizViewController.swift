@@ -39,7 +39,7 @@ public class QuizViewController: UIViewController {
                 var language: String = ""
                 if languageNum == 1{
                     language = "French"
-                }else if languageNum == 2 { 
+                }else if languageNum == 2 {
                     language = "Spanish"
                 }else if languageNum == 3 {
                     language = "Maori"
@@ -70,7 +70,7 @@ public class QuizViewController: UIViewController {
                         let option_4 = shuffledOptions[3]
                         let question = "Translate \"\(phraseArray[0])\" to \(language)"
                         
-                        questions.append(Question(correct_answer: correct_answer, option_1: option_1, option_2: option_2, option_3: option_3, option_4: option_4, question: question))
+                        questions.append(Question(correctAnswer: correct_answer, option_1: option_1, option_2: option_2, option_3: option_3, option_4: option_4, question: question))
                     }
                     
                     i += 1
