@@ -14,7 +14,7 @@ var xpToLevelUp: Int = 5
 /**
     View Controller for the Home Screen
  */
-public class HomeScreen:UIViewController {
+public class HomeScreen: UIViewController {
     
     @IBOutlet public weak var welcomeLabel:UILabel!
     @IBOutlet weak var levelLabel:UILabel!

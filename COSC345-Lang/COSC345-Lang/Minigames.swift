@@ -14,7 +14,7 @@ public class ViewController:UIViewController {
     
     var language = ""
     
-    private let controller:GameController
+    private let controller: GameController
     
     /**
         Creates an instance of the game to be played

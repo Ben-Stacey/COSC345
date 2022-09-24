@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DragNDrop:UIViewController {
+class DragNDrop: UIViewController {
     
     //var viewModel = TileViewModel()
     var questions:[Question] = []

@@ -11,7 +11,7 @@ import UIKit
 /**
     View Controller for the HUD on the Drag and Drop Game
  */
-public class HUDView:UIView {
+public class HUDView: UIView {
   //var stopwatch: StopwatchView
   //var gamePoints: CounterLabelView
   //hintButton: UIButton!
