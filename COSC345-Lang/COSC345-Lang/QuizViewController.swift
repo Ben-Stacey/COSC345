@@ -60,8 +60,6 @@ public class QuizViewController: UIViewController {
                     if index == randomNumber {
                         let options = [phraseArray[languageNum], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)], randAnswersFromLanguage[Int.random(in: 0...randAnswersLength)]]
                         let shuffledOptions = options.shuffled()
-
-                        
                         
                         let correctAnswer = phraseArray[languageNum]
                         let option_1 = shuffledOptions[0]
