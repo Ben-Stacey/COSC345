@@ -141,7 +141,6 @@ public class QuizViewController: UIViewController {
 }
 
 extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
     /**
         Returns number of questions.
      

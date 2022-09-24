@@ -8,11 +8,9 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var langPicked: UILabel!
     @IBOutlet weak var submitButton: UIButton!
-        
     override func viewDidLoad() {
         super.viewDidLoad()
 
