@@ -130,7 +130,7 @@ public class QuizViewController: UIViewController {
             points += 1
         }
         
-        if index < (self.questions.count) - 1{
+        if index < (self.questions.count) - 1 {
             index += 1
             collectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
         } else {
@@ -142,7 +142,7 @@ public class QuizViewController: UIViewController {
     }
 }
 
-extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{ 
+extension QuizViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     /**
         Returns number of questions.
