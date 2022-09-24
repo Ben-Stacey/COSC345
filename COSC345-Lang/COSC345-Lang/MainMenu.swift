@@ -73,16 +73,16 @@ public class MainMenu: UIViewController {
             - any: [in] allows method to be sent anything
     */
     @IBAction public func start(_ sender: Any) {
-        if let n = textfield.text{
-            name = n
+        if let nam = textfield.text{
+            name = nam
             nameSelected = true
         }
         
         if nameSelected == true && langSelected == true{
-            guard let vc = storyboard?
+            guard let view = storyboard?
                 .instantiateViewController(withIdentifier:
                                             "HomeScreen") as? HomeScreen else{return}
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(view, animated: true)
         }else{
             let alert = UIAlertController(title: "not selected", message: "Name or Language not selected", preferredStyle: .alert)
             
