@@ -39,9 +39,9 @@ public class QuizViewController: UIViewController {
                 var language: String = ""
                 if languageNum == 1{
                     language = "French"
-                }else if(languageNum == 2){
+                }else if languageNum == 2 { 
                     language = "Spanish"
-                }else if(languageNum == 3){
+                }else if languageNum == 3 {
                     language = "Maori"
                 }
                 var randAnswersFromLanguage:[String] = []
