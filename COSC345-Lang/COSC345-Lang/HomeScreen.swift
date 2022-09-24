@@ -29,7 +29,7 @@ public class HomeScreen: UIViewController {
         
         
         xpToLevelUp = level * 5
-        if xp >= xpToLevelUp{
+        if xp >= xpToLevelUp {
             level += 1
             xp = xp - xpToLevelUp
         }
@@ -47,11 +47,11 @@ public class HomeScreen: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    public class func getXp() -> Int{
+    public class func getXp() -> Int {
         return xp
     }
     
-    public class func increaseXp(amount: Int){
+    public class func increaseXp(amount: Int) {
         xp += amount
     }
     
