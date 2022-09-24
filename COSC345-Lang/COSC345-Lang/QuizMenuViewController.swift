@@ -37,8 +37,8 @@ public class QuizMenuViewController:UIViewController {
             - sender: allows method to be sent anything
     */
     @IBAction public func onClickPlay(_ sender:Any) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else{return}
-        self.navigationController?.pushViewController(vc, animated: true)
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else {return}
+        self.navigationController?.pushViewController(vc, animated:true)
     }
     
 }
