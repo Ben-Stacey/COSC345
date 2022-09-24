@@ -31,7 +31,7 @@ public class HomeScreen: UIViewController {
         xpToLevelUp = level * 5
         if xp >= xpToLevelUp {
             level += 1
-            xp = xp - xpToLevelUp
+            xp -= xpToLevelUp
         }
         
         
