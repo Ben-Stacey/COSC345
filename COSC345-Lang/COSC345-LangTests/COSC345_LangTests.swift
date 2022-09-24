@@ -12,42 +12,42 @@ class COSC345_LangTests: XCTestCase {
     
     var mainMenuSubjects: MainMenu!
     
-    func testEqualMaoriLanguage(){
+    func testEqualMaoriLanguage() {
         MainMenu.setLanguage(lang: "maori")
         XCTAssertEqual(MainMenu.getLanguage(), "maori")
     }
     
-    func testEqualSpanishLanguage(){
+    func testEqualSpanishLanguage() {
         MainMenu.setLanguage(lang: "spanish")
         XCTAssertEqual(MainMenu.getLanguage(), "spanish")
     }
     
-    func testEqualFrenchLanguage(){
+    func testEqualFrenchLanguage() {
         MainMenu.setLanguage(lang: "french")
         XCTAssertEqual(MainMenu.getLanguage(), "french")
     }
     
-    func testEqualName(){
+    func testEqualName() {
         MainMenu.setName(n: "Ben")
         XCTAssertEqual(MainMenu.getName(), "Ben")
     }
     
-    func testTrueLangSelected(){
+    func testTrueLangSelected() {
         MainMenu.setLangSelected(ls: true)
         XCTAssertTrue(MainMenu.getLangSelected())
     }
     
-    func testTrueNameSelected(){
+    func testTrueNameSelected() {
         MainMenu.setNameSelected(ns: true)
         XCTAssertTrue(MainMenu.getNameSelected())
     }
     
-    func textEqualScreenWidth(){
+    func textEqualScreenWidth() {
         setScreenWidth(width: ScreenWidth)
         XCTAssertEqual(getScreenWidth(), ScreenWidth)
     }
     
-    func textEqualScreenHeight(){
+    func textEqualScreenHeight() {
         setScreenHeight(height: ScreenHeight)
         XCTAssertEqual(getScreenWidth(), ScreenHeight)
     }
