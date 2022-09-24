@@ -16,13 +16,16 @@ class QuestionViewModel {
         
         URLSession.shared.dataTask(with: sourcesURL) { [weak self] (data, urlResponse, error) in
             if let data = data {
-                
-                let jsonDecoder = JSONDecoder()
-                
-                let empData = try! jsonDecoder.decode(DataModel.self, from: data)
-                self?.questionData = empData
-                print(empData)
-                completion()
+                do{
+                    let jsonDecoder = JSONDecoder()
+                    
+                    let empData = try! jsonDecoder.decode(DataModel.self, from: data)
+                    self?.questionData = empData
+                    print(empData)
+                    completion()
+                }catch{
+                    print("Error decoding JSON")
+                }
             }
         }.resume()
     }
