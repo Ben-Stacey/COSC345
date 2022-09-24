@@ -61,7 +61,7 @@ class DragNDrop: UIViewController {
          */
     }
     
-    @objc func handlerOne(gesture: UIPanGestureRecognizer){
+    @objc func handlerOne(gesture: UIPanGestureRecognizer) {
         let location = gesture.location(in: self.view)
         let tile1 = gesture.view
         tile1?.center = location
@@ -79,7 +79,7 @@ class DragNDrop: UIViewController {
         }
     }
     
-    @objc func handlerTwo(gesture: UIPanGestureRecognizer){
+    @objc func handlerTwo(gesture: UIPanGestureRecognizer) {
         let location = gesture.location(in: self.view)
         let tile1 = gesture.view
         tile1?.center = location
@@ -97,7 +97,7 @@ class DragNDrop: UIViewController {
         }
     }
     
-    @objc func handlerThree(gesture: UIPanGestureRecognizer){
+    @objc func handlerThree(gesture: UIPanGestureRecognizer) {
         let location = gesture.location(in: self.view)
         let tile1 = gesture.view
         tile1?.center = location
