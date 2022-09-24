@@ -14,7 +14,6 @@ import UIKit
 public class TileView:UIImageView{
     var letter: Character
     var isMatched: Bool = false
-    
     /**
         Init shouldnt be called and if it is diaplays the fatal error
     */
