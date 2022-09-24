@@ -33,4 +33,3 @@ public class HUDView: UIView {
         self.isUserInteractionEnabled = true
     }
 }
-
