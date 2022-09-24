@@ -61,9 +61,6 @@
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2935E02228DE9EE40071C3D5 /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeaOfWords.swift; path = "../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/SeaOfWords.swift"; sourceTree = "<group>"; };
-		2935E02428DE9EF70071C3D5 /* SoWQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestion.swift; path = "../../../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestion.swift"; sourceTree = "<group>"; };
-		2935E02628DE9EFC0071C3D5 /* SoWQuestionBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoWQuestionBank.swift; path = "../../../../../../Downloads/COSC345/COSC345-Lang/COSC345-Lang/Classes/Models/SoWQuestionBank.swift"; sourceTree = "<group>"; };
 		293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		297AF0A528A600AD00C3291A /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
@@ -140,7 +137,6 @@
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */,
-				2935E02228DE9EE40071C3D5 /* SeaOfWords.swift */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
 				35865C1028DBD1AE002C179C /* DragNDrop.swift */,
 				35865C1228DC1170002C179C /* DragNDropMainMenu.swift */,
@@ -218,8 +214,6 @@
 				AE2D2B4228DE9F4800311548 /* SoWQuestionBank.swift */,
 				357FD72328AB4FCB00D060C4 /* GameData.swift */,
 				357FD72528AB504900D060C4 /* Level.swift */,
-				2935E02428DE9EF70071C3D5 /* SoWQuestion.swift */,
-				2935E02628DE9EFC0071C3D5 /* SoWQuestionBank.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
