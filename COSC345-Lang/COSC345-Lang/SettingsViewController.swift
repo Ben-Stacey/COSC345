@@ -41,8 +41,8 @@ class SettingsViewController: UIViewController {
         }
         
         
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "HomeScreen") as? HomeScreen else{return}
-        self.navigationController?.pushViewController(vc, animated: true)
+        guard let view = storyboard?.instantiateViewController(withIdentifier: "HomeScreen") as? HomeScreen else{return}
+        self.navigationController?.pushViewController(view, animated: true)
     }
 
 }
