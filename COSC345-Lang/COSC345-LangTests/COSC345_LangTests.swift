@@ -43,13 +43,13 @@ class COSC345_LangTests: XCTestCase {
     }
     
     func textEqualScreenWidth() {
-        setScreenWidth(width: ScreenWidth)
-        XCTAssertEqual(getScreenWidth(), ScreenWidth)
+        setScreenWidth(width: screenWidth)
+        XCTAssertEqual(getScreenWidth(), screenWidth)
     }
     
     func textEqualScreenHeight() {
-        setScreenHeight(height: ScreenHeight)
-        XCTAssertEqual(getScreenWidth(), ScreenHeight)
+        setScreenHeight(height: screenHeight)
+        XCTAssertEqual(getScreenWidth(), screenHeight)
     }
 
     override func setUpWithError() throws {
