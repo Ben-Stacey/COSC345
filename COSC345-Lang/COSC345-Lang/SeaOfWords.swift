@@ -24,6 +24,7 @@ public class SeaofWords: UIViewController {
     @IBOutlet weak var optionC: UIButton!
     @IBOutlet weak var optionD: UIButton!
     
+    let language = MainMenu.getLanguageNum()
     let allQuestions = SoWQuestionBank()
     var questionNumber: Int = 0
     var score: Int = 0
@@ -65,37 +66,67 @@ public class SeaofWords: UIViewController {
         updateQuestion()
     }
     func updateQuestion(){
-
-        if questionNumber <= allQuestions.list.count - 1{
-            questionLabel.text = allQuestions.list[questionNumber].question
-            questionWord.text = allQuestions.list[questionNumber].questionWord
-            optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
-            optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
-            optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
-            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
-            selectedAnswer = allQuestions.list[questionNumber].correctAnswer
-            
-        }else {
-            let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
-            let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
-                action in self.restartQuiz()
+        if language == 2 {
+            if questionNumber <= allQuestions.list.count - 1{
+                questionLabel.text = allQuestions.list[questionNumber].question
+                questionWord.text = allQuestions.list[questionNumber].questionWord
+                optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
+                optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
+                optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
+                optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
+                selectedAnswer = allQuestions.list[questionNumber].correctAnswer
                 
-            })
-            let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
-            alert.addAction(restartAction)
-            alert.addAction(goBackAction)
-            present(alert, animated: true, completion: nil)
+            }else {
+                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
+                let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
+                    action in self.restartQuiz()
+                    
+                })
+                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
+                alert.addAction(restartAction)
+                alert.addAction(goBackAction)
+                present(alert, animated: true, completion: nil)
+            }
+            updateUI()
+        } else if language == 1 {
+            if questionNumber <= allQuestions.french.count - 1{
+                questionLabel.text = allQuestions.french[questionNumber].question
+                questionWord.text = allQuestions.french[questionNumber].questionWord
+                optionA.setTitle(allQuestions.french[questionNumber].optionA, for: UIControl.State.normal)
+                optionB.setTitle(allQuestions.french[questionNumber].optionB, for: UIControl.State.normal)
+                optionC.setTitle(allQuestions.french[questionNumber].optionC, for: UIControl.State.normal)
+                optionD.setTitle(allQuestions.french[questionNumber].optionD, for: UIControl.State.normal)
+                selectedAnswer = allQuestions.french[questionNumber].correctAnswer
+                
+            }else {
+                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.french.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
+                let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
+                    action in self.restartQuiz()
+                    
+                })
+                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
+                alert.addAction(restartAction)
+                alert.addAction(goBackAction)
+                present(alert, animated: true, completion: nil)
+            }
+            updateUI()
         }
-        updateUI()
     }
     
     func updateUI() {
-        scoreCounter.text = "Score: \(score)"
-        if questionNumber <= allQuestions.list.count - 1{
-            questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
+        if language == 2 {
+            scoreCounter.text = "Score: \(score)"
+            if questionNumber <= allQuestions.list.count - 1{
+                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
+            }
+            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
+        } else if language == 1 {
+            scoreCounter.text = "Score: \(score)"
+            if questionNumber <= allQuestions.french.count - 1{
+                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.french.count)"
+            }
+            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.french.count)) * CGFloat(questionNumber + 1)
         }
-        progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
-        
     }
     
     func restartQuiz(){

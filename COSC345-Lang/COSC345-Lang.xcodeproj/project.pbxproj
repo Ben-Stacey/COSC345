@@ -43,7 +43,6 @@
 		35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1028DBD1AE002C179C /* DragNDrop.swift */; };
 		35865C1328DC1170002C179C /* DragNDropMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1228DC1170002C179C /* DragNDropMainMenu.swift */; };
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
-		35865C1D28DEA4C1002C179C /* SeaofWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1C28DEA4C1002C179C /* SeaofWords.swift */; };
 		35865C1F28DEA651002C179C /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1E28DEA651002C179C /* SoWQuestionBank.swift */; };
 		35865C2128DEA693002C179C /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2028DEA693002C179C /* SoWQuestion.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
@@ -100,7 +99,6 @@
 		35865C1028DBD1AE002C179C /* DragNDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDrop.swift; sourceTree = "<group>"; };
 		35865C1228DC1170002C179C /* DragNDropMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropMainMenu.swift; sourceTree = "<group>"; };
 		35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropCollectionViewCell.swift; sourceTree = "<group>"; };
-		35865C1C28DEA4C1002C179C /* SeaofWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaofWords.swift; sourceTree = "<group>"; };
 		35865C1E28DEA651002C179C /* SoWQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestionBank.swift; sourceTree = "<group>"; };
 		35865C2028DEA693002C179C /* SoWQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestion.swift; sourceTree = "<group>"; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				357FD71128AB3CE400D060C4 /* Levels */,
 				293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */,
 				3528941F28A330EB002C980C /* LaunchScreen.storyboard */,
-				35865C1C28DEA4C1002C179C /* SeaofWords.swift */,
 				35865C1028DBD1AE002C179C /* DragNDrop.swift */,
 				35865C1228DC1170002C179C /* DragNDropMainMenu.swift */,
 				35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */,
@@ -347,7 +344,6 @@
 				35865C1F28DEA651002C179C /* SoWQuestionBank.swift in Sources */,
 				353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */,
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
-				35865C1D28DEA4C1002C179C /* SeaofWords.swift in Sources */,
 				2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */,
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
 				357FD72628AB504900D060C4 /* Level.swift in Sources */,
