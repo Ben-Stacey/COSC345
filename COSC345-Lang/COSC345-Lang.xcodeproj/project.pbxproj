@@ -25,7 +25,6 @@
 		3528941728A330E9002C980C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528941628A330E9002C980C /* SceneDelegate.swift */; };
 		3528941E28A330EB002C980C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3528941D28A330EB002C980C /* Assets.xcassets */; };
 		3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3528941F28A330EB002C980C /* LaunchScreen.storyboard */; };
-		353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B11CE28A9FDDA00B996DB /* CheatSheet.swift */; };
 		357EC44B28B461A40092F1B4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EC44A28B461A40092F1B4 /* MainMenu.swift */; };
 		357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357FD70D28AB3C5E00D060C4 /* Config.swift */; };
 		357FD71828AB3EDF00D060C4 /* TowerOne.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357FD71728AB3EDF00D060C4 /* TowerOne.plist */; };
@@ -45,6 +44,7 @@
 		35865C1F28DEA651002C179C /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1E28DEA651002C179C /* SoWQuestionBank.swift */; };
 		35865C2128DEA693002C179C /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2028DEA693002C179C /* SoWQuestion.swift */; };
 		35865C2328E65AA8002C179C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2228E65AA8002C179C /* TableViewController.swift */; };
+		35865C2528E6616A002C179C /* CheatSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2428E6616A002C179C /* CheatSheetTableViewController.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 		AED335B928E3963900BB364C /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED335B828E3963900BB364C /* SeaOfWords.swift */; };
 /* End PBXBuildFile section */
@@ -80,7 +80,6 @@
 		3528941D28A330EB002C980C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3528942028A330EB002C980C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3528942228A330EB002C980C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		353B11CE28A9FDDA00B996DB /* CheatSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheet.swift; sourceTree = "<group>"; };
 		357EC44A28B461A40092F1B4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		357FD70D28AB3C5E00D060C4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		357FD71728AB3EDF00D060C4 /* TowerOne.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TowerOne.plist; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		35865C1E28DEA651002C179C /* SoWQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestionBank.swift; sourceTree = "<group>"; };
 		35865C2028DEA693002C179C /* SoWQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestion.swift; sourceTree = "<group>"; };
 		35865C2228E65AA8002C179C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		35865C2428E6616A002C179C /* CheatSheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetTableViewController.swift; sourceTree = "<group>"; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED335B828E3963900BB364C /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				2923D47028B44B2B00A4493A /* QuestionModel.swift */,
 				2923D47228B44B4600A4493A /* QuestionViewModel.swift */,
 				357FD70D28AB3C5E00D060C4 /* Config.swift */,
-				353B11CE28A9FDDA00B996DB /* CheatSheet.swift */,
+				35865C2428E6616A002C179C /* CheatSheetTableViewController.swift */,
 				2996AABF28B70F81005B36E1 /* Phrases.plist */,
 				2996AAC128B7109B005B36E1 /* Words.plist */,
 				3528941428A330E9002C980C /* AppDelegate.swift */,
@@ -342,11 +342,11 @@
 				293B93F028DBF5C900FE5AAA /* HomeScreen.swift in Sources */,
 				357FD73428AB5E2F00D060C4 /* HUDView.swift in Sources */,
 				35865C1F28DEA651002C179C /* SoWQuestionBank.swift in Sources */,
-				353B11CF28A9FDDA00B996DB /* CheatSheet.swift in Sources */,
 				3528941528A330E9002C980C /* AppDelegate.swift in Sources */,
 				2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */,
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
 				357FD72628AB504900D060C4 /* Level.swift in Sources */,
+				35865C2528E6616A002C179C /* CheatSheetTableViewController.swift in Sources */,
 				35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */,
 				35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
