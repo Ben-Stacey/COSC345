@@ -191,36 +191,6 @@
             </objects>
             <point key="canvasLocation" x="3444.9275362318845" y="65.625"/>
         </scene>
-        <!--Wager Quizzes-->
-        <scene sceneID="C2P-f4-QF7">
-            <objects>
-                <viewController id="m2D-eI-ZLu" customClass="WagerQuizzes" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mQI-1D-RgB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-Ud-mPI">
-                                <rect key="frame" x="305" y="793" width="48" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
-                                <connections>
-                                    <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="Eff-7f-Rqs"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="w4W-Uz-DtN"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        <constraints>
-                            <constraint firstItem="BRU-Ud-mPI" firstAttribute="top" secondItem="w4W-Uz-DtN" secondAttribute="top" constant="749" id="8x2-aF-1c5"/>
-                            <constraint firstItem="BRU-Ud-mPI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w4W-Uz-DtN" secondAttribute="leading" id="aha-16-xlM"/>
-                            <constraint firstItem="w4W-Uz-DtN" firstAttribute="trailing" secondItem="BRU-Ud-mPI" secondAttribute="trailing" constant="61" id="qZK-Bg-jZv"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9aj-3K-UGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="714" y="1171"/>
-        </scene>
         <!--Cheat Sheet-->
         <scene sceneID="4Xw-zZ-rwC">
             <objects>
@@ -251,34 +221,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zk-CW-1ND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1635" y="1171"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="zVs-8N-Oh4">
-            <objects>
-                <tableViewController id="xih-uL-79m" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KE6-ht-27m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TSf-yf-EqH">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TSf-yf-EqH" id="Bq2-g3-8jY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xih-uL-79m" id="VqC-C1-77p"/>
-                            <outlet property="delegate" destination="xih-uL-79m" id="3Xo-pq-mIt"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VsM-at-sUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2458" y="1171"/>
         </scene>
         <!--SeaofWords-->
         <scene sceneID="bYg-E2-j64">
@@ -1044,7 +986,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Eff-7f-Rqs"/>
+        <segue reference="qkX-hR-JCr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
