@@ -12,7 +12,6 @@
 		2935E01928DE74330071C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E01828DE74330071C3D5 /* Main.storyboard */; };
 		293B93EF28DBCFF800FE5AAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */; };
 		293B93F028DBF5C900FE5AAA /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352675C828B84B99007C7942 /* HomeScreen.swift */; };
-		297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A528A600AD00C3291A /* Leaderboards.swift */; };
 		297AF0A828A600E900C3291A /* Minigames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0A728A600E900C3291A /* Minigames.swift */; };
 		297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297AF0AB28A601B300C3291A /* WagerQuizzes.swift */; };
 		2996AAB828B5CEF4005B36E1 /* QuizMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */; };
@@ -45,6 +44,7 @@
 		35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */; };
 		35865C1F28DEA651002C179C /* SoWQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C1E28DEA651002C179C /* SoWQuestionBank.swift */; };
 		35865C2128DEA693002C179C /* SoWQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2028DEA693002C179C /* SoWQuestion.swift */; };
+		35865C2328E65AA8002C179C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2228E65AA8002C179C /* TableViewController.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 		AED335B928E3963900BB364C /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED335B828E3963900BB364C /* SeaOfWords.swift */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,6 @@
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		297AF0A528A600AD00C3291A /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
 		297AF0AB28A601B300C3291A /* WagerQuizzes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerQuizzes.swift; sourceTree = "<group>"; };
 		2996AAB728B5CEF4005B36E1 /* QuizMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMenuViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropCollectionViewCell.swift; sourceTree = "<group>"; };
 		35865C1E28DEA651002C179C /* SoWQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestionBank.swift; sourceTree = "<group>"; };
 		35865C2028DEA693002C179C /* SoWQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoWQuestion.swift; sourceTree = "<group>"; };
+		35865C2228E65AA8002C179C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED335B828E3963900BB364C /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
@@ -146,6 +146,7 @@
 				35865C1A28DC1DD3002C179C /* DragNDropCollectionViewCell.swift */,
 				352675C828B84B99007C7942 /* HomeScreen.swift */,
 				2935E01828DE74330071C3D5 /* Main.storyboard */,
+				35865C2228E65AA8002C179C /* TableViewController.swift */,
 				357EC44A28B461A40092F1B4 /* MainMenu.swift */,
 				297AF0A728A600E900C3291A /* Minigames.swift */,
 				AED335B828E3963900BB364C /* SeaOfWords.swift */,
@@ -154,7 +155,6 @@
 				2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */,
 				2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */,
 				297AF0AB28A601B300C3291A /* WagerQuizzes.swift */,
-				297AF0A528A600AD00C3291A /* Leaderboards.swift */,
 				2923D47028B44B2B00A4493A /* QuestionModel.swift */,
 				2923D47228B44B4600A4493A /* QuestionViewModel.swift */,
 				357FD70D28AB3C5E00D060C4 /* Config.swift */,
@@ -348,13 +348,13 @@
 				357FD72428AB4FCB00D060C4 /* GameData.swift in Sources */,
 				357FD72628AB504900D060C4 /* Level.swift in Sources */,
 				35865C1128DBD1AE002C179C /* DragNDrop.swift in Sources */,
-				297AF0A628A600AD00C3291A /* Leaderboards.swift in Sources */,
 				35865C1B28DC1DD3002C179C /* DragNDropCollectionViewCell.swift in Sources */,
 				297AF0AC28A601B300C3291A /* WagerQuizzes.swift in Sources */,
 				35865C2128DEA693002C179C /* SoWQuestion.swift in Sources */,
 				2996AACA28B85B16005B36E1 /* QuizCollectionViewCell.swift in Sources */,
 				357FD70E28AB3C5E00D060C4 /* Config.swift in Sources */,
 				357EC44B28B461A40092F1B4 /* MainMenu.swift in Sources */,
+				35865C2328E65AA8002C179C /* TableViewController.swift in Sources */,
 				2996AACC28B85B2A005B36E1 /* QuizResultViewController.swift in Sources */,
 				2996AABA28B5D27D005B36E1 /* QuizViewController.swift in Sources */,
 				297AF0A828A600E900C3291A /* Minigames.swift in Sources */,
