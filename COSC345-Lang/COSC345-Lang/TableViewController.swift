@@ -33,9 +33,8 @@ class PlayerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
 
-        let player = self.players[indexPath.row]
-        cell.nameLabel?.text = player.name
-        cell.scoreLabel?.text = player.score
+        let player = players[indexPath.row]
+        cell.textLabel?.text = player.name + "   " + String(player.score)
 
         return cell
     }
