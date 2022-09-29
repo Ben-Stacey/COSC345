@@ -6,8 +6,8 @@
 //
 
 import UIKit
-/**
-struct Root: players{
+
+struct Root: Decodable{
     var players: player
 }
 
@@ -17,12 +17,12 @@ struct player: Decodable{
 }
 
 //declare array
+var store = []
 
 class myCell: UITableViewCell{
     
 }
  
-
 /**
     View Controller for the Leaderboards
  */
@@ -36,7 +36,8 @@ public class Leaderboards: UIViewController{
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let english = countries[indexPath.row]
+        let name = indexPath[1]
+        cell.
         cell.englishLabel?.text = country
         
 
@@ -57,7 +58,7 @@ public class Leaderboards: UIViewController{
     
     public func getJSON(jsonData: Data){
         let decoder = JSONDecoder()
-        let player = try! decoder.decode(players.self, from: jsonData)
+        let player = try! decoder.decode(player.self, from: jsonData)
 
         print(player.name)
     }
@@ -72,6 +73,6 @@ public class Leaderboards: UIViewController{
             self.getJSON(jsonData: localData)
         }
         //add data source
+        self.tableView.dataSource = self
     }
 }
-*/
