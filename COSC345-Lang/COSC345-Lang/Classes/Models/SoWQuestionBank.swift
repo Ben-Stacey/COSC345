@@ -10,6 +10,7 @@ import Foundation
 class SoWQuestionBank {
     var list = [SoWQuestions]()
     var french = [SoWQuestions]()
+    var maori = [SoWQuestions]()
     
     init(){
         list.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Good",choiceA: "Si",choiceB: "Bueno",choiceC: "Gracias",choiceD: "El no Sabe",answer: 2))
@@ -28,8 +29,19 @@ class SoWQuestionBank {
         french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "No",choiceA: "Amour",choiceB: "Belle",choiceC: "Non", choiceD: "Oui",answer: 3))
         french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Excuse Me",choiceA: "Excuse-moi",choiceB: "De Rien",choiceC: "Beau", choiceD: "Bonne", answer: 1))
         french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Thank You",choiceA: "Temps",choiceB: "Beu",choiceC: "Belle", choiceD: "Merci",answer: 4))
-        french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Your Welcome",choiceA: "De Rien",choiceB: "Fracais",choiceC: "Fort", choiceD: "Bounjour",answer: 1))
+        french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "You're Welcome",choiceA: "De Rien",choiceB: "Fracais",choiceC: "Fort", choiceD: "Bounjour",answer: 1))
         french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Please",choiceA: "Monsiuer",choiceB: "S'il Vous Plait",choiceC: "Monde",choiceD: "Jour",answer: 2))
         french.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Good Night",choiceA: "Chien",choiceB: "Madame",choiceC: "Bonne Nuit",choiceD: "Bonsoir",answer: 3))
+        
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Hello",choiceA: "Kia Ora",choiceB: "Aroha",choiceC: "Hui",choiceD: "Hapu",answer: 1))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Goodbye",choiceA: "Iti",choiceB: "Kai",choiceC: "Kia Ora",choiceD: "Kaumatau",answer: 3))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Yes",choiceA: "Karaki",choiceB: "Ae",choiceC: "Marae",choiceD: "Mahi",answer: 2))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "No",choiceA: "Kao",choiceB: "Mana",choiceC: "Maunga",choiceD: "Moana",answer: 1))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Excuse Me",choiceA: "Puku",choiceB: "Tama",choiceC: "Motu",choiceD: "Aroha Mai",answer: 4))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Thank You",choiceA: "Tamariki",choiceB: "Tena Koe",choiceC: "Tuatara",choiceD: "Wai",answer: 2))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "You're Welcome",choiceA: "Whanau",choiceB: "Waiata",choiceC: "Ka Nui Te Mihi",choiceD: "Waka",answer: 3))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Please",choiceA: "Tipuna",choiceB: "Tapu",choiceC: "Tane",choiceD: "Tena Koe",answer: 4))
+        maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Good Night",choiceA: "Po Pai",choiceB: "Pa",choiceC: "Paunamu",choiceD: "Tangi",answer: 1))
+        
     }
 }

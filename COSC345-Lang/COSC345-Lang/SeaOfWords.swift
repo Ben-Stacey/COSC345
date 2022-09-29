@@ -110,6 +110,28 @@ public class SeaofWords: UIViewController {
                 present(alert, animated: true, completion: nil)
             }
             updateUI()
+        } else if language == 3 {
+            if questionNumber <= allQuestions.maori.count - 1{
+                questionLabel.text = allQuestions.maori[questionNumber].question
+                questionWord.text = allQuestions.maori[questionNumber].questionWord
+                optionA.setTitle(allQuestions.maori[questionNumber].optionA, for: UIControl.State.normal)
+                optionB.setTitle(allQuestions.maori[questionNumber].optionB, for: UIControl.State.normal)
+                optionC.setTitle(allQuestions.maori[questionNumber].optionC, for: UIControl.State.normal)
+                optionD.setTitle(allQuestions.maori[questionNumber].optionD, for: UIControl.State.normal)
+                selectedAnswer = allQuestions.maori[questionNumber].correctAnswer
+                
+            }else {
+                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.maori.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
+                let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
+                    action in self.restartQuiz()
+                    
+                })
+                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
+                alert.addAction(restartAction)
+                alert.addAction(goBackAction)
+                present(alert, animated: true, completion: nil)
+            }
+            updateUI()
         }
     }
     
@@ -126,6 +148,12 @@ public class SeaofWords: UIViewController {
                 questionCounter.text = "\(questionNumber + 1)/\(allQuestions.french.count)"
             }
             progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.french.count)) * CGFloat(questionNumber + 1)
+        } else if language == 3 {
+            scoreCounter.text = "Score: \(score)"
+            if questionNumber <= allQuestions.maori.count - 1{
+                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.maori.count)"
+            }
+            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.maori.count)) * CGFloat(questionNumber + 1)
         }
     }
     
