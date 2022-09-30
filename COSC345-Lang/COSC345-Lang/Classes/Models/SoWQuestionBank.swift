@@ -5,6 +5,9 @@
 //  Created by Mahfuz Abdul Razak on 22/09/22.
 //
 
+/*
+ Class to create arrays to hold questions for Sea of Words
+*/
 import Foundation
 
 class SoWQuestionBank {

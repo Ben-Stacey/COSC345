@@ -5,9 +5,7 @@
 //  Created by Mahfuz Abdul Razak on 22/09/22.
 //
 /*
- commit
- 
- 
+ The View Controller for Sea of Words
  */
 import UIKit
 

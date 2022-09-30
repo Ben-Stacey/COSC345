@@ -4,6 +4,9 @@
 //
 //  Created by Mahfuz Abdul Razak on 22/09/22.
 //
+/*
+ Generate Question Format for Sea of Words
+ */
 
 import Foundation
 
