@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="3444.9275362318845" y="65.625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Cheat Sheet Table View Controller-->
         <scene sceneID="HBW-qH-Kc0">
             <objects>
-                <tableViewController id="Zdb-g8-4gf" sceneMemberID="viewController">
+                <tableViewController id="Zdb-g8-4gf" customClass="CheatSheetTableViewController" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9tc-PC-2J4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +299,7 @@
                             </connections>
                         </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="878-E9-IZL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCheatCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="878-E9-IZL" customClass="myCheatCell" customModule="COSC345_Lang" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="878-E9-IZL" id="4rD-xo-2cw">
@@ -1018,7 +1018,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-kw-sY7">
-                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="8ru-gd-eFM"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="Ax8-Gx-H3Y"/>
@@ -1061,7 +1061,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Cf-oLx">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="180" id="JF3-2K-1EU"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="LKw-OI-MjE"/>
@@ -1100,7 +1100,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-8O-7tt">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="180" id="WjL-WB-imA"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="esE-N9-KWw"/>
@@ -1360,8 +1360,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pzV-pC-8u2"/>
-        <segue reference="wUH-Cl-14S"/>
+        <segue reference="Fg7-s2-TLg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5556923" width="1080" height="1920"/>

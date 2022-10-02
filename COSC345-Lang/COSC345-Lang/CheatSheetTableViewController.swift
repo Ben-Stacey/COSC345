@@ -14,6 +14,10 @@ struct Word{
     var spanish: String
 }
 
+class myCheatCell: UITableViewCell{
+    
+}
+
 class CheatSheetTableViewController: UITableViewController {
         let words = [
             Word(english: "Hello", maori: "Kia Ora", french: "Bonjour", spanish: "Hola"),
