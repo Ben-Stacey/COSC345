@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BDA128928E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */; };
-		1BDA128A28E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */; };
 		2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47028B44B2B00A4493A /* QuestionModel.swift */; };
 		2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47228B44B4600A4493A /* QuestionViewModel.swift */; };
 		2935E01928DE74330071C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E01828DE74330071C3D5 /* Main.storyboard */; };
@@ -63,7 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SeahorsesRegular-1G9R2.otf"; path = "../../../../../../../../Downloads/sea-horses-font/SeahorsesRegular-1G9R2.otf"; sourceTree = "<group>"; };
 		2923D47028B44B2B00A4493A /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +104,7 @@
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED335B828E3963900BB364C /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
-		AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "COSC345-LangTests.xctest"; path = "/Users/benstacey/Documents/COSC345/COSC345-Lang/build/Debug-iphoneos/COSC345-LangTests.xctest"; sourceTree = "<absolute>"; };
 		AED335BB28E66D4F00BB364C /* COSC345-LangTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COSC345-LangTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		AED335BE28E66DF300BB364C /* SeaOfWordsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaOfWordsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,28 +127,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BDA128428E650120099EC97 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		3528940828A330E9002C980C = {
 			isa = PBXGroup;
 			children = (
 				3528941328A330E9002C980C /* COSC345-Lang */,
 				35CE493228A5F3430093CC7E /* COSC345-LangTests */,
 				AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */,
-				AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		3528941328A330E9002C980C /* COSC345-Lang */ = {
 			isa = PBXGroup;
 			children = (
-				1BDA128428E650120099EC97 /* New Group */,
 				357FD71228AB3D0700D060C4 /* Classes */,
 				357FD71128AB3CE400D060C4 /* Levels */,
 				293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */,
@@ -332,7 +319,6 @@
 			files = (
 				2996AAC028B70F81005B36E1 /* Phrases.plist in Resources */,
 				2935E01928DE74330071C3D5 /* Main.storyboard in Resources */,
-				1BDA128928E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */,
 				3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */,
 				357FD71C28AB3EFE00D060C4 /* TowerThree.plist in Resources */,
 				3528941E28A330EB002C980C /* Assets.xcassets in Resources */,
@@ -348,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BDA128A28E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

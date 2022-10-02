@@ -1061,7 +1061,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Cf-oLx">
-                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="180" id="JF3-2K-1EU"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="LKw-OI-MjE"/>
@@ -1100,7 +1100,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-8O-7tt">
-                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="180" id="WjL-WB-imA"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="esE-N9-KWw"/>
@@ -1228,13 +1228,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVN-Ys-GwT">
-                                <rect key="frame" x="165" y="194" width="101.5" height="60.5"/>
+                                <rect key="frame" x="165" y="194" width="108.5" height="87.5"/>
                                 <fontDescription key="fontDescription" name="SeaHorses-Regular" family="Sea Horses" pointSize="75"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQk-pD-yg0">
-                                <rect key="frame" x="123" y="193" width="168.5" height="60.5"/>
+                                <rect key="frame" x="123" y="193" width="196" height="87.5"/>
                                 <fontDescription key="fontDescription" name="SeaHorses-Regular" family="Sea Horses" pointSize="75"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1360,6 +1360,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pzV-pC-8u2"/>
         <segue reference="wUH-Cl-14S"/>
     </inferredMetricsTieBreakers>
     <resources>
