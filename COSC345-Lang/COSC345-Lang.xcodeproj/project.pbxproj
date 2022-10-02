@@ -47,6 +47,7 @@
 		35865C2528E6616A002C179C /* CheatSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865C2428E6616A002C179C /* CheatSheetTableViewController.swift */; };
 		35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */; };
 		AED335B928E3963900BB364C /* SeaOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED335B828E3963900BB364C /* SeaOfWords.swift */; };
+		AED335BF28E66DF300BB364C /* SeaOfWordsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED335BE28E66DF300BB364C /* SeaOfWordsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,6 @@
 		2923D47028B44B2B00A4493A /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "COSC345-LangTests.xctest"; path = "/Users/benstacey/Documents/COSC345/COSC345-Lang/build/Debug-iphoneos/COSC345-LangTests.xctest"; sourceTree = "<absolute>"; };
 		293B93EE28DBCFF800FE5AAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		297AF0A728A600E900C3291A /* Minigames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minigames.swift; sourceTree = "<group>"; };
 		297AF0AB28A601B300C3291A /* WagerQuizzes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerQuizzes.swift; sourceTree = "<group>"; };
@@ -104,6 +104,9 @@
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED335B828E3963900BB364C /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
+		AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COSC345-LangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED335BB28E66D4F00BB364C /* COSC345-LangTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COSC345-LangTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		AED335BE28E66DF300BB364C /* SeaOfWordsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaOfWordsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,7 @@
 				3528941328A330E9002C980C /* COSC345-Lang */,
 				35CE493228A5F3430093CC7E /* COSC345-LangTests */,
 				AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */,
+				AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +237,8 @@
 			children = (
 				35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */,
 				2996AACE28B87526005B36E1 /* QuizTests.swift */,
+				AED335BE28E66DF300BB364C /* SeaOfWordsTest.swift */,
+				AED335BB28E66D4F00BB364C /* COSC345-LangTests-Bridging-Header.h */,
 			);
 			path = "COSC345-LangTests";
 			sourceTree = "<group>";
@@ -272,7 +278,7 @@
 			);
 			name = "COSC345-LangTests";
 			productName = "COSC345-LangTests";
-			productReference = 2935E01D28DE9E0B0071C3D5 /* COSC345-LangTests.xctest */;
+			productReference = AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -291,6 +297,7 @@
 					};
 					35CE493028A5F3430093CC7E = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = 3528941028A330E9002C980C;
 					};
 				};
@@ -382,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2996AACF28B87526005B36E1 /* QuizTests.swift in Sources */,
+				AED335BF28E66DF300BB364C /* SeaOfWordsTest.swift in Sources */,
 				35CE493428A5F3430093CC7E /* COSC345_LangTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,14 +597,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RL35JKD39V;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-LangTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "COSC345-LangTests/COSC345-LangTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345-Lang.app/COSC345-Lang";
@@ -607,14 +623,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RL35JKD39V;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchris.COSC345-LangTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "COSC345-LangTests/COSC345-LangTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345-Lang.app/COSC345-Lang";
