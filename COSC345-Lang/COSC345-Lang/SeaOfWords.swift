@@ -75,7 +75,7 @@ public class SeaofWords: UIViewController {
                 selectedAnswer = allQuestions.list[questionNumber].correctAnswer
                 
             }else {
-                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
+                let alert = UIAlertController(title:"Awesome! You got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over?", preferredStyle:.alert)
                 let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
                     action in self.restartQuiz()
                     
