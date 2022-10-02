@@ -47,8 +47,8 @@
 	<key>New item - 7</key>
 	<array>
 		<string>I do not understand</string>
-		<string>je ne comprends pas</string>
-		<string>no entiendo</string>
+		<string>Je ne comprends pas</string>
+		<string>No entiendo</string>
 		<string>Kaore au i te marama</string>
 	</array>
 	<key>New item - 8</key>
@@ -82,8 +82,8 @@
 	<key>New item - 12</key>
 	<array>
 		<string>I do not know my size</string>
-		<string>je ne connais pas ma taille</string>
-		<string>no se mi talla</string>
+		<string>Je ne connais pas ma taille</string>
+		<string>No se mi talla</string>
 		<string>Kaore au e mohio ki taku rahi</string>
 	</array>
 	<key>New item - 13</key>
@@ -96,8 +96,8 @@
 	<key>New item - 14</key>
 	<array>
 		<string>I do not need a bag</string>
-		<string>je n&apos;ai pas besoin de sac</string>
-		<string>no necesito una bolsa</string>
+		<string>Je n&apos;ai pas besoin de sac</string>
+		<string>No necesito una bolsa</string>
 		<string>Kaore au e hiahia putea</string>
 	</array>
 	<key>New item - 15</key>

@@ -68,9 +68,9 @@
 	<key>New item - 10</key>
 	<array>
 		<string>Goodbye</string>
-		<string>au revoir</string>
-		<string>adiós</string>
-		<string>haere rā</string>
+		<string>Au revoir</string>
+		<string>Adiós</string>
+		<string>Haere rā</string>
 	</array>
 	<key>New item - 11</key>
 	<array>
@@ -82,16 +82,16 @@
 	<key>New item - 12</key>
 	<array>
 		<string>Place</string>
-		<string>le lieu</string>
+		<string>Le lieu</string>
 		<string>Lugar</string>
 		<string>Wahi</string>
 	</array>
 	<key>New item - 13</key>
 	<array>
 		<string>Restaurant</string>
-		<string>le restaurant</string>
-		<string>restaurante</string>
-		<string>wharekai</string>
+		<string>Le restaurant</string>
+		<string>Restaurante</string>
+		<string>Wharekai</string>
 	</array>
 	<key>New item - 14</key>
 	<array>

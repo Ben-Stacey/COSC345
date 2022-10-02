@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BDA128928E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */; };
+		1BDA128A28E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */; };
 		2923D47128B44B2B00A4493A /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47028B44B2B00A4493A /* QuestionModel.swift */; };
 		2923D47328B44B4600A4493A /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923D47228B44B4600A4493A /* QuestionViewModel.swift */; };
 		2935E01928DE74330071C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E01828DE74330071C3D5 /* Main.storyboard */; };
@@ -61,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SeahorsesRegular-1G9R2.otf"; path = "../../../../../../../../Downloads/sea-horses-font/SeahorsesRegular-1G9R2.otf"; sourceTree = "<group>"; };
 		2923D47028B44B2B00A4493A /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		2923D47228B44B4600A4493A /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		2935E01828DE74330071C3D5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		1BDA128428E650120099EC97 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				1BDA128828E96E930099EC97 /* SeahorsesRegular-1G9R2.otf */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -328,6 +332,7 @@
 			files = (
 				2996AAC028B70F81005B36E1 /* Phrases.plist in Resources */,
 				2935E01928DE74330071C3D5 /* Main.storyboard in Resources */,
+				1BDA128928E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */,
 				3528942128A330EB002C980C /* LaunchScreen.storyboard in Resources */,
 				357FD71C28AB3EFE00D060C4 /* TowerThree.plist in Resources */,
 				3528941E28A330EB002C980C /* Assets.xcassets in Resources */,
@@ -343,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDA128A28E96E930099EC97 /* SeahorsesRegular-1G9R2.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
