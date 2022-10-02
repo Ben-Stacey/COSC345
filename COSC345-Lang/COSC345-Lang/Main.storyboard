@@ -243,7 +243,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cheat Sheet"/>
                                 <connections>
-                                    <segue destination="Zdb-g8-4gf" kind="presentation" modalPresentationStyle="fullScreen" id="i2G-QK-UtJ"/>
+                                    <segue destination="Zdb-g8-4gf" kind="presentation" modalPresentationStyle="fullScreen" id="hGu-eg-Cyt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="3444.9275362318845" y="65.625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Cheat Sheet Table View Controller-->
         <scene sceneID="HBW-qH-Kc0">
             <objects>
-                <tableViewController id="Zdb-g8-4gf" sceneMemberID="viewController">
+                <tableViewController id="Zdb-g8-4gf" customClass="CheatSheetTableViewController" customModule="COSC345_Lang" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9tc-PC-2J4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +301,7 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Exit"/>
                             <connections>
-                                <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="m64-nb-Smx"/>
+                                <segue destination="q2f-da-TVm" kind="presentation" modalPresentationStyle="fullScreen" id="qZh-Gd-WbP"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -1067,7 +1067,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Cf-oLx">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="180" id="JF3-2K-1EU"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="LKw-OI-MjE"/>
@@ -1106,7 +1106,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-8O-7tt">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="180" id="WjL-WB-imA"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="esE-N9-KWw"/>
@@ -1291,7 +1291,7 @@
                             </connections>
                         </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" id="s5D-Um-Jbt" customClass="myCell" customModule="COSC345_Lang" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" id="s5D-Um-Jbt">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s5D-Um-Jbt" id="5rE-cP-Co2">
@@ -1366,7 +1366,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fg7-s2-TLg"/>
+        <segue reference="qZh-Gd-WbP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5556923" width="1080" height="1920"/>

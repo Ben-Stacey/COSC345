@@ -12,11 +12,6 @@ struct Player{
     var score: Int
 }
 
-class myCell: UITableViewCell{
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-}
-
 class PlayerTableViewController: UITableViewController {
     let players = [
         Player(name: "Bruce", score: 5),
@@ -40,6 +35,6 @@ class PlayerTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "Countries"
+        "Leaderboard"
     }
 }
