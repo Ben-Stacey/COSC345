@@ -7,6 +7,9 @@
 
 import UIKit
 
+/**
+ Struct that has the variables that the cell will display
+ */
 struct Word{
     var english: String
     var maori: String
@@ -14,11 +17,14 @@ struct Word{
     var spanish: String
 }
 
-class myCheatCell: UITableViewCell{
-    
-}
-
+/**
+  Table view controller
+ */
 class CheatSheetTableViewController: UITableViewController {
+    
+        /**
+            List of objects that the table will display
+         */
         let words = [
             Word(english: "Hello", maori: "Kia Ora", french: "Bonjour", spanish: "Hola"),
             Word(english: "Please", maori: "Tena koa", french: "S'il vous plaît", spanish: "Hola"),
@@ -78,10 +84,27 @@ class CheatSheetTableViewController: UITableViewController {
             Word(english: "meeting", maori: "hui", french: "recountre", spanish: "reunión")
         ]
 
+        /**
+            Gets the amount of rows in the table
+         - parameters:
+            - tableView: gets the table
+            - numberOfRowsInSection: number of rows in the table
+         - returns:
+            - Int: the number of rows
+         */
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             self.words.count
         }
 
+        /**
+        Creates the view for each cell in the table by adding the text onto the label
+      
+         - Parameters:
+            - tableView: Gets the table
+            - cellForRowAt: the index of the cell
+         - Returns:
+            - UITableViewCell: Cell
+         */
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
@@ -90,7 +113,15 @@ class CheatSheetTableViewController: UITableViewController {
 
             return cell
         }
-
+        
+        /**
+         The name at the top of the table
+         - parameters:
+            - tableView: the table
+            - titleForHeaderInSection: header for the table
+         - returns:
+            - String: name for table
+         */
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
             "CheatSheet"
         }
