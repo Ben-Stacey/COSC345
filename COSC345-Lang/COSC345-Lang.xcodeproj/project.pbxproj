@@ -74,6 +74,7 @@
 		2996AAC928B85B16005B36E1 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		2996AACB28B85B2A005B36E1 /* QuizResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
 		2996AACE28B87526005B36E1 /* QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTests.swift; sourceTree = "<group>"; };
+		3510760328EA47480069878E /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "COSC345-LangTests.xctest"; path = "/Users/benstacey/Documents/COSC345/COSC345-Lang/build/Debug-iphoneos/COSC345-LangTests.xctest"; sourceTree = "<absolute>"; };
 		352675C828B84B99007C7942 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3528941428A330E9002C980C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3528941628A330E9002C980C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		35CE493328A5F3430093CC7E /* COSC345_LangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345_LangTests.swift; sourceTree = "<group>"; };
 		AEAD3B6E28DE699600D9E88A /* COSC345-Lang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COSC345-Lang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED335B828E3963900BB364C /* SeaOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaOfWords.swift; sourceTree = "<group>"; };
-		AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "COSC345-LangTests.xctest"; path = "/Users/benstacey/Documents/COSC345/COSC345-Lang/build/Debug-iphoneos/COSC345-LangTests.xctest"; sourceTree = "<absolute>"; };
 		AED335BB28E66D4F00BB364C /* COSC345-LangTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COSC345-LangTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		AED335BE28E66DF300BB364C /* SeaOfWordsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaOfWordsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +269,7 @@
 			);
 			name = "COSC345-LangTests";
 			productName = "COSC345-LangTests";
-			productReference = AED335BA28E6654700BB364C /* COSC345-LangTests.xctest */;
+			productReference = 3510760328EA47480069878E /* COSC345-LangTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
