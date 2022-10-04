@@ -47,4 +47,6 @@ class SoWQuestionBank {
         maori.append(SoWQuestions(quest: "Select the word with the same meaning",questWord: "Good Night",choiceA: "Po Pai",choiceB: "Pa",choiceC: "Paunamu",choiceD: "Tangi",answer: 1))
         
     }
+    
+
 }

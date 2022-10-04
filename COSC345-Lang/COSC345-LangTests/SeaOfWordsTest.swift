@@ -13,11 +13,14 @@ public class SeaofWordsTests: XCTestCase {
     var seaofWordsSubject : SeaofWords!
     
     public func doesQuestionUpdate(){
-        
+        SeaofWords.setQuestionNumber(qNum: 2)
+        XCTAssertEqual(SeaofWords.getQuestionNumber(), 2)
     }
     
-    public func doesUiUpdate(){
-        
+    public func doesScoreWork(){
+        SeaofWords.setScore(sc: 23)
+        XCTAssertEqual(SeaofWords.getScore(), 23)
+
     }
 
     public override func setUpWithError() throws {

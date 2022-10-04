@@ -9,6 +9,13 @@
  */
 import UIKit
 
+let lang = MainMenu.getLanguageNum()
+let allQuestions = SoWQuestionBank()
+var questionNumber: Int = 0
+var score: Int = 0
+var selectedAnswer: Int = 0
+var quest = [SoWQuestions]()
+
 public class SeaofWords: UIViewController {
     @IBOutlet weak var questionCounter: UILabel!
     @IBOutlet weak var scoreCounter: UILabel!
@@ -22,11 +29,7 @@ public class SeaofWords: UIViewController {
     @IBOutlet weak var optionC: UIButton!
     @IBOutlet weak var optionD: UIButton!
     
-    let language = MainMenu.getLanguageNum()
-    let allQuestions = SoWQuestionBank()
-    var questionNumber: Int = 0
-    var score: Int = 0
-    var selectedAnswer: Int = 0
+   
     
     
     public override func viewDidLoad() {
@@ -64,15 +67,16 @@ public class SeaofWords: UIViewController {
         updateQuestion()
     }
     func updateQuestion(){
-        if language == 2 {
-            if questionNumber <= allQuestions.list.count - 1{
-                questionLabel.text = allQuestions.list[questionNumber].question
-                questionWord.text = allQuestions.list[questionNumber].questionWord
-                optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
-                optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
-                optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
-                optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
-                selectedAnswer = allQuestions.list[questionNumber].correctAnswer
+        if lang == 2 {
+             quest = allQuestions.list.shuffled()
+            if questionNumber <= quest.count - 1{
+                questionLabel.text = quest[questionNumber].question
+                questionWord.text = quest[questionNumber].questionWord
+                optionA.setTitle(quest[questionNumber].optionA, for: UIControl.State.normal)
+                optionB.setTitle(quest[questionNumber].optionB, for: UIControl.State.normal)
+                optionC.setTitle(quest[questionNumber].optionC, for: UIControl.State.normal)
+                optionD.setTitle(quest[questionNumber].optionD, for: UIControl.State.normal)
+                selectedAnswer = quest[questionNumber].correctAnswer
                 
             }else {
                 let alert = UIAlertController(title:"Awesome! You got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over?", preferredStyle:.alert)
@@ -86,16 +90,16 @@ public class SeaofWords: UIViewController {
                 present(alert, animated: true, completion: nil)
             }
             updateUI()
-        } else if language == 1 {
-            if questionNumber <= allQuestions.french.count - 1{
-                questionLabel.text = allQuestions.french[questionNumber].question
-                questionWord.text = allQuestions.french[questionNumber].questionWord
-                optionA.setTitle(allQuestions.french[questionNumber].optionA, for: UIControl.State.normal)
-                optionB.setTitle(allQuestions.french[questionNumber].optionB, for: UIControl.State.normal)
-                optionC.setTitle(allQuestions.french[questionNumber].optionC, for: UIControl.State.normal)
-                optionD.setTitle(allQuestions.french[questionNumber].optionD, for: UIControl.State.normal)
-                selectedAnswer = allQuestions.french[questionNumber].correctAnswer
-                
+        } else if lang == 1 {
+            quest = allQuestions.french.shuffled()
+           if questionNumber <= quest.count - 1{
+               questionLabel.text = quest[questionNumber].question
+               questionWord.text = quest[questionNumber].questionWord
+               optionA.setTitle(quest[questionNumber].optionA, for: UIControl.State.normal)
+               optionB.setTitle(quest[questionNumber].optionB, for: UIControl.State.normal)
+               optionC.setTitle(quest[questionNumber].optionC, for: UIControl.State.normal)
+               optionD.setTitle(quest[questionNumber].optionD, for: UIControl.State.normal)
+               selectedAnswer = quest[questionNumber].correctAnswer
             }else {
                 let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.french.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
                 let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
@@ -108,15 +112,16 @@ public class SeaofWords: UIViewController {
                 present(alert, animated: true, completion: nil)
             }
             updateUI()
-        } else if language == 3 {
-            if questionNumber <= allQuestions.maori.count - 1{
-                questionLabel.text = allQuestions.maori[questionNumber].question
-                questionWord.text = allQuestions.maori[questionNumber].questionWord
-                optionA.setTitle(allQuestions.maori[questionNumber].optionA, for: UIControl.State.normal)
-                optionB.setTitle(allQuestions.maori[questionNumber].optionB, for: UIControl.State.normal)
-                optionC.setTitle(allQuestions.maori[questionNumber].optionC, for: UIControl.State.normal)
-                optionD.setTitle(allQuestions.maori[questionNumber].optionD, for: UIControl.State.normal)
-                selectedAnswer = allQuestions.maori[questionNumber].correctAnswer
+        } else if lang == 3 {
+            quest = allQuestions.maori.shuffled()
+           if questionNumber <= quest.count - 1{
+               questionLabel.text = quest[questionNumber].question
+               questionWord.text = quest[questionNumber].questionWord
+               optionA.setTitle(quest[questionNumber].optionA, for: UIControl.State.normal)
+               optionB.setTitle(quest[questionNumber].optionB, for: UIControl.State.normal)
+               optionC.setTitle(quest[questionNumber].optionC, for: UIControl.State.normal)
+               optionD.setTitle(quest[questionNumber].optionD, for: UIControl.State.normal)
+               selectedAnswer = quest[questionNumber].correctAnswer
                 
             }else {
                 let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.maori.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
@@ -134,19 +139,19 @@ public class SeaofWords: UIViewController {
     }
     
     func updateUI() {
-        if language == 2 {
+        if lang == 2 {
             scoreCounter.text = "Score: \(score)"
             if questionNumber <= allQuestions.list.count - 1{
                 questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
             }
             progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
-        } else if language == 1 {
+        } else if lang == 1 {
             scoreCounter.text = "Score: \(score)"
             if questionNumber <= allQuestions.french.count - 1{
                 questionCounter.text = "\(questionNumber + 1)/\(allQuestions.french.count)"
             }
             progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.french.count)) * CGFloat(questionNumber + 1)
-        } else if language == 3 {
+        } else if lang == 3 {
             scoreCounter.text = "Score: \(score)"
             if questionNumber <= allQuestions.maori.count - 1{
                 questionCounter.text = "\(questionNumber + 1)/\(allQuestions.maori.count)"
@@ -160,4 +165,21 @@ public class SeaofWords: UIViewController {
         questionNumber = 0
         updateQuestion()
     }
+    
+    public class func setQuestionNumber(qNum:Int) {
+        questionNumber = qNum
+    }
+    
+    public class func getQuestionNumber() -> Int {
+        return questionNumber
+    }
+    
+    public class func setScore(sc:Int) {
+        score = sc
+    }
+    
+    public class func getScore() -> Int {
+        return score
+    }
+    
 }
