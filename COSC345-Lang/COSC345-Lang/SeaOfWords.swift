@@ -89,6 +89,7 @@ public class SeaofWords: UIViewController {
                 alert.addAction(goBackAction)
                 present(alert, animated: true, completion: nil)
             }
+            HomeScreen.increaseXp(amount: score)
             updateUI()
         } else if lang == 1 {
             quest = allQuestions.french.shuffled()
@@ -111,6 +112,7 @@ public class SeaofWords: UIViewController {
                 alert.addAction(goBackAction)
                 present(alert, animated: true, completion: nil)
             }
+            HomeScreen.increaseXp(amount: score)
             updateUI()
         } else if lang == 3 {
             quest = allQuestions.maori.shuffled()
@@ -134,6 +136,7 @@ public class SeaofWords: UIViewController {
                 alert.addAction(goBackAction)
                 present(alert, animated: true, completion: nil)
             }
+            HomeScreen.increaseXp(amount: score)
             updateUI()
         }
     }
