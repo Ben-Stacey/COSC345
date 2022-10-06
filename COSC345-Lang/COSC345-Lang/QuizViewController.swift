@@ -52,15 +52,10 @@ public class QuizViewController: UIViewController {
                 idex += 1
             }
         }
-        
-        print("\n\n\n\n\nQuestion nums: " + questionNums.description + "\n\n\n\n\n")
-        
+                
         var dex = 0
         while dex < 10 {
             if let root = NSDictionary(contentsOfFile:Bundle.main.path(forResource: "Phrases", ofType:"plist")!) as? [String:[String]] {
-                
-                print(dex)
-                print(questionNums[dex])
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori.
                 var language: String = ""
@@ -79,7 +74,7 @@ public class QuizViewController: UIViewController {
                 
                 let randAnswersLength = randAnswersFromLanguage.count - 1
                 
-                var questionNumber = questionNums[dex]
+                let questionNumber = questionNums[dex]
                 var optionNums = [questionNumber]
                 
                 var idx = 1
@@ -117,12 +112,7 @@ public class QuizViewController: UIViewController {
                     indy += 1
                 }
             }
-            print(questions[dex].question)
             dex += 1
-        }
-        
-        for question in questions {
-            print(question)
         }
         
         viewModel.apiToGetQuestionData {
