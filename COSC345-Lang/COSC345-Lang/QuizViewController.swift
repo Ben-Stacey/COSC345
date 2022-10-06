@@ -31,9 +31,36 @@ public class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        var idex = 0
+        while idex < 10{
+            let randy = Int.random(in:0...18)
+            var dup = false
+
+            if idex == 0{
+                questionNums.append(randy)
+                idex += 1
+                continue
+            }
+            
+            for numba in questionNums{
+                if randy == numba{
+                    dup = true
+                }
+            }
+            if !dup{
+                questionNums.append(randy)
+                idex += 1
+            }
+        }
+        
+        print("\n\n\n\n\nQuestion nums: " + questionNums.description + "\n\n\n\n\n")
+        
         var dex = 0
         while dex < 10 {
             if let root = NSDictionary(contentsOfFile:Bundle.main.path(forResource: "Phrases", ofType:"plist")!) as? [String:[String]] {
+                
+                print(dex)
+                print(questionNums[dex])
                 
                 let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori.
                 var language: String = ""
@@ -52,33 +79,8 @@ public class QuizViewController: UIViewController {
                 
                 let randAnswersLength = randAnswersFromLanguage.count - 1
                 
-                var idex = 0
-                while idex < 1{
-                    let randy = Int.random(in:0...randAnswersLength)
-                    var dup = false
-
-                    if dex == 0{
-                        questionNums.append(randy)
-                        idex += 1
-                        continue
-                    }
-                    
-                    for numba in questionNums{
-                        if randy == numba{
-                            dup = true
-                        }
-                    }
-                    if !dup{
-                        questionNums.append(randy)
-                        idex += 1
-                    }
-                }
-                
-                print("Question nums: " + questionNums.description)
-                
-                
-                let randomNumber = questionNums[dex]
-                var optionNums = [randomNumber]
+                var questionNumber = questionNums[dex]
+                var optionNums = [questionNumber]
                 
                 var idx = 1
                 while idx < 4{
@@ -97,12 +99,9 @@ public class QuizViewController: UIViewController {
                     }
                 }
                 
-                
-                var index = 0
+                var indy = 0
                 for (_, phraseArray) in root {
-                    if index == randomNumber {
-                        
-                        
+                    if indy == questionNumber {
                         let options = [randAnswersFromLanguage[optionNums[0]], randAnswersFromLanguage[optionNums[1]], randAnswersFromLanguage[optionNums[2]], randAnswersFromLanguage[optionNums[3]]]
                         let shuffledOptions = options.shuffled()
                         
@@ -115,11 +114,15 @@ public class QuizViewController: UIViewController {
                         
                         questions.append(Question(correctAnswer:correctAnswer, option_1:option_1, option_2:option_2, option_3:option_3, option_4:option_4, question:question))
                     }
-                    
-                    index += 1
+                    indy += 1
                 }
             }
+            print(questions[dex].question)
             dex += 1
+        }
+        
+        for question in questions {
+            print(question)
         }
         
         viewModel.apiToGetQuestionData {
@@ -173,7 +176,7 @@ public class QuizViewController: UIViewController {
             points += 1
         }
         
-        if index < (self.questions.count) - 1 {
+        if index < (self.questions.count - 1){
             index += 1
             collectionView.scrollToItem(at: IndexPath(row:index, section:0), at:.right, animated: true)
         } else {

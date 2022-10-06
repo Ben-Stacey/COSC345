@@ -17,6 +17,7 @@ public enum SelectedOption {
     Handles the selected option and highlights it so the user can tell they pressed it.
 */
 public class QuizCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var option1: UILabel!
     @IBOutlet weak var option2: UILabel!
@@ -26,6 +27,7 @@ public class QuizCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var optionB: UIControl!
     @IBOutlet weak var optionC: UIControl!
     @IBOutlet weak var optionD: UIControl!
+    
     private var correctAnswer: String?
     
     var setValues: Question? {
