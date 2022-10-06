@@ -18,6 +18,7 @@ public class QuizViewController: UIViewController {
     var isCorrectAnswer = false
     var points = 0
     var index = 0
+    var questionNums: [Int] = []
     /**
         Gets the language phrases from Phrases.plist and creates mulitple questions with answer options.
         Once generated they are then added to the collection view.
@@ -30,7 +31,7 @@ public class QuizViewController: UIViewController {
         while dex < 10 {
             if let root = NSDictionary(contentsOfFile:Bundle.main.path(forResource: "Phrases", ofType:"plist")!) as? [String:[String]] {
                 
-                let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori. //Int.random(in: 1...3)
+                let languageNum = MainMenu.getLanguageNum()//1 for french, 2 for spanish, 3 for maori.
                 var language: String = ""
                 if languageNum == 1 {
                     language = "French"
@@ -45,15 +46,60 @@ public class QuizViewController: UIViewController {
                     randAnswersFromLanguage.append(phraseArray[languageNum])
                 }
                 
-                var randAnswersLength = randAnswersFromLanguage.count - 1
-                let randomNumber = Int.random(in:0...randAnswersLength)
-                randAnswersFromLanguage.remove(at:randomNumber)
-                randAnswersLength -= 1
+                let randAnswersLength = randAnswersFromLanguage.count - 1
+                
+                var idex = 0
+                while idex < 1{
+                    let randy = Int.random(in:0...randAnswersLength)
+                    var dup = false
+
+                    if dex == 0{
+                        questionNums.append(randy)
+                        idex += 1
+                        continue
+                    }
+                    
+                    for numba in questionNums{
+                        if randy == numba{
+                            dup = true
+                        }
+                    }
+                    if !dup{
+                        questionNums.append(randy)
+                        idex += 1
+                    }
+                }
+                
+                print("Question nums: " + questionNums.description)
+                
+                
+                let randomNumber = questionNums[dex]
+                var optionNums = [randomNumber]
+                
+                var idx = 1
+                while idx < 4{
+                    let rando = Int.random(in:0...randAnswersLength)
+                    var dup = false
+                    
+                    for numba in optionNums{
+                        if rando == numba{
+                            dup = true
+                        }
+                    }
+                    
+                    if !dup{
+                        optionNums.append(rando)
+                        idx += 1
+                    }
+                }
+                
                 
                 var index = 0
                 for (_, phraseArray) in root {
                     if index == randomNumber {
-                        let options = [phraseArray[languageNum], randAnswersFromLanguage[Int.random(in:0...randAnswersLength)], randAnswersFromLanguage[Int.random(in:0...randAnswersLength)], randAnswersFromLanguage[Int.random(in:0...randAnswersLength)]]
+                        
+                        
+                        let options = [randAnswersFromLanguage[optionNums[0]], randAnswersFromLanguage[optionNums[1]], randAnswersFromLanguage[optionNums[2]], randAnswersFromLanguage[optionNums[3]]]
                         let shuffledOptions = options.shuffled()
                         
                         let correctAnswer = phraseArray[languageNum]
