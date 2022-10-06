@@ -1,11 +1,13 @@
 {
   "images" : [
     {
+      "filename" : "LOGO-lang copy-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "LOGO-lang copy 2.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -41,11 +43,13 @@
       "size" : "60x60"
     },
     {
+      "filename" : "LOGO-lang4.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
+      "filename" : "LOGO-lang copy.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
