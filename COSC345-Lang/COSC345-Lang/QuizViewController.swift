@@ -11,7 +11,10 @@ import UIKit
     The view controller for the quiz. Also generates the questions and handles the users answers too.
 */
 public class QuizViewController: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var progressBar: UIView!
+    
     var viewModel = QuestionViewModel()
     var questions: [Question] = []
     var answerSelected = false
@@ -19,6 +22,7 @@ public class QuizViewController: UIViewController {
     var points = 0
     var index = 0
     var questionNums: [Int] = []
+    
     /**
         Gets the language phrases from Phrases.plist and creates mulitple questions with answer options.
         Once generated they are then added to the collection view.
@@ -178,6 +182,8 @@ public class QuizViewController: UIViewController {
             HomeScreen.increaseXp(amount:points)
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        progressBar.frame.size.width = (374 / 11) * CGFloat(index + 1)
     }
 }
 

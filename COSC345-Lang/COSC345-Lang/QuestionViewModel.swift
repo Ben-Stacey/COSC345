@@ -20,7 +20,7 @@ class QuestionViewModel {
                     
                     let empData = try! jsonDecoder.decode(DataModel.self, from:data)
                     self?.questionData = empData
-                    print(empData)
+                    //print(empData)
                     completion()
                 } catch {
                     print("Error decoding JSON")

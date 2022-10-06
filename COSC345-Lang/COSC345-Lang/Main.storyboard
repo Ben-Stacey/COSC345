@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ex-9i-gqE">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -943,8 +943,8 @@
                                     <action selector="onClickNext:" destination="NEz-6J-tLC" eventType="touchUpInside" id="8RU-9D-nvr"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-nL-BGj">
-                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-nL-BGj">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kfB-ws-Edb">
                                     <size key="itemSize" width="414" height="744"/>
@@ -953,12 +953,12 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" id="mIx-c7-Xcj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuizCollectionViewCell" id="atd-xm-ZSg" customClass="QuizCollectionViewCell" customModule="COSC345_Lang" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2" width="414" height="744"/>
+                                        <rect key="frame" x="0.0" y="-11" width="414" height="744"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ANa-GQ-fVD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="744"/>
@@ -970,7 +970,7 @@
                                                         <constraint firstAttribute="height" constant="310" id="Hdu-w4-0Cx"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TBh-ZK-6e2">
@@ -1018,7 +1018,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-kw-sY7">
-                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
+                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="8ru-gd-eFM"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="Ax8-Gx-H3Y"/>
@@ -1164,6 +1164,16 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VLX-Sa-2ya" userLabel="Bar">
+                                <rect key="frame" x="20" y="112" width="374" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fie-Ro-q2X" userLabel="Bar">
+                                <rect key="frame" x="20" y="112" width="34" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r8d-h0-vd4"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -1182,6 +1192,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="6DH-nL-BGj" id="eYG-e3-7qS"/>
+                        <outlet property="progressBar" destination="fie-Ro-q2X" id="kkv-5z-7ZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM8-jJ-PMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1360,7 +1371,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fg7-s2-TLg"/>
+        <segue reference="KhK-Yi-vM9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5556923" width="1080" height="1920"/>
