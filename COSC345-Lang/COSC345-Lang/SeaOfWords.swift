@@ -43,8 +43,15 @@ public class SeaofWords: UIViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func quit(_ sender: UIButton){
-        self.dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title:"Are you sure you want to quit ?", message:"You will lose all progress", preferredStyle:.alert)
+        let quitAction = UIAlertAction(title:"Quit", style:.default, handler:{ action in self.quitGame()})
+        let cancelAction = UIAlertAction(title:"Back to Quiz", style:.cancel, handler: nil)
+        alert.addAction(quitAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+
     }
+    
     
     @IBAction func answerPressed(_ sender: UIButton) {
         /*
@@ -125,6 +132,12 @@ public class SeaofWords: UIViewController {
         restartQuiz()
         self.dismiss(animated: true, completion: nil)
     }
+    func quitGame(){
+        restartQuiz()
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    
     
     public class func setQuestionNumber(qNum:Int) {
         questionNumber = qNum
