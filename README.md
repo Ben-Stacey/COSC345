@@ -59,4 +59,4 @@ We received high ratings for the overall of the app.
 
 
 Overall, we found that our lack of UI designs took away from the app. After fixing this we hope that we can provide a good user experience for our app
-![image](https://user-images.githubusercontent.com/66763075/194446566-1460ecd6-6cc7-457d-8da2-7880ac2effe6.png)
+
