@@ -23,6 +23,7 @@ class PlayerTableViewController: UITableViewController {
         Data that is displayed in the table
      */
     let players = [
+        Player(name: MainMenu.getName(), score: HomeScreen.getScore()),
         Player(name: "Bruce", score: 5),
         Player(name: "Bob", score: 4),
         Player(name: "Brent", score: 3),

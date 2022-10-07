@@ -7,6 +7,7 @@
 
 import UIKit
 
+public var totalScore: Int = 0
 var xp: Int = 0
 var level: Int = 1
 var xpToLevelUp: Int = 5
@@ -51,6 +52,11 @@ public class HomeScreen: UIViewController {
     
     public class func increaseXp(amount: Int) {
         xp += amount
+        totalScore += amount
+    }
+    
+    public class func getScore() -> Int{
+        return totalScore
     }
     
 }
