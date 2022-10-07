@@ -34,6 +34,7 @@ public class SeaofWords: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        setLanguage()
         updateQuestion()
         updateUI()
     }
@@ -66,9 +67,21 @@ public class SeaofWords: UIViewController {
         questionNumber += 1
         updateQuestion()
     }
+    
+    func setLanguage(){
+        if lang == 1 {
+            quest = allQuestions.french.shuffled()
+        } else if lang == 2 {
+            quest = allQuestions.list.shuffled()
+        } else if lang == 3 {
+            quest = allQuestions.maori.shuffled()
+        }
+        
+    }
+    
+   
+    
     func updateQuestion(){
-        if lang == 2 {
-             quest = allQuestions.list.shuffled()
             if questionNumber <= quest.count - 1{
                 questionLabel.text = quest[questionNumber].question
                 questionWord.text = quest[questionNumber].questionWord
@@ -79,94 +92,38 @@ public class SeaofWords: UIViewController {
                 selectedAnswer = quest[questionNumber].correctAnswer
                 
             }else {
-                let alert = UIAlertController(title:"Awesome! You got \(score)/\(allQuestions.list.count)", message:"End of Quiz. Do you want to start over?", preferredStyle:.alert)
+                let alert = UIAlertController(title:"Awesome! You got \(score)/\(quest.count)", message:"End of Quiz. Do you want to start over?", preferredStyle:.alert)
                 let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
                     action in self.restartQuiz()
                     
                 })
-                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
+                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.finishGame()})
                 alert.addAction(restartAction)
                 alert.addAction(goBackAction)
                 present(alert, animated: true, completion: nil)
             }
-            HomeScreen.increaseXp(amount: score)
             updateUI()
-        } else if lang == 1 {
-            quest = allQuestions.french.shuffled()
-           if questionNumber <= quest.count - 1{
-               questionLabel.text = quest[questionNumber].question
-               questionWord.text = quest[questionNumber].questionWord
-               optionA.setTitle(quest[questionNumber].optionA, for: UIControl.State.normal)
-               optionB.setTitle(quest[questionNumber].optionB, for: UIControl.State.normal)
-               optionC.setTitle(quest[questionNumber].optionC, for: UIControl.State.normal)
-               optionD.setTitle(quest[questionNumber].optionD, for: UIControl.State.normal)
-               selectedAnswer = quest[questionNumber].correctAnswer
-            }else {
-                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.french.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
-                let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
-                    action in self.restartQuiz()
-                    
-                })
-                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
-                alert.addAction(restartAction)
-                alert.addAction(goBackAction)
-                present(alert, animated: true, completion: nil)
-            }
-            HomeScreen.increaseXp(amount: score)
-            updateUI()
-        } else if lang == 3 {
-            quest = allQuestions.maori.shuffled()
-           if questionNumber <= quest.count - 1{
-               questionLabel.text = quest[questionNumber].question
-               questionWord.text = quest[questionNumber].questionWord
-               optionA.setTitle(quest[questionNumber].optionA, for: UIControl.State.normal)
-               optionB.setTitle(quest[questionNumber].optionB, for: UIControl.State.normal)
-               optionC.setTitle(quest[questionNumber].optionC, for: UIControl.State.normal)
-               optionD.setTitle(quest[questionNumber].optionD, for: UIControl.State.normal)
-               selectedAnswer = quest[questionNumber].correctAnswer
-                
-            }else {
-                let alert = UIAlertController(title:"Awsome !, you got \(score)/\(allQuestions.maori.count)", message:"End of Quiz. Do you want to start over ?", preferredStyle:.alert)
-                let restartAction = UIAlertAction(title:"Restart", style:.default, handler: {
-                    action in self.restartQuiz()
-                    
-                })
-                let goBackAction = UIAlertAction(title:"Back to Main Menu", style:.default, handler:{ action in self.dismiss(animated:true, completion:nil)})
-                alert.addAction(restartAction)
-                alert.addAction(goBackAction)
-                present(alert, animated: true, completion: nil)
-            }
-            HomeScreen.increaseXp(amount: score)
-            updateUI()
-        }
     }
     
     func updateUI() {
-        if lang == 2 {
-            scoreCounter.text = "Score: \(score)"
-            if questionNumber <= allQuestions.list.count - 1{
-                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
-            }
-            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
-        } else if lang == 1 {
-            scoreCounter.text = "Score: \(score)"
-            if questionNumber <= allQuestions.french.count - 1{
-                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.french.count)"
-            }
-            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.french.count)) * CGFloat(questionNumber + 1)
-        } else if lang == 3 {
             scoreCounter.text = "Score: \(score)"
             if questionNumber <= allQuestions.maori.count - 1{
-                questionCounter.text = "\(questionNumber + 1)/\(allQuestions.maori.count)"
+                questionCounter.text = "\(questionNumber + 1)/\(quest.count)"
             }
-            progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.maori.count)) * CGFloat(questionNumber + 1)
-        }
+        progressView.frame.size.width = (view.frame.size.width / CGFloat(quest.count)) * CGFloat(questionNumber + 1)
     }
     
     func restartQuiz(){
         score = 0
         questionNumber = 0
         updateQuestion()
+        setLanguage()
+    }
+    
+    func finishGame(){
+        HomeScreen.increaseXp(amount: score)
+        restartQuiz()
+        self.dismiss(animated: true, completion: nil)
     }
     
     public class func setQuestionNumber(qNum:Int) {
