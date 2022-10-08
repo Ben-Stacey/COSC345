@@ -686,20 +686,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lang-title" translatesAutoresizingMaskIntoConstraints="NO" id="iYb-sL-vs1">
                                 <rect key="frame" x="-2" y="-9" width="411" height="334"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="166-3U-HON">
-                                <rect key="frame" x="248" y="802" width="89.5" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe down to go back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-fd-BI1">
+                                <rect key="frame" x="105" y="727" width="204" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Back">
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="backButtton:" destination="Osk-d3-nxy" eventType="touchUpInside" id="TKZ-2F-yoX"/>
-                                    <action selector="maoriButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPz-qY-fKy"/>
-                                    <action selector="maoriButton:" destination="Osk-d3-nxy" eventType="touchUpInside" id="Jhf-yn-Uh5"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wht-6Q-d3M"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -719,7 +712,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="ToU-iy-Myd"/>
                     <connections>
-                        <outlet property="backButton" destination="166-3U-HON" id="Mz5-w3-dIi"/>
                         <outlet property="langPicked" destination="KB6-BJ-PqW" id="xN1-bI-7RQ"/>
                         <outlet property="nameField" destination="m56-qc-UjI" id="2w3-He-aNd"/>
                         <outlet property="submitButton" destination="4DE-B6-gAA" id="oFQ-64-pCV"/>
@@ -1108,7 +1100,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Cf-oLx">
-                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="180" id="JF3-2K-1EU"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="LKw-OI-MjE"/>
@@ -1448,9 +1440,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
