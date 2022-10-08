@@ -12,9 +12,11 @@ import UIKit
 View Controller for Settings
  */
 class SettingsViewController: UIViewController {
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var langPicked: UILabel!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     /**
      Loads the View Controller
@@ -67,6 +69,16 @@ class SettingsViewController: UIViewController {
         }
         
         
+        guard let view = storyboard?.instantiateViewController(withIdentifier:"HomeScreen") as? HomeScreen else{return}
+        self.navigationController?.pushViewController(view, animated:true)
+    }
+    
+    /**
+        When the back button is clicked it goes to the previous screen
+        - Parameters:
+            - any: [in] allows method to be sent anything
+    */
+    @IBAction func backButtton(_ sender: Any) {
         guard let view = storyboard?.instantiateViewController(withIdentifier:"HomeScreen") as? HomeScreen else{return}
         self.navigationController?.pushViewController(view, animated:true)
     }
