@@ -46,15 +46,26 @@ public class HomeScreen: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    /**
+     Gets the Users xp number
+     */
     public class func getXp() -> Int {
         return xp
     }
     
+    /**
+     Increases xp by the amount parameter
+     - Parameters:
+      - amount: the amount to increase xp by
+     */
     public class func increaseXp(amount: Int) {
         xp += amount
         totalScore += amount
     }
     
+    /**
+     Gets the users total score for the leaderboard.
+     */
     public class func getScore() -> Int{
         return totalScore
     }
