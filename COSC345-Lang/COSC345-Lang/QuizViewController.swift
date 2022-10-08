@@ -14,12 +14,13 @@ public class QuizViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var progressBar: UIView!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var viewModel = QuestionViewModel()
     var questions: [Question] = []
     var answerSelected = false
     var isCorrectAnswer = false
-    var points = 0
+    var points: Int = 0
     var index = 0
     var questionNums: [Int] = []
     
@@ -164,6 +165,8 @@ public class QuizViewController: UIViewController {
         
         if isCorrectAnswer {
             points += 1
+            let bigChungus = "\(points)"
+            scoreLabel.text = "Score: " + bigChungus
         }
         
         if index < (self.questions.count - 1){

@@ -1065,7 +1065,7 @@
                                                                     <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-kw-sY7">
-                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
+                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="8ru-gd-eFM"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="Ax8-Gx-H3Y"/>
@@ -1108,7 +1108,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Cf-oLx">
-                                                                            <rect key="frame" x="-0.5" y="-0.5" width="180.5" height="180.5"/>
+                                                                            <rect key="frame" x="0.0" y="-0.5" width="180" height="180.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="180" id="JF3-2K-1EU"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="LKw-OI-MjE"/>
@@ -1221,6 +1221,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlC-7f-Pkn">
+                                <rect key="frame" x="180" y="64" width="73" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r8d-h0-vd4"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -1239,7 +1246,8 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="6DH-nL-BGj" id="eYG-e3-7qS"/>
-                        <outlet property="progressBar" destination="fie-Ro-q2X" id="kkv-5z-7ZZ"/>
+                        <outlet property="progressBar" destination="fie-Ro-q2X" id="6v6-74-LUi"/>
+                        <outlet property="scoreLabel" destination="dlC-7f-Pkn" id="rf8-cu-5EV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM8-jJ-PMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
